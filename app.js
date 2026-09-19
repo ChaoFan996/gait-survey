@@ -14,10 +14,11 @@ const years=[...new Set(papers.map(p=>p.year).filter(Boolean))].sort((a,b)=>b-a)
 const venues=[...new Set(papers.map(p=>p.venue).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
 for(const y of years)$('year').add(new Option(y,y));
 for(const v of venues)$('venue').add(new Option(v,v));
-$('total-count').textContent=papers.length;
+$('total-count').textContent=papers.filter(p=>p.publicationStatus!=='Withdrawn').length;
+$('year').add(new Option('Before 2020','before2020'));
 $('about-provenance').textContent=data.meta.description;
 function queryTokens(q){return (norm(q).match(/"[^"]+"|\S+/g)||[]).map(s=>s.replace(/^"|"$/g,''));}
-function findPapers(ignoreYear=false){const tokens=queryTokens(state.query);return papers.filter(p=>(ignoreYear||!state.year||String(p.year)===state.year)&&(!state.venue||p.venue===state.venue)&&tokens.every(t=>p.searchText.includes(t)));}
+function findPapers(ignoreYear=false){const tokens=queryTokens(state.query);return papers.filter(p=>p.publicationStatus!=='Withdrawn'&&(ignoreYear||!state.year||(state.year==='before2020'?p.year<2020:String(p.year)===state.year))&&(!state.venue||p.venue===state.venue)&&tokens.every(t=>p.searchText.includes(t)));}
 function stopPlayback(){if(timer)clearInterval(timer);timer=null;$('play').setAttribute('aria-pressed','false');$('play').innerHTML='<span aria-hidden="true">▶</span>';$('play').setAttribute('aria-label','Animate word cloud by year');}
 function syncURL(){const q=new URLSearchParams();if(state.query)q.set('q',state.query);if(state.year)q.set('year',state.year);if(state.venue)q.set('venue',state.venue);if(state.sort!=='newest')q.set('sort',state.sort);if(state.field!=='all')q.set('field',state.field);const p=new URLSearchParams(location.search).get('paper');if(p)q.set('paper',p);try{history.replaceState(null,'',location.pathname+(q.size?'?'+q:'')+location.hash);}catch{}}
 function setFilter(key,value,{playback=false}={}){if(!playback)stopPlayback();state[key]=String(value);state.page=1;render();}
@@ -28,7 +29,7 @@ function render(){
   state.page=Math.min(state.page,Math.max(1,Math.ceil(filtered.length/PAGE_SIZE)));
   $('result-count').textContent=filtered.length;
   const complete=filtered.filter(p=>p.complete).length;
-  $('result-description').textContent=`${filtered.length} ${filtered.length===1?'paper':'papers'}${filtered.length!==papers.length?' of '+papers.length:''} · ${complete} with three-field summaries`;
+  $('result-description').textContent=`${complete} with three-field summaries`;
   $('active-filters').innerHTML=[['query',state.query],['year',state.year],['venue',state.venue]].filter(x=>x[1]).map(([k,v])=>`<button class="filter-chip" data-clear="${k}" aria-label="Remove ${escape(k)} filter: ${escape(v)}">${escape(v)}<span aria-hidden="true">×</span></button>`).join('');
   $('active-filters').querySelectorAll('[data-clear]').forEach(b=>b.addEventListener('click',()=>setFilter(b.dataset.clear,'')));
   renderPapers();renderCloud();renderYears();syncURL();
@@ -44,9 +45,9 @@ function renderPapers(){
 }
 const STOP=new Set('a an the for of on and or in to from with by via as at is are be being been this that these those their its it our we can may using use used uses based approach approaches method methods model models network networks framework frameworks recognition gait improve improving improved enhancement enhance learning learn learned proposed propose effective efficient robust towards toward across better new novel paper study task tasks features feature representation representations various different address addressing enable enables capture capturing leverage leveraging end based together both more within through into without need unified single multiple not under while also improve obtain obtained provide provides proposed proposing identify addressing address existing utilize utilizing using achieve achieving enable enabled enhance propose study based reduce reducing contain containing information novel new based high low limitations limitation limited difficult challenge challenges capture based better improve improving real world well performance accuracy effectiveness different additionally first second specific task related purpose perspective' .split(' '));
 const PHRASES=['self-supervised','cross-view','cross-modal','cross-domain','cross-covariate','cloth-changing','clothing change','in-the-wild','point cloud','body shape','multi-modal','multimodal','spatio-temporal','spatial-temporal','counterfactual','contrastive','distillation','disentanglement','occlusion','silhouette','skeleton','diffusion','transformer','attention','temporal','spatial','motion','fusion','causal','privacy','RGB','LiDAR','pretraining','adaptation','generative','robustness','reconstruction','alignment','local','global','identity','covariates','semantics','video','clothing','3D'];
-function termFrequency(rows){
+function termFrequency(rows,field=state.field){
   const count=new Map();
-  for(const p of rows){if(!p.complete||p.publicationStatus==='Withdrawn')continue;let text=norm((state.field==='all'?fields:[state.field]).map(f=>p[f]||'').join(' '));const seen=new Set();
+  for(const p of rows){if(!p.complete||p.publicationStatus==='Withdrawn')continue;let text=norm((field==='all'?fields:[field]).map(f=>p[f]||'').join(' '));const seen=new Set();
     for(const phrase of PHRASES){const ph=norm(phrase);if(text.includes(ph)){seen.add(phrase);text=text.split(ph).join(' ');}}
     for(let t of text.match(/[a-z][a-z-]{2,}/g)||[]){t=t.replace(/^-+|-+$/g,'');if(t.endsWith('s')&&t.length>5&&!/(ss|sis|ics)$/.test(t))t=t.slice(0,-1);if(t.length>3&&!STOP.has(t))seen.add(t);}
     for(const t of seen)count.set(t,(count.get(t)||0)+1);
@@ -77,7 +78,15 @@ function renderCloud(){
   if(!matchMedia('(prefers-reduced-motion: reduce)').matches)host.animate([{opacity:.3},{opacity:1}],{duration:280});
   $('cloud-caption').textContent=`Document frequency · ${filtered.filter(p=>p.complete&&p.publicationStatus!=='Withdrawn').length} summarized papers${state.year?' · '+state.year:''}`;
 }
-function renderYears(){const rows=findPapers(true),counts=new Map();for(let y=2020;y<=2026;y++)counts.set(y,rows.filter(p=>p.year===y).length);const max=Math.max(1,...counts.values()),maxH=matchMedia('(max-width:700px)').matches?42:98;$('year-chart').innerHTML=[...counts].map(([y,n])=>`<button class="year-bar${state.year===String(y)?' active':''}" data-year="${y}" aria-label="${y}: ${n} papers" aria-pressed="${state.year===String(y)}"><span class="bar-count">${n}</span><span class="bar" style="height:${Math.max(3,n/max*maxH)}px"></span><span>${String(y).slice(2)}</span></button>`).join('');$('year-chart').querySelectorAll('[data-year]').forEach(b=>b.addEventListener('click',()=>setFilter('year',state.year===b.dataset.year?'':b.dataset.year)));}
+function renderYears(){
+ const rows=findPapers(true),counts=new Map();
+ const earlier=rows.filter(p=>p.year<2020).length;if(earlier)counts.set('before2020',earlier);
+ for(let y=2020;y<=2026;y++)counts.set(y,rows.filter(p=>p.year===y).length);
+ const max=Math.max(1,...counts.values()),maxH=matchMedia('(max-width:700px)').matches?42:98;
+ $('year-chart').innerHTML=[...counts].map(([y,n])=>`<button class="year-bar${state.year===String(y)?' active':''}" data-year="${y}" aria-label="${y==='before2020'?'Before 2020':y}: ${n} papers" aria-pressed="${state.year===String(y)}"><span class="bar-count">${n}</span><span class="bar" style="height:${Math.max(3,n/max*maxH)}px"></span><span>${y==='before2020'?'Pre-20':String(y).slice(2)}</span></button>`).join('');
+ $('year-chart').querySelectorAll('[data-year]').forEach(b=>b.addEventListener('click',()=>setFilter('year',state.year===b.dataset.year?'':b.dataset.year)));
+}
+
 function openPaper(id){
  const p=papers.find(p=>p.id===id);if(!p)return;stopPlayback();lastFocus=document.activeElement;
  const details=[['Status',p.publicationStatus],['Authors',formatAuthors(p.authors)],['Publication',`${p.venue} ${p.year||''}`],['Inputs',p.inputs],['Backbone',p.backbone],['Identity loss',p.loss],['Datasets',p.datasets],['Survey sections',p.sections?.join('; ')],['Citation key',p.citationKey]];
@@ -102,9 +111,9 @@ $('play').addEventListener('click',()=>{if(timer){stopPlayback();return;}const y
 document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!document.querySelector('dialog[open]')){e.preventDefault();$('search').focus();}});
 document.addEventListener('visibilitychange',()=>{if(document.hidden)stopPlayback();});
 let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{renderCloud();renderYears();},120);});
-const params=new URLSearchParams(location.search);state.query=params.get('q')||'';state.year=years.map(String).includes(params.get('year'))?params.get('year'):'';state.venue=venues.includes(params.get('venue'))?params.get('venue'):'';state.sort=['newest','oldest','az'].includes(params.get('sort'))?params.get('sort'):'newest';state.field=['all',...fields].includes(params.get('field'))?params.get('field'):'all';
+const params=new URLSearchParams(location.search);state.query=params.get('q')||'';state.year=[...years.map(String),'before2020'].includes(params.get('year'))?params.get('year'):'';state.venue=venues.includes(params.get('venue'))?params.get('venue'):'';state.sort=['newest','oldest','az'].includes(params.get('sort'))?params.get('sort'):'newest';state.field=['all',...fields].includes(params.get('field'))?params.get('field'):'all';
 render();if(params.get('paper'))openPaper(params.get('paper'));
-window.GAIT_LIBRARY={search:input=>{stopPlayback();Object.assign(state,{query:String(input.query||''),year:input.year?String(input.year):'',venue:String(input.venue||''),page:1});render();return filtered.map(({id,method,title,year,venue,motivation,idea,techniques})=>({id,method,title,year,venue,motivation,idea,techniques}));},getState:()=>({...state,total:filtered.length,terms:cloudTerms}),openPaper};
+window.GAIT_LIBRARY={termFrequency,formatAuthors,stopPlayback,search:input=>{stopPlayback();Object.assign(state,{query:String(input.query||''),year:input.year?String(input.year):'',venue:String(input.venue||''),page:1});render();return filtered.map(({id,method,title,year,venue,motivation,idea,techniques})=>({id,method,title,year,venue,motivation,idea,techniques}));},getState:()=>({...state,total:filtered.length,terms:cloudTerms}),openPaper};
 const context=document.modelContext;
 if(context?.registerTool){
   const lifecycle=new AbortController();
