@@ -1,0 +1,31 @@
+{
+  "id": "survey-2026-09-21",
+  "period": [
+    2020,
+    2025
+  ],
+  "publications": 160,
+  "modalityUses": 212,
+  "allowedVenues": [
+    "CVPR",
+    "ICCV",
+    "ECCV",
+    "WACV",
+    "BMVC",
+    "ACCV",
+    "IJCB",
+    "AAAI",
+    "ACM MM",
+    "TPAMI",
+    "TIFS",
+    "TIP",
+    "TNNLS",
+    "TCSVT",
+    "TBIOM",
+    "TMM",
+    "IJCV",
+    "PR"
+  ],
+  "manuscriptBase": "cb44c379bfc18b992054f25ec18048ffde27a721",
+  "note": "Frozen publication membership shared with Table II and Figures 5–6. New references can enter the catalogue without changing this snapshot."
+}
