@@ -1,16 +1,17 @@
 {
   "meta": {
     "title": "Gait Recognition: A Survey and Outlook",
-    "updated": "2026-09-19",
+    "updated": "2026-09-21",
     "coverage": "2020–2026, with foundational and related references",
-    "description": "Research summaries accompanying the gait recognition survey. Historical summaries were prepared with language-model assistance and author refinement. Newer summaries retain their source provenance.",
+    "description": "Literature identification, data extraction and three-field summaries used language-model assistance, followed by record-by-record manual verification by the authors. This describes the curation workflow; linked results remain source-reported.",
     "wordCloudMethod": "Document frequency in the three summary fields: a term contributes at most once per paper. Counts describe this collection, not citation impact or a complete publication census.",
     "counts": {
       "total": 278,
       "complete": 278
     },
     "githubOwner": "ChaoFan996",
-    "githubRepo": "gait-survey"
+    "githubRepo": "gait-survey",
+    "statisticsDescription": "The smaller 2020–2025 modality archive defines membership. Specified venues only; corrected publication identity removes exact duplicates; withdrawn and wearable-only studies are excluded. Distinct conference/journal publications are separate."
   },
   "papers": [
     {
@@ -55,7 +56,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/38096",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "lu2026walking-aaai-2026",
@@ -98,7 +101,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/37703",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "hou2026gat-aaai-2026",
@@ -141,7 +146,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/42479",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "cosma2026scaling-aaai-2026",
@@ -185,7 +192,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/37340",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "wu2026lmgait-aaai-2026",
@@ -227,7 +236,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/38063",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "hamgait2026-array-2026",
@@ -273,7 +284,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.sciencedirect.com/science/article/pii/S2590005626003838",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "glcgait2026-bspc-2026",
@@ -320,7 +333,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.sciencedirect.com/science/article/pii/S1746809426012176",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "wang2026flowgait-chi-2026",
@@ -363,7 +378,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://doi.org/10.1145/3772318.3790623",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "xu2026eventgait-cvpr-2026",
@@ -407,7 +424,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_EventGait_Towards_Robust_Gait_Recognition_with_Event_Streams_CVPR_2026_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "cai2026barbiegait-cvpr-2026",
@@ -455,7 +474,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2604.12221",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "huang2026gaitmax-cvpr-2026",
@@ -501,7 +522,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "zheng2026hypergait-cvpr-2026",
@@ -543,7 +566,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2026/html/Zheng_HyperGait_Unleashing_the_Power_of_Parsing_for_Gait_Recognition_in_CVPR_2026_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "xu2026ms2gait-cvpr-2026",
@@ -585,7 +610,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xu_MS2Gait_A_Multi-Scale_Spatio-Temporal_Fusion_Network_for_LiDAR-based_Gait_Recognition_CVPR_2026_paper.pdf",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "wang2026mmgait-cvpr-2026",
@@ -631,7 +658,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2604.15979",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "lu2026textguided-cvpr-2026",
@@ -674,7 +703,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2026/html/Lu_Text-guided_Feature_Disentanglement_for_Cross-modal_Gait_Recognition_CVPR_2026_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "dao2026forces-cvprw-2026",
@@ -718,7 +749,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2026W/PhysHuman/html/Dao_Beyond_Motion_Patterns_An_Empirical_Study_of_Physical_Forces_for_CVPRW_2026_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "shen2026childrengait-eccv-2026",
@@ -762,7 +795,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://github.com/PediaMedAI/ChildrenGait",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ye2026foundationgait-eccv-2026",
@@ -807,7 +842,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2512.00691",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "xu2026msglfgcn-eswa-2026",
@@ -849,7 +886,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.sciencedirect.com/science/article/abs/pii/S0957417425042022",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "fonua2026acoustic-electronics-2026",
@@ -892,7 +931,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.mdpi.com/2079-9292/15/12/2658",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "xu2026psgait-icassp-2026",
@@ -935,7 +976,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://github.com/realHarryX/PSGait",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "qin2026ggcn-jvcir-2026",
@@ -978,7 +1021,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.sciencedirect.com/science/article/pii/S1047320326000854",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "zou2026gallery-kbs-2026",
@@ -1020,7 +1065,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.sciencedirect.com/science/article/pii/S0950705126003187",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "zhang2026disrec-pr-2026",
@@ -1063,7 +1110,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.sciencedirect.com/science/article/pii/S0031320326005844",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "freire2026multiyear-pr-2026",
@@ -1105,7 +1154,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://accedacris.ulpgc.es/bitstream/10553/150431/1/1-s2.0-S0031320325012907-main.pdf",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "wang2026gaitadapt-pr-2026",
@@ -1148,7 +1199,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.sciencedirect.com/science/article/pii/S0031320326007818",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ryu2026gwcpj-pr-2026",
@@ -1192,7 +1245,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.sciencedirect.com/science/article/abs/pii/S0031320326008344",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "wang2026synthesis-pr-2026",
@@ -1235,7 +1290,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.sciencedirect.com/science/article/pii/S0031320326012938",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "zheng2026gaitpr-prl-2026",
@@ -1278,7 +1335,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.sciencedirect.com/science/article/abs/pii/S0167865526001492",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "privacy2026beyondface-sensors-2026",
@@ -1324,7 +1383,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.mdpi.com/1424-8220/26/1/187",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "adeli2026gaitgen-wacv-2026",
@@ -1366,7 +1427,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://openaccess.thecvf.com/content/WACV2026/html/Adeli_GAITGen_Disentangled_Motion-Pathology_Impaired_Gait_Generative_Model_--_Bringing_Motion_WACV_2026_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "sayera2026robustgait-wacv-2026",
@@ -1409,7 +1472,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2511.13065",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "vishwakarma2026scoligaitx-wacv-2026",
@@ -1451,7 +1516,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://openaccess.thecvf.com/content/WACV2026/html/Vishwakarma_ScoliGaitX_A_Deep_Multi-Modal_Fusion_Network_for_Scoliosis_Assessment_via_WACV_2026_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "asad2026tkan-arxiv-2026",
@@ -1493,7 +1560,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2604.09990",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "gaitprotector2026-arxiv-2026",
@@ -1540,7 +1609,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2605.12431",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "gabet2026health-arxiv-2026",
@@ -1582,7 +1653,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2603.25283",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-su2026localscore",
@@ -1622,7 +1695,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2602.01012",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "duan2026mhrgait-arxiv-2026",
@@ -1666,7 +1741,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2607.29083",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "wang2026rrsgait-arxiv-2026",
@@ -1709,7 +1786,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2601.05604",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "wang2025ra-aaai-2025",
@@ -1747,7 +1826,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "jin2025exploring-aaai-2025",
@@ -1767,7 +1848,7 @@
       "datasets": "GREW, Gait3D, CCPG, SUSTech1K",
       "codeAvailable": "OpenGait",
       "codeUrl": "",
-      "url": "",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/32432",
       "bibtex": "@inproceedings{jin2025exploring,\n  title = {Exploring more from multiple gait modalities for human identification},\n  author = {Jin, Dongyang and Fan, Chao and Chen, Weihua and Yu, Shiqi},\n  year = {2025},\n  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},\n  volume = {39},\n  number = {4},\n  pages = {4120--4128}\n}",
       "scope": "Survey collection",
       "provenance": [
@@ -1786,7 +1867,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wang2025waveloss-aaai-2025",
@@ -1824,7 +1907,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "lang2025dpgait-acmmm-2025",
@@ -1863,7 +1948,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1145/3746027.3755685",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "meng2025mirrorgait-acmmm-2025",
@@ -1902,7 +1989,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1145/3746027.3755066",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "jin2025denoising-cvpr-2025",
@@ -1953,7 +2042,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2025/html/Jin_On_Denoising_Walking_Videos_for_Gait_Recognition_CVPR_2025_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "yang2025bridging-cvpr-2025",
@@ -2002,7 +2093,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2025/html/Yang_Bridging_Gait_Recognition_and_Large_Language_Models_Sequence_Modeling_CVPR_2025_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "shen2025lidargait-cvpr-2025",
@@ -2053,7 +2146,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2025/html/Shen_LidarGait_Learning_Local_Features_and_Size_Awareness_from_LiDAR_Point_CVPR_2025_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-kim2025sapiensid",
@@ -2093,7 +2188,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2504.04708",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-jager2025expanding",
@@ -2135,7 +2232,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2501.14070",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "habib2025cargait-iccv-2025",
@@ -2173,7 +2272,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/ICCV2025/html/Habib_CarGait_Cross-Attention_based_Re-ranking_for_Gait_recognition_ICCV_2025_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wang2025gaitx-acmmm-2025",
@@ -2214,7 +2315,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Gait-X_Exploring_X_modality_for_Generalized_Gait_Recognition_ICCV_2025_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "huang2025origins-iccv-2025",
@@ -2234,7 +2337,7 @@
       "datasets": "CASIA-B, GREW, Gait3D, CCPG, SUSTech1K, CCGR-MINI",
       "codeAvailable": "No",
       "codeUrl": "",
-      "url": "",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Huang_Learning_A_Unified_Template_for_Gait_Recognition_ICCV_2025_paper.html",
       "bibtex": "@inproceedings{huang2025origins,\n  title = {Learning A Unified Template for Gait Recognition},\n  author = {Huang, Panjian and Hou, Saihui and Huang, Junzhou and Huang, Yongzhen},\n  year = {2025},\n  booktitle = {2025 IEEE/CVF International Conference on Computer Vision (ICCV)}\n}",
       "scope": "Survey collection",
       "provenance": [
@@ -2252,7 +2355,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-zhu2025qme",
@@ -2292,7 +2397,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://arxiv.org/abs/2508.00053",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "zhou2025cgtgait-ijcb-2025",
@@ -2332,7 +2439,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/IJCB65343.2025.11411435",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "lu2025csca-ijcb-2025",
@@ -2373,7 +2482,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/IJCB65343.2025.11410963",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "li2025cvvnet-ijcb-2025",
@@ -2414,7 +2525,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/ijcb65343.2025.11410871",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "cao2025dyuda-ijcb-2025",
@@ -2455,7 +2568,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/IJCB65343.2025.11410992",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-hid2025",
@@ -2495,7 +2610,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2602.07565",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "tian2025qgait-ijcb-2025",
@@ -2536,7 +2653,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/IJCB65343.2025.11411264",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "gupta2025mind-ijcb-2025",
@@ -2577,7 +2696,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/ijcb65343.2025.11411559",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zhou2025tdgait-ijcb-2025",
@@ -2618,7 +2739,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/IJCB65343.2025.11411492",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "hou2025edge-ijcv-2024",
@@ -2665,7 +2788,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1007/s11263-024-02225-1",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-ye2025biggergait",
@@ -2710,7 +2835,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://proceedings.neurips.cc/paper_files/paper/2025/file/6a5c23219f401f3efd322579002dbb80-Paper-Conference.pdf",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "he2025radar-pr-2025",
@@ -2751,7 +2878,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2024.111101",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "peng2025rsanet-pr-2025",
@@ -2797,7 +2926,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2024.111219",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "shen2024comprehensive-tbiom-2025",
@@ -2841,7 +2972,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TBIOM.2024.3486345",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "liao2024denseposegait-tbiom-2025",
@@ -2887,7 +3020,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TBIOM.2024.3486732",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "guo2025distillation-tbiom-2025",
@@ -2928,7 +3063,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TBIOM.2025.3595366",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ren2025unsupervised-tbiom-2025",
@@ -2974,7 +3111,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TBIOM.2025.3544805",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "lu2024flag-tcsvt-2025",
@@ -3015,7 +3154,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TCSVT.2024.3483265",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "chen2025fusiongait-tcsvt-2025",
@@ -3056,7 +3197,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TCSVT.2025.3642699",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wang2025gaitc-tcsvt-2025",
@@ -3103,7 +3246,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TCSVT.2025.3545210",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zhai2024multi-tcsvt-2025",
@@ -3149,7 +3294,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TCSVT.2024.3476384",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wang2025new-tifs-2025",
@@ -3190,7 +3337,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/tifs.2025.3539079",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "yang2025multimodal-tifs-2025",
@@ -3236,7 +3385,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIFS.2025.3602638",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "lu2025mojo-tifs-2025",
@@ -3277,7 +3428,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIFS.2025.3614500",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "dou2024clash-tip-2025",
@@ -3322,7 +3475,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIP.2024.3360870",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "peng2024masked-tmm-2025",
@@ -3363,7 +3518,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TMM.2024.3521730",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zhang2025trackletgait-tmm-2025",
@@ -3404,7 +3561,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TMM.2025.3607705",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "chen2023adaptive-tnnls-2025",
@@ -3450,7 +3609,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TNNLS.2023.3331050",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "li2025rethinking-tnnls-2025",
@@ -3496,7 +3657,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TNNLS.2025.3526815",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "meng2025fastposegait-tpami-2025",
@@ -3543,7 +3706,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TPAMI.2025.3577594",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "fan2025opengait-tpami-2025",
@@ -3589,7 +3754,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TPAMI.2025.3576283",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "guo2025gait-tpami-2025",
@@ -3642,7 +3809,9 @@
       ],
       "citationAliases": [
         "guo2025sposgait"
-      ]
+      ],
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zhang2025gaitcloud-wacv-2025",
@@ -3681,7 +3850,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/WACV2025/html/Zhang_GaitCloud_Leveraging_Spatial-Temporal_Information_for_LiDAR-Base_Gait_Recognition_with_A_WACV_2025_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "guo2025gaitcontour-wacv-2025",
@@ -3720,7 +3891,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/WACV2025/html/Guo_GaitContour_Efficient_Gait_Recognition_Based_on_a_Contour-Pose_Representation_WACV_2025_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "gupta2025mimicgait-wacv-2025",
@@ -3761,7 +3934,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/WACV2025/html/Gupta_MimicGait_A_Model_Agnostic_Approach_for_Occluded_Gait_Recognition_using_WACV_2025_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wang2025vm-wacv-2025",
@@ -3800,7 +3975,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/WACV2025/html/Wang_VM-Gait_Multi-Modal_3D_Representation_Based_on_Virtual_Marker_for_Gait_WACV_2025_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-huang2025vills",
@@ -3844,7 +4021,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2311.17074",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-simeoni2025dinov3",
@@ -3884,7 +4063,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2508.10104",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-liu2025person",
@@ -3925,7 +4106,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2505.04616",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "dong2024hybridgait-aaai-2024",
@@ -3961,7 +4144,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zou2024cross-aaai-2024",
@@ -4003,7 +4188,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wang2024qagait-aaai-2024",
@@ -4042,7 +4229,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "fan2024skegait-aaai-2024",
@@ -4083,7 +4272,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "thapar2024gaitw-accv-2024",
@@ -4119,7 +4310,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "li2024aerialgait-acmmm-2024",
@@ -4161,7 +4354,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1145/nnnnnnn.nnnnnnn",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "peng2024glgait-acmmm-2024",
@@ -4200,7 +4395,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1145/3664647.3680812",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "han2024gait-acmmm-2024",
@@ -4239,7 +4436,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1145/3664647.3681166",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zheng2024takes-acmmm-2024",
@@ -4281,7 +4480,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1145/3664647.3680577",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ye2024biggait-cvpr-2024",
@@ -4334,7 +4535,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2024/html/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ma2024learning-cvpr-2024",
@@ -4378,7 +4581,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2024/html/Ma_Learning_Visual_Prompt_for_Gait_Recognition_CVPR_2024_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-li2024finerehab",
@@ -4418,7 +4623,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2024W/CVsports/html/Li_FineRehab_A_Multi-modality_and_Multi-task_Dataset_for_Rehabilitation_Analysis_CVPRW_2024_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "guo2024camera-eccv-2024",
@@ -4469,7 +4676,9 @@
       ],
       "citationAliases": [
         "guo2024clgait"
-      ]
+      ],
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "xiong2024causality-eccv-2024",
@@ -4507,7 +4716,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "fu2024cut-eccv-2024",
@@ -4543,7 +4754,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "huang2024occluded-eccv-2024",
@@ -4582,7 +4795,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-su2024open",
@@ -4629,7 +4844,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2407.16133",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "wang2024free-eccv-2024",
@@ -4665,7 +4882,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-wu2024gstnet",
@@ -4705,7 +4924,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://doi.org/10.1109/ICASSP48485.2024.10447288",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "okimura2024cropping-ijcb-2024",
@@ -4746,7 +4967,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/IJCB62174.2024.10744433",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "guo2024distillation-ijcb-2024",
@@ -4785,7 +5008,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/IJCB62174.2024.10744527",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-hid2024",
@@ -4825,7 +5050,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://doi.org/10.1109/IJCB62174.2024.10744507",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-liu2024gait",
@@ -4868,7 +5095,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.sciencedirect.com/science/article/pii/S1350449524001464",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-zhou2024gait",
@@ -4910,7 +5139,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://papers.miccai.org/miccai-2024/348-Paper1763.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-liu2024depression",
@@ -4954,7 +5185,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.sciencedirect.com/science/article/pii/S0925231224008166",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "castro2024attengait-pr-2024",
@@ -5000,7 +5233,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2023.110171",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "sezavar2024dcapsnet-pr-2024",
@@ -5046,7 +5281,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2023.110054",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "yin2024msa-pr-2024",
@@ -5092,7 +5329,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2023.110117",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "chen2024gait-pr-2024",
@@ -5138,7 +5377,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2023.110090",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "yue2024deep-prl-2024",
@@ -5184,7 +5425,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patrec.2024.06.031",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "mehmood2024human-prl-2024",
@@ -5230,7 +5473,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patrec.2024.02.010",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-ye2024robotreid",
@@ -5270,7 +5515,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2309.11727",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "thejaswin2024exploring-tbiom-2024",
@@ -5315,7 +5562,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.54499/LA/P/0083/2020",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zheng2024gaitstr-tbiom-2024",
@@ -5361,7 +5610,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TBIOM.2024.3390626",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zou2024multi-tbiom-2024",
@@ -5402,7 +5653,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "sun2024trigait-tbiom-2025",
@@ -5446,7 +5699,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "hou2024cloth-tcsvt-2024",
@@ -5490,7 +5745,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TCSVT.2024.3360232",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "huang2024gaitdan-tcsvt-2024",
@@ -5536,7 +5793,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TCSVT.2024.3384308",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "hou2024adaptive-tifs-2024",
@@ -5582,7 +5841,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIFS.2024.3428371",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "liang2024dcs-tifs-2024",
@@ -5623,7 +5884,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIFS.2024.3356827",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "chen2024egst-tifs-2024",
@@ -5669,7 +5932,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIFS.2024.3409167",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "song2023gait-tifs-2024",
@@ -5715,7 +5980,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIFS.2023.3318934",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "huang2024integral-tifs-2024",
@@ -5761,7 +6028,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIFS.2024.3382606",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "dou2022gaitmpl-tip-2024",
@@ -5804,7 +6073,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIP.2022.3164543",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "deng2023human-tmm-2024",
@@ -5850,7 +6121,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TMM.2023.3262131",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wang2023gait-tcsvt-2024",
@@ -5897,7 +6170,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TMM.2023.3323887",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "habib2024watch-wacv-2024",
@@ -5936,7 +6211,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/WACV2024/html/Habib_Watch_Where_You_Head_A_View-Biased_Domain_Gap_in_Gait_WACV_2024_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "gupta2024you-wacv-2024",
@@ -5975,7 +6252,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/WACV2024/html/Gupta_You_Can_Run_but_Not_Hide_Improving_Gait_Recognition_With_WACV_2024_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-ma2024gaiteditor",
@@ -6015,7 +6294,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2303.05076",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "wang2023landmarkgait-acmmm-2023",
@@ -6054,7 +6335,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1145/3581783.3611840",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zheng2023parsing-acmmm-2023",
@@ -6095,7 +6378,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1145/3581783.3612052",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wang2023causal-acmmm-2023",
@@ -6134,7 +6419,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1145/3581783.3612124",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-rollo2023followme",
@@ -6174,7 +6461,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2311.12992",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "li2023depth-cvpr-2023",
@@ -6221,7 +6510,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2023/html/Li_An_In-Depth_Exploration_of_Person_Re-Identification_and_Gait_Recognition_in_CVPR_2023_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ma2023dynamic-cvpr-2023",
@@ -6266,7 +6557,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2023/html/Ma_Dynamic_Aggregated_Network_for_Gait_Recognition_CVPR_2023_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "fan2023opengait-cvpr-2023",
@@ -6315,7 +6608,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/cvpr52729.2023.00936",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "dou2023gaitgci-cvpr-2023",
@@ -6361,7 +6656,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2023/html/Dou_GaitGCI_Generative_Counterfactual_Intervention_for_Gait_Recognition_CVPR_2023_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "shen2023lidargait-cvpr-2023",
@@ -6410,7 +6707,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2023/html/Shen_LidarGait_Benchmarking_3D_Gait_Recognition_With_Point_Clouds_CVPR_2023_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "cui2023multi-cvpr-2023",
@@ -6455,7 +6754,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2023/html/Cui_Multi-Modal_Gait_Recognition_via_Effective_Spatial-Temporal_Feature_Fusion_CVPR_2023_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wang2023dygait-iccv-2023",
@@ -6494,7 +6795,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2303.14953",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "fu2023gpgait-iccv-2023",
@@ -6538,7 +6841,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/ICCV2023/html/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wang2023hierarchical-iccv-2023",
@@ -6579,7 +6884,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://openaccess.thecvf.com/content/ICCV2023/html/Wang_Hierarchical_Spatio-Temporal_Representation_Learning_for_Gait_Recognition_ICCV_2023_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "guo2023physics-iccv-2023",
@@ -6618,7 +6925,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/ICCV2023/html/Guo_Physics-Augmented_Autoencoder_for_3D_Skeleton-Based_Gait_Recognition_ICCV_2023_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ma2023fine-iccv-2023",
@@ -6659,7 +6968,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/ICCV2023/html/Ma_Fine-grained_Unsupervised_Domain_Adaptation_for_Gait_Recognition_ICCV_2023_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-agreid2023",
@@ -6699,7 +7010,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://cvlab.cse.msu.edu/pdfs/IJCB_AG_ReID2023_Challenge_Summary_Paper.pdf",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "zhu2023gaitref-ijcb-2023",
@@ -6738,7 +7051,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/IJCB57857.2023.10448634",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-hid2023",
@@ -6778,7 +7093,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://hid.iapr-tc4.org/wp-content/uploads/sites/11/2024/03/HID2023-summary.pdf",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "zou2024multi-ijcb-2023",
@@ -6819,7 +7136,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://arxiv.org/abs/2312.14410",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wang2023pointgait-ijcb-2023",
@@ -6860,7 +7179,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/IJCB57857.2023.10448817",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "delgado2023exploring-pr-2023",
@@ -6906,7 +7227,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2023.109798",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "he2023temporal-pr-2023",
@@ -6952,7 +7275,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2022.109028",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "parashar2023data-prl-2023",
@@ -6998,7 +7323,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patrec.2023.05.021",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "wang2023gait-tbiom-2023",
@@ -7044,7 +7371,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TBIOM.2023.3244206",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "hou2022comprehensive-tbiom-2023",
@@ -7090,7 +7419,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TBIOM.2022.3216857",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "huang2022star-tbiom-2023",
@@ -7136,7 +7467,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TBIOM.2022.3211843",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zhao2022gait-tcsvt-2023",
@@ -7181,7 +7514,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TCSVT.2022.3202531",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "pan2023toward-tifs-2023",
@@ -7227,7 +7562,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIFS.2023.3254449",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "xu2023occlusion-tifs-2023",
@@ -7274,7 +7611,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIFS.2023.3236181",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wang2023progressive-tifs-2023",
@@ -7320,7 +7659,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIFS.2023.3298518",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "huang2023condition-tip-2023",
@@ -7366,7 +7707,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIP.2023.3305822",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "li2022strong-tmm-2023",
@@ -7412,7 +7755,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TMM.2022.3154609",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wang2023gaitparsing-tmm-2024",
@@ -7456,7 +7801,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "yao2022improving-tcsvt-2023",
@@ -7520,7 +7867,9 @@
       ],
       "citationAliases": [
         "yao2022improving"
-      ]
+      ],
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "li2023gait-tmm-2024",
@@ -7564,7 +7913,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "hou2022gait-tnnls-2023",
@@ -7610,7 +7961,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TNNLS.2022.3154723",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "sepas2022deep-tpami-2023",
@@ -7653,7 +8006,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TPAMI.2022.3151865",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "fan2023learning-tpami-2023",
@@ -7697,7 +8052,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-cornett2023expanding",
@@ -7739,7 +8096,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "zhu2023gait-wacv-2023",
@@ -7778,7 +8137,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/WACV2023/html/Zhu_Gait_Recognition_Using_3-D_Human_Body_Shape_Inference_WACV_2023_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-fan2023exploring",
@@ -7821,7 +8182,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://arxiv.org/abs/2303.03301",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "wang2022gaitstrip-accv-2022",
@@ -7857,7 +8220,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "yu2022generalized-acmmm-2022",
@@ -7911,7 +8276,9 @@
       ],
       "citationAliases": [
         "yu2022interclass"
-      ]
+      ],
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zheng2022mtsgait-acmmm-2022",
@@ -7952,7 +8319,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1145/3503161.3547897",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "xiang2022multi-acmmm-2022",
@@ -7991,7 +8360,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1145/3503161.3547941",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-filipi2022gait",
@@ -8031,7 +8402,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2201.03323",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-gu2022clothes",
@@ -8074,7 +8447,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Gu_Clothes-Changing_Person_Re-Identification_With_RGB_Modality_Only_CVPR_2022_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "chai2022lagrange-cvpr-2022",
@@ -8119,7 +8494,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Chai_Lagrange_Motion_Analysis_and_View_Embeddings_for_Improved_Gait_Recognition_CVPR_2022_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zheng2022gait-cvpr-2022",
@@ -8169,7 +8546,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Zheng_Gait_Recognition_in_the_Wild_With_Dense_3D_Representations_and_CVPR_2022_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-zhang2022bytetrack",
@@ -8212,7 +8591,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/2110.06864",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "liang2022gaitedge-eccv-2022",
@@ -8255,7 +8636,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://arxiv.org/abs/2203.03972",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "dou2022metagait-eccv-2022",
@@ -8294,7 +8677,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://arxiv.org/abs/2306.03445",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-hid2022",
@@ -8334,7 +8719,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://doi.org/10.1109/IJCB54206.2022.10007993",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "han2022unified-pr-2022",
@@ -8381,7 +8768,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2021.108519",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "li2022gaitslice-pr-2022",
@@ -8427,7 +8816,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2021.108453",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "liu2022symmetry-pr-2022",
@@ -8473,7 +8864,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2022.108520",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "song2022distilled-prl-2022",
@@ -8519,7 +8912,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patrec.2022.03.019",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "chen2022gait-tbiom-2022",
@@ -8565,7 +8960,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TBIOM.2022.3213545",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "li2022multi-tbiom-2022",
@@ -8611,7 +9008,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TBIOM.2022.3174559",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "chen2022understanding-tcsvt-2022",
@@ -8659,7 +9058,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TCSVT.2022.3185642",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "yao2021collaborative-tcsvt-2022",
@@ -8705,7 +9106,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TCSVT.2021.3112564",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "huang2022enhanced-tcsvt-2022",
@@ -8751,7 +9154,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TCSVT.2022.3175959",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "qin2021rpnet-tcsvt-2022",
@@ -8797,7 +9202,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TCSVT.2021.3095290",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zhao2021associated-tmm-2022",
@@ -8843,7 +9250,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TMM.2021.3060280",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "xu2021gait-tmm-2022",
@@ -8888,7 +9297,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/tmm.2021.3095809",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "song2022casia-tpami-2023",
@@ -8933,7 +9344,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "chao2021gaitset-tpami-2022",
@@ -8978,7 +9391,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TPAMI.2021.3057879",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "lin2021gaitmask-bmvc-2021",
@@ -9014,7 +9429,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zhang2021cross-cvpr-2021",
@@ -9059,7 +9476,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/CVPR2021/html/Zhang_Cross-View_Gait_Recognition_With_Deep_Universal_Linear_Embeddings_CVPR_2021_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "huang20213d-iccv-2021",
@@ -9098,7 +9517,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/ICCV2021/html/Huang_3D_Local_Convolutional_Neural_Networks_for_Gait_Recognition_ICCV_2021_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "huang2021context-iccv-2021",
@@ -9137,7 +9558,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/ICCV2021/html/Huang_Context-Sensitive_Temporal_Feature_Learning_for_Gait_Recognition_ICCV_2021_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zhu2021gait-iccv-2021",
@@ -9182,7 +9605,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/ICCV2021/html/Zhu_Gait_Recognition_in_the_Wild_A_Benchmark_ICCV_2021_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "lin2021gait-iccv-2021",
@@ -9224,7 +9649,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content/ICCV2021/html/Lin_Gait_Recognition_via_Effective_Global-Local_Feature_Representation_and_Local_Temporal_ICCV_2021_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "mu2021resgait-ijcb-2021",
@@ -9263,7 +9690,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/IJCB52358.2021.9484347",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "sheng2021multi-pr-2021",
@@ -9309,7 +9738,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2021.107868",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "yao2021robust-prl-2021",
@@ -9355,7 +9786,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patrec.2019.05.012",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "sepas2020view-tbiom-2021",
@@ -9401,7 +9834,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TBIOM.2020.3031470",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "hou2021set-tbiom-2021",
@@ -9447,7 +9882,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TBIOM.2021.3074963",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "xu2020cross-tcsvt-2021",
@@ -9493,7 +9930,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TCSVT.2020.2975671",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "chen2021multi-tip-2021",
@@ -9538,7 +9977,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIP",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wang2021event-tpami-2022",
@@ -9582,7 +10023,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-meng2020gait",
@@ -9622,7 +10065,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "li2020end-accv-2020",
@@ -9658,7 +10103,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "lin2020gait-acmmm-2020",
@@ -9697,7 +10144,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1145/3394171.3413861",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "fan2020gaitpart-cvpr-2020",
@@ -9744,7 +10193,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content_CVPR_2020/html/Fan_GaitPart_Temporal_Part-Based_Model_for_Gait_Recognition_CVPR_2020_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "li2020gait-cvpr-2020",
@@ -9785,7 +10236,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://openaccess.thecvf.com/content_CVPR_2020/html/Li_Gait_Recognition_via_Semi-supervised_Disentangled_Representation_Learning_to_Identity_and_CVPR_2020_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "hou2020gait-eccv-2020",
@@ -9821,7 +10274,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "xu2020gait-eccv-2020",
@@ -9857,7 +10312,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "li2020gait-pr-2020",
@@ -9904,7 +10361,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2020.107376",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "liao2020model-pr-2020",
@@ -9950,7 +10409,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2019.107069",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "an2020performance-tbiom-2020",
@@ -9993,7 +10454,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ben2019coupled-tcsvt-2020",
@@ -10038,7 +10501,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TCSVT.2019.2893736",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "zou2020deep-tifs-2020",
@@ -10079,7 +10544,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIFS.2020.2985628",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "limcharoen2020view-tifs-2020",
@@ -10125,7 +10592,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIFS.2020.2985535",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "wu2020condition-tip-2021",
@@ -10169,7 +10638,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-wang2020deep",
@@ -10212,7 +10683,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/1908.07919",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "zhang2020learning-tpami-2022",
@@ -10259,7 +10732,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-chao2019gaitset",
@@ -10304,7 +10779,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://doi.org/10.1609/aaai.v33i01.33018126",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-marsico2019survey",
@@ -10344,7 +10821,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://research.uniroma1.it/node/39843",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-wang2019ev",
@@ -10385,7 +10864,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://openaccess.thecvf.com/content_CVPR_2019/html/Wang_EV-Gait_Event-Based_Robust_Gait_Recognition_Using_Dynamic_Vision_Sensors_CVPR_2019_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-zhang2019learning",
@@ -10425,7 +10906,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://openaccess.thecvf.com/content_CVPR_2019/html/Zhang_Learning_Joint_Gait_Representation_via_Quintuplet_Loss_Minimization_CVPR_2019_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-song2019gaitnet",
@@ -10468,7 +10951,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2019.106988",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "zhang2019cross-tip-2020",
@@ -10477,7 +10962,7 @@
       "method": "Angle Center Loss (ACL)",
       "title": "Cross-view gait recognition by discriminative feature learning",
       "authors": "Zhang, Yuqi and Huang, Yongzhen and Yu, Shiqi and Wang, Liang",
-      "year": 2019,
+      "year": 2020,
       "venue": "TIP",
       "motivation": "Accurate cross-view gait recognition",
       "idea": "Learn discriminative spatial-temporal features",
@@ -10488,7 +10973,7 @@
       "datasets": "CASIA-B, OU-LP, OU-MVLP",
       "codeAvailable": "No",
       "codeUrl": "",
-      "url": "",
+      "url": "https://doi.org/10.1109/TIP.2019.2926208",
       "bibtex": "@article{zhang2019cross,\n  title = {Cross-view gait recognition by discriminative feature learning},\n  author = {Zhang, Yuqi and Huang, Yongzhen and Yu, Shiqi and Wang, Liang},\n  year = {2019},\n  journal = {IEEE Transactions on Image Processing},\n  volume = {29},\n  pages = {1001--1015},\n  publisher = {IEEE}\n}",
       "scope": "Survey collection",
       "provenance": [
@@ -10507,12 +10992,14 @@
       "sections": [
         "Background / Historical Evolution"
       ],
-      "yearNote": "Archive: 2020; bibliography: 2019",
+      "yearNote": "Statistics use final publication year: IEEE TIP volume 29 (2020), pp. 1001–1015. Online-first publication was 2019.",
       "abstract": "Recently, deep learning-based cross-view gait recognition has become popular owing to the strong capacity of convolutional neural networks (CNNs). Current deep learning methods often rely on loss functions used widely in the task of face recognition, e.g., contrastive loss and triplet loss. These loss functions have the problem of hard negative mining. In this paper, a robust, effective, and gait-related loss function, called angle center loss (ACL), is proposed to learn discriminative gait features. The proposed loss function is robust to different local parts and temporal window sizes. Different from center loss which learns a center for each identity, the proposed loss function learns multiple sub-centers for each angle of the same identity. Only the largest distance between the anchor feature and the corresponding cross-view sub-centers is penalized, which achieves better intra-subject compactness. We also propose to extract discriminative spatial–temporal features by local feature extractors and a temporal attention model. A simplified spatial transformer network is proposed to localize the suitable horizontal parts of the human body. Local gait features for each horizontal part are extracted and then concatenated as the descriptor. We introduce long short-term memory (LSTM) units as the temporal attention model to learn the attention score for each frame, e.g., focusing more on discriminative frames and less on frames with bad quality. The temporal attention model shows better performance than the temporal average pooling or gait energy images (GEI). By combing the three aspects, we ac hieve state-of-the-art results on several cross-view gait recognition benchmarks.",
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": true,
+      "venueInScope": true
     },
     {
       "id": "ref-cao2019openpose",
@@ -10552,7 +11039,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://arxiv.org/abs/1812.08008",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-an2018improving",
@@ -10595,7 +11084,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://scholars.hkbu.edu.hk/en/publications/improving-gait-recognition-with-3d-pose-estimation-2/",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-takemura2018multi",
@@ -10641,7 +11132,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1186/s41074-018-0039-6",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-uddin2018isir",
@@ -10684,7 +11177,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://doi.org/10.1186/s41074-018-0041-z",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-he2018multi",
@@ -10724,7 +11219,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://doi.org/10.1109/TIFS.2018.2844819",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-yu2017gaitgan",
@@ -10764,7 +11261,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://openaccess.thecvf.com/content_cvpr_2017_workshops/w6/html/Yu_GaitGAN_Invariant_Gait_CVPR_2017_paper.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-shiraga2016geinet",
@@ -10807,7 +11306,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://doi.org/10.1109/ICB.2016.7550060",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-feng2016learning",
@@ -10847,7 +11348,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://vision.unipv.it/CV/materiale2016-17/3rd%20Choice/0213.pdf",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-wu2016comprehensive",
@@ -10888,7 +11391,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.ee.cuhk.edu.hk/~xgwang/papers/wuHWWTtpami16.pdf",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-lecun2015deep",
@@ -10928,7 +11433,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.nature.com/articles/nature14539",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-hofmann2014tum",
@@ -10971,7 +11478,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://www.sciencedirect.com/science/article/pii/S1047320313000266",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-borras2012depth",
@@ -11011,7 +11520,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://doi.org/10.1007/978-3-642-31298-4_12",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-iwama2012isir",
@@ -11054,7 +11565,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://doi.org/10.1109/TIFS.2012.2204253",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-wang2010chrono",
@@ -11094,7 +11607,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://researchportal.bath.ac.uk/en/publications/chrono-gait-image-a-novel-temporal-template-for-gait-recognition/",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-hossain2010clothing",
@@ -11138,7 +11653,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2009.12.020",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-cho2009vision",
@@ -11182,7 +11699,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://scholar.nycu.edu.tw/en/publications/a-vision-based-analysis-system-for-gait-recognition-in-patients-w/",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-seely2008soton",
@@ -11225,7 +11744,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://eprints.soton.ac.uk/266970/",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-yu2006framework",
@@ -11268,7 +11789,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-tan2006efficient",
@@ -11308,7 +11831,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-nixon2006automatic",
@@ -11348,7 +11873,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://eprints.soton.ac.uk/263369/",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-han2005individual",
@@ -11391,7 +11918,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://doi.org/10.1109/TPAMI.2006.38",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-sarkar2005humanid",
@@ -11433,7 +11962,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-shutler2004large",
@@ -11476,7 +12007,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://eprints.soton.ac.uk/257901/1/Shutler_2002.pdf",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-veres2004what",
@@ -11516,7 +12049,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/CVPR.2004.1315243",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-yam2004automated",
@@ -11556,7 +12091,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/j.patcog.2003.09.012",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-kale2004identification",
@@ -11596,7 +12133,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/TIP.2004.832865",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-kale2003towards",
@@ -11636,7 +12175,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/AVSS.2003.1217914",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-cunado2003automatic",
@@ -11677,7 +12218,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/S1077-3142(03)00008-0",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-cuntoor2003combining",
@@ -11717,7 +12260,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://doi.org/10.1109/ICASSP.2003.1199100",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-sundaresan2003hidden",
@@ -11757,7 +12302,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1109/ICIP.2003.1246624",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-wang2003silhouette",
@@ -11798,7 +12345,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     },
     {
       "id": "ref-collins2002silhouette",
@@ -11838,7 +12387,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://publications.ri.cmu.edu/silhouette-based-human-identification-from-body-shape-and-gait",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-huang1999recognising",
@@ -11878,7 +12429,9 @@
       "abstractKind": "Original abstract",
       "abstractSource": "Original paper abstract",
       "abstractUrl": "https://doi.org/10.1016/S0954-1810(99)00008-4",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-cunado1997using",
@@ -11918,7 +12471,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://eprints.soton.ac.uk/250040/1/cunado_avbpa.pdf",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
     },
     {
       "id": "ref-niyogi1994analyzing",
@@ -11961,7 +12516,9 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://persci.mit.edu/pub_abstracts/niyogi_XYT_abs.html",
-      "complete": true
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
     }
   ]
 }

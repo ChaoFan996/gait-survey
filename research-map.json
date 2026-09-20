@@ -1,0 +1,1969 @@
+{
+  "meta": {
+    "updated": "2026-09-21",
+    "manuscriptBase": "700efc2112b4b3f9619c2dd3d69f3247fed97ee6",
+    "manuscriptSha256": "70da003568d277b6cd0fa75db3fde6aeae676a33bc0a002a776266169fce5545",
+    "policy": "Links index explicit discussions in Sections IV–VI. A paper may connect to several dimensions or outlooks. Unmarked cells mean no indexed discussion link, not absence of a capability. Additional editorial links require a source excerpt and a recorded review.",
+    "statisticsPolicy": "Aggregate relationship counts use only the fixed 160-publication corpus. The browseable map also includes foundational, related and 2026 references; these do not enter those counts.",
+    "linkedPublications": 101,
+    "cataloguePublications": 278
+  },
+  "nodes": [
+    {
+      "id": "modalities",
+      "title": "Gait Modalities and Representations",
+      "short": "Modalities",
+      "section": "IV-A",
+      "group": "dimension",
+      "overview": "Fig. 6 records the historical dominance of silhouettes and the growing use of complementary representations. Their suitability depends on acquisition constraints, extraction reliability, and the covariates of interest. A silhouette suppresses color and texture while retaining projected body contour. Its compactness supports effective sequence processing in GaitSet, GaitPart, and GaitGL. Clothing and carried objects nevertheless change the contour itself, and coherent segmentation errors may persist across frames. GaitEdge connects segmentation and alignment to recognition; analysis of cropping further shows how normalization affects the resulting evidence."
+    },
+    {
+      "id": "backbones",
+      "title": "Gait Backbone Architectures",
+      "short": "Backbones",
+      "section": "IV-B",
+      "group": "dimension",
+      "overview": "Set pooling offers variable-length aggregation without requiring temporal alignment. In an idealized frame-wise encoder followed by symmetric pooling, z=\\!(Pool_t=1^T(x_t)), the representation is invariant to frame permutations. This simplifies aggregation when ordering or phase alignment is unreliable, while discarding the order of otherwise identical frames. Local temporal operations before pooling can retain ordering information within their receptive fields. GaitPart captures local micro-motion, GaitGL integrates local and global features, and DyGait emphasizes dynamic regions; hierarchical and adaptive aggregation offer related designs. Fixed body partitions simplify correspondence under good alignment but become unreliable with leaning or partial visibility. MTSGait explores multi-hop temporal interaction, while dynamic aggregation and quality-aware weighting adapt which regions and frames contribute."
+    },
+    {
+      "id": "learning",
+      "title": "Gait Learning Frameworks",
+      "short": "Learning",
+      "section": "IV-C",
+      "group": "dimension",
+      "overview": "A common recipe combines identity classification with metric learning. For an anchor z_a, positive z_p, and negative z_n, a representative triplet objective is L_ tri=[d(z_a,z_p)-d(z_a,z_n)+m]_+, where m is a margin. Classification separates training identities; metric learning shapes relations used to match unseen people. Part-wise heads, normalization, and batch construction determine how these objectives act on gait sequences. Sampling supplies the variation that learning is asked to tolerate. Cross-condition positives expose clothing or view changes, while hard negatives emphasize identity ambiguity. A loss trained mainly on same-condition pairs receives little direct supervision for cross-condition stability. This makes covariate coverage a shared concern of sampling and metric design (Section IV-E), even when both methods use the same identity labels."
+    },
+    {
+      "id": "robustness",
+      "title": "Handling Real-World Noise",
+      "short": "Robustness",
+      "section": "IV-D",
+      "group": "dimension",
+      "overview": "The five covariate groups in Fig. 1 affect recognition differently: some remove observations, while others alter the visible body or the mapping from motion to image. Their remedies consequently act at acquisition, representation, and learning stages. Missing regions call for selective aggregation or structural inference. The mixture-of-experts method of Huang et al. selects evidence according to visibility; mesh completion and distillation from unobstructed observations introduce additional priors. Aggregation can recover a body region visible in other frames. Persistent occlusion instead forces reliance on remaining evidence or inferred structure, whose confidence should reflect that it was not directly observed."
+    },
+    {
+      "id": "metrics",
+      "title": "Gait Metric Designs",
+      "short": "Metrics",
+      "section": "IV-E",
+      "group": "dimension",
+      "overview": "Metric design connects training geometry to recognition decisions. We distinguish objectives that shape an embedding, similarities that compare it, and measures that evaluate the resulting ranking or decision. Building on the classification and triplet objectives in Section IV-C, metric design refines embedding geometry; a unified analysis relates classification- and distance-based objectives. Generalized Inter-class Loss adjusts pairwise weighting and class-level separation. Progressive memory-based learning further addresses hard positives and negatives beyond an individual mini-batch. WaveLoss adapts the emphasis placed on parts of unequal difficulty. These methods refine how limited training identities define a space for unseen people."
+    },
+    {
+      "id": "coverage",
+      "title": "Benchmark coverage",
+      "short": "Benchmark coverage",
+      "section": "V-A",
+      "group": "outlook",
+      "overview": "Controlled collections provide covariate labels and matched conditions, making model failures easier to attribute, but often simplify acquisition or limit population diversity. In-the-wild collections broaden scale and realism, yet rarely provide comparably balanced combinations of people and conditions. GREW's attributes, RA-GAR's richer attribute supervision, and recent language descriptions help characterize these observations. The difficulty is obtaining reliable coverage of interacting factors. Covariate imbalance can also make aggregate accuracy optimistic about robustness. GaitC3I analyzes how identity–covariate correlations in wild data bias metric learning; stronger results on the dominant, similar-condition pairs need not imply reliable matching across rarer changes. A promising benchmark design couples large natural collections with a smaller, densely annotated diagnostic subset. Pair-conditioned reporting, longitudinal sampling, and held-out combinations would preserve realism while making gains and failures more interpretable."
+    },
+    {
+      "id": "missing-inputs",
+      "title": "Missing inputs",
+      "short": "Missing inputs",
+      "section": "V-A",
+      "group": "outlook",
+      "overview": "MMGait and long-range camera–LiDAR learning enable heterogeneous observations. The challenge is to retain fusion benefits when sensors are missing, asynchronous, or unequally reliable. Quality-conditioned fusion and modality dropout are plausible directions, but evaluations should distinguish measured information from imputed features. Predictable degradation under partial availability may matter more in deployment than the best complete-input score."
+    },
+    {
+      "id": "whole-body",
+      "title": "Whole-body recognition",
+      "short": "Whole-body recognition",
+      "section": "V-A",
+      "group": "outlook",
+      "overview": "Face, body shape, appearance, and gait differ in spatial resolution, observation duration, permanence, and failure modes. FarSight integrates these cues under altitude and range, while VILLS studies local and global information for long-range recognition. SapiensID provides a complementary unified model for face and body recognition across pose and scale variations, offering a related foundation for whole-body identity representation. Effective fusion combines complementary evidence while accounting for differences in score scale and input quality. Quality-guided score-fusion experts explicitly address score misalignment and variable input quality. Future models could learn when each cue contributes, accounting for correlated errors and the required time horizon. Face detail may be absent when gait is observable, whereas a short encounter may contain little motion. Under matched observation time and resources, improvement over the strongest single cue, including missing-cue conditions, would establish fusion's incremental value. The branch analysis in Section IV-B illustrates how this complementarity varies by condition."
+    },
+    {
+      "id": "compound-noise",
+      "title": "Interacting failures",
+      "short": "Interacting failures",
+      "section": "V-A",
+      "group": "outlook",
+      "overview": "Real failures combine clothing, occlusion, sensor degradation, and preprocessing error. Factorial stress tests could reveal interactions that single-corruption evaluation misses. Models also need to distinguish recoverable corruption from insufficient observation; quality-aware abstention should report retained coverage, including people with atypical gaits or walking aids."
+    },
+    {
+      "id": "generalization",
+      "title": "Generalization",
+      "short": "Generalization",
+      "section": "V-A",
+      "group": "outlook",
+      "overview": "Cross-dataset tests bundle changes in population, cameras, and preprocessing, often obscuring the dominant cause. Unseen-site evaluation paired with controlled shifts could connect laboratory remedies to deployment. Multi-year studies further motivate separating identity persistence from aging, injury, and changing appearance. Session-separated enrollment updates would test adaptation without accumulating incorrect associations."
+    },
+    {
+      "id": "open-set",
+      "title": "Open-set recognition",
+      "short": "Open-set recognition",
+      "section": "V-A",
+      "group": "outlook",
+      "overview": "Unknown people, changing galleries, and repeated encounters require more than closed-set retrieval. A useful next test freezes calibration on held-out validation identities, then expands the gallery or changes the site. Reporting false identifications, missed identifications, and retained coverage would reveal whether thresholds remain usable. Repeated observations may support enrollment updates, but identity-switch recovery and update errors should be measured alongside search speed and storage."
+    },
+    {
+      "id": "foundation",
+      "title": "Foundation models",
+      "short": "Foundation models",
+      "section": "V-B",
+      "group": "outlook",
+      "overview": "Here, foundation models refer to broadly pretrained models whose representations or generation capabilities support adaptation across gait datasets or tasks. We distinguish adaptation of general visual models from gait-specific pretraining, with reusable gait capability assessed through downstream transfer. Discriminative Models: Diversity and Reuse. Scaling identities, clips, and covariate coverage are different interventions. Deduplicated corpora and diversity-controlled comparisons could show which improves transfer. Frozen transfer, linear probing, fine-tuning, and target self-supervision also expose different kinds of reuse. Reporting pretraining resources alongside downstream labels and computation makes the benefits of each adaptation regime easier to compare. Multiple readouts may be necessary when identification requires stability but a downstream task requires within-person change. A useful transfer study would vary target-label availability while holding the adaptation budget fixed, including datasets absent from pretraining. This would reveal whether reuse chiefly reduces annotation demand or also improves performance under unseen acquisition. BarbieGait, DenoisingGait, and CoD^2 use generation as data, prior, and representation learning. For broader reuse, clip count should be distinguished from the number of separable identities and useful conditions per identity. Repeated clothing or background variants can increase volume without equally increasing effective coverage. Gait adds constraints of identity consistency, temporal continuity, and plausible biomechanics. Independent recognizers and held-out real conditions can test identity retention without relying only on the model used to supervise generation; ordinary augmentation remains a relevant baseline."
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "short": "Healthcare",
+      "section": "V-C",
+      "group": "outlook",
+      "overview": "Action-based rehabilitation analysis evaluates prescribed movements with known intent and expert quality labels. FineRehab, for example, combines visual and inertial observations for exercise recognition and multidimensional quality assessment. Walking offers a complementary opportunity: it is frequent in daily life and can support repeated observation with less task-specific instruction. Video-based scoliosis studies, ScoliGaitX, and recent skeletal-health modeling demonstrate interest in this direction. Together, these studies motivate task-specific models for repeated assessment of everyday walking. Atypical gait may reflect pathology, fatigue, footwear, or a person's usual style. Identity-pretrained features can encode a personal baseline, but matching invariance may suppress asymmetry or temporal change needed for assessment. A key comparison is whether identity pretraining improves longitudinal change detection over action- or pose-pretrained features under matched labels and capacity. Task-specific readouts could preserve this distinction. Comparing a patient's change with their own baseline, alongside population-level assessment, would help test whether the representation separates stable personal style from clinically relevant variation. Generative approaches such as GAITGen likewise need condition-relevant biomechanics, beyond visually plausible walking."
+    },
+    {
+      "id": "robotics",
+      "title": "Robotics",
+      "short": "Robotics",
+      "section": "V-D",
+      "group": "outlook",
+      "overview": "Human detection, pose, gestures, tracking, and appearance ReID already support robot interaction. FollowMe integrates ReID and gesture recognition with navigation; online continual ReID adapts person-following features to changing viewpoints and appearance. Gait could complement these systems when a person faces away or facial detail is unavailable, particularly during reacquisition after occlusion. Existing components establish a feasible integration context, while gait's incremental value still needs robot-based evaluation. A moving robot changes viewpoint, scale, and background motion while collecting short or partially occluded sequences. Walking may be interrupted by interaction. Ego-motion compensation, uncertainty-aware temporal accumulation, and adaptive observation length could connect gait inference to tracking and navigation. Active sensing could seek a more informative view, subject to social distance and task constraints, instead of assuming a complete gait cycle is always available."
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy and responsible use",
+      "short": "Privacy",
+      "section": "VI",
+      "group": "outlook",
+      "overview": "Gait can support identification and linkage when facial detail is unavailable. Identity information can persist in silhouettes and compact embeddings. Relevant risks include unwanted identification, cross-release linkage, and sensitive-attribute inference; security additionally concerns impersonation, evasion, and tampering. Protection can act on videos, derived representations, templates, or access to outputs. Each protection claim should specify the released object, the adversary's access, and the downstream utility to be retained. Adversarial gait methods manipulate temporal or contour information, while GaitProtector uses diffusion-latent optimization for gait de-identification. GaitEditor explores a complementary route through semantic attribute editing in a GAN latent space, using stronger and repeated edits to reduce identity recognizability while retaining visually plausible walking sequences. Their protection depends on attacker access, transfer to unseen recognizers, and survival through compression and re-extraction. Evaluation can examine transfer to independent recognizers, adaptation to protected data, and linkage across repeated releases. For example, testing a new recognizer trained on protected outputs would ask whether identity information remains learnable, beyond whether protection transfers to an already trained model. Repeated-release tests should also examine whether observations that are individually difficult to identify become linkable when combined."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e-f0a6cfbba426",
+      "nodeId": "modalities",
+      "section": "IV-A",
+      "subtopic": "Silhouettes",
+      "line": 529,
+      "text": "A silhouette suppresses color and texture while retaining projected body contour. Its compactness supports effective sequence processing in GaitSet, GaitPart, and GaitGL. Clothing and carried objects nevertheless change the contour itself, and coherent segmentation errors may persist across frames. GaitEdge connects segmentation and alignment to recognition; analysis of cropping further shows how normalization affects the resulting evidence.",
+      "citationKeys": [
+        "chao2019gaitset",
+        "fan2020gaitpart",
+        "lin2021gait",
+        "liang2022gaitedge",
+        "okimura2024cropping"
+      ],
+      "paperIds": [
+        "ref-chao2019gaitset",
+        "fan2020gaitpart-cvpr-2020",
+        "lin2021gait-iccv-2021",
+        "liang2022gaitedge-eccv-2022",
+        "okimura2024cropping-ijcb-2024"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-c15793c1af38",
+      "nodeId": "modalities",
+      "section": "IV-A",
+      "subtopic": "Skeletons, Parsing, and Parametric Bodies",
+      "line": 533,
+      "text": "Skeletons retain articulation with little texture or contour information. GPGait combines body-coordinate processing with graph learning; SkeletonGait renders joints as maps and uses convolutions. These routes separate the choice of skeletal evidence from graph topology. OpenGait's reduced-channel SkeletonGait remains competitive at a parameter count close to GPGait, although pose sources and encoding choices also differ. Shared pose-processing baselines help localize these effects. Both routes remain exposed to occlusion and upstream estimation error.",
+      "citationKeys": [
+        "fu2023gpgait",
+        "fan2024skeletongait",
+        "fan2025opengait",
+        "meng2025fastposegait"
+      ],
+      "paperIds": [
+        "fu2023gpgait-iccv-2023",
+        "fan2024skegait-aaai-2024",
+        "fan2025opengait-tpami-2025",
+        "meng2025fastposegait-tpami-2025"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-cd867994823b",
+      "nodeId": "modalities",
+      "section": "IV-A",
+      "subtopic": "Skeletons, Parsing, and Parametric Bodies",
+      "line": 536,
+      "text": "Parsing supplies denser body-region correspondence. ParsingGait and XGait exploit semantic regions and cross-granularity alignment, respectively, with related part representations and higher-order relations developed in subsequent work. SMPLGait introduces recovered body geometry, and occlusion-aware mesh learning extends this route. Such estimates regularize observations but can smooth individual detail or propagate fitting errors; unlike measured geometry, they depend on the image and body prior.",
+      "citationKeys": [
+        "zheng2023parsing",
+        "zheng2024takes",
+        "wang2023gaitparsing",
+        "zheng2026hypergait",
+        "zheng2022gait",
+        "xu2023occlusion"
+      ],
+      "paperIds": [
+        "zheng2023parsing-acmmm-2023",
+        "zheng2024takes-acmmm-2024",
+        "wang2023gaitparsing-tmm-2024",
+        "zheng2026hypergait-cvpr-2026",
+        "zheng2022gait-cvpr-2022",
+        "xu2023occlusion-tifs-2023"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-1d58a12dbc01",
+      "nodeId": "modalities",
+      "section": "IV-A",
+      "subtopic": "RGB and Learned Representations",
+      "line": 538,
+      "text": "RGB retains evidence removed by explicit preprocessing. GaitNet learns disentangled representations; BigGait adapts pretrained visual features, and BiggerGait uses complementary layers. Gait-X instead applies frequency decomposition without a learned upstream estimator. Explicit transformations constrain the retained information before learning; RGB adaptation learns which details to use from richer observations and external priors. Cross-clothing and cross-domain tests assess which shape and appearance details remain useful across encounters.",
+      "citationKeys": [
+        "zhang2020learning",
+        "ye2024biggait",
+        "ye2025biggergait",
+        "wang2025gaitx"
+      ],
+      "paperIds": [
+        "zhang2020learning-tpami-2022",
+        "ye2024biggait-cvpr-2024",
+        "ref-ye2025biggergait",
+        "wang2025gaitx-acmmm-2025"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-14b0f3c08b34",
+      "nodeId": "modalities",
+      "section": "IV-A",
+      "subtopic": "RGB and Learned Representations",
+      "line": 541,
+      "text": "Optical flow provides estimated motion, complementing contour in AttenGait and MultiGait. Its contribution depends on alignment, camera motion, and extraction cost, especially for low-quality video.",
+      "citationKeys": [
+        "castro2024attengait",
+        "jin2025exploring"
+      ],
+      "paperIds": [
+        "castro2024attengait-pr-2024",
+        "jin2025exploring-aaai-2025"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-780145688acc",
+      "nodeId": "modalities",
+      "section": "IV-A",
+      "subtopic": "LiDAR and Event Sensing",
+      "line": 543,
+      "text": "LiDAR measures geometry independently of visible-light texture. LidarGait established a projection baseline, and LidarGait++ develops size-aware local geometric features; point-based and multiscale temporal designs provide related alternatives. Geometry can remain informative at night, but garments, sparsity, and occlusion still affect the observed surface.",
+      "citationKeys": [
+        "shen2023lidargait",
+        "shen2025lidargait++",
+        "wang2023pointgait",
+        "xu2026ms2gait"
+      ],
+      "paperIds": [
+        "shen2023lidargait-cvpr-2023",
+        "shen2025lidargait-cvpr-2025",
+        "wang2023pointgait-ijcb-2023",
+        "xu2026ms2gait-cvpr-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-48d82bef520f",
+      "nodeId": "modalities",
+      "section": "IV-A",
+      "subtopic": "LiDAR and Event Sensing",
+      "line": 546,
+      "text": "Event cameras asynchronously record brightness changes. EventGait combines event-based dynamics and shape, extending earlier event representations. Physical and simulated event streams require separate interpretation because their acquisition and noise differ.",
+      "citationKeys": [
+        "wang2019ev",
+        "xu2026eventgait",
+        "wang2021event",
+        "chen2024egst"
+      ],
+      "paperIds": [
+        "ref-wang2019ev",
+        "xu2026eventgait-cvpr-2026",
+        "wang2021event-tpami-2022",
+        "chen2024egst-tifs-2024"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-ab8a218e784b",
+      "nodeId": "modalities",
+      "section": "IV-A",
+      "subtopic": "Fusion and Heterogeneous Availability",
+      "line": 548,
+      "text": "Additional modalities can be fused at inference, matched across heterogeneous probe and gallery observations, or used only to supervise training. MMGaitFormer and SkeletonGait++ combine complementary visual representations; MultiGait++ refines fusion across silhouette, parsing, and flow. Related multimodal learning explores temporal coordination. CL-Gait aligns camera and LiDAR embeddings through contrastive pretraining, while long-range and text-guided methods extend cross-modal learning. MMGait and OmniGait provide a common setting for heterogeneous modality configurations.",
+      "citationKeys": [
+        "cui2023multi",
+        "fan2024skeletongait",
+        "jin2025exploring",
+        "sun2024trigait",
+        "guo2024clgait",
+        "lu2026walking",
+        "lu2026textguided",
+        "wang2026mmgait"
+      ],
+      "paperIds": [
+        "cui2023multi-cvpr-2023",
+        "fan2024skegait-aaai-2024",
+        "jin2025exploring-aaai-2025",
+        "sun2024trigait-tbiom-2025",
+        "guo2024camera-eccv-2024",
+        "lu2026walking-aaai-2026",
+        "lu2026textguided-cvpr-2026",
+        "wang2026mmgait-cvpr-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-1ad751688e96",
+      "nodeId": "backbones",
+      "section": "IV-B",
+      "subtopic": "Set, Temporal and Local--Global Models",
+      "line": 556,
+      "text": "Set pooling offers variable-length aggregation without requiring temporal alignment. In an idealized frame-wise encoder followed by symmetric pooling, z=\\!(Pool_t=1^T(x_t)), the representation is invariant to frame permutations. This simplifies aggregation when ordering or phase alignment is unreliable, while discarding the order of otherwise identical frames. Local temporal operations before pooling can retain ordering information within their receptive fields.",
+      "citationKeys": [
+        "chao2019gaitset"
+      ],
+      "paperIds": [
+        "ref-chao2019gaitset"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-931bbdeaf5b7",
+      "nodeId": "backbones",
+      "section": "IV-B",
+      "subtopic": "Set, Temporal and Local--Global Models",
+      "line": 567,
+      "text": "GaitPart captures local micro-motion, GaitGL integrates local and global features, and DyGait emphasizes dynamic regions; hierarchical and adaptive aggregation offer related designs. Fixed body partitions simplify correspondence under good alignment but become unreliable with leaning or partial visibility. MTSGait explores multi-hop temporal interaction, while dynamic aggregation and quality-aware weighting adapt which regions and frames contribute.",
+      "citationKeys": [
+        "fan2020gaitpart",
+        "lin2021gait",
+        "wang2023dygait",
+        "wang2023hierarchical",
+        "ma2023dynamic",
+        "zheng2022mstgait",
+        "wang2024qagait"
+      ],
+      "paperIds": [
+        "fan2020gaitpart-cvpr-2020",
+        "lin2021gait-iccv-2021",
+        "wang2023dygait-iccv-2023",
+        "wang2023hierarchical-iccv-2023",
+        "ma2023dynamic-cvpr-2023",
+        "zheng2022mtsgait-acmmm-2022",
+        "wang2024qagait-aaai-2024"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-109aae104424",
+      "nodeId": "backbones",
+      "section": "IV-B",
+      "subtopic": "Set, Temporal and Local--Global Models",
+      "line": 569,
+      "text": "Convolutional encoders exploit spatial locality; 3D or factorized operations additionally model temporal neighborhoods. OpenGait's re-analysis of GaitSet finds that removing selected architectural branches can preserve or improve recognition while reducing parameters. This finding highlights the value of simple, well-trained reference models. SPOSGait extends architecture selection to large-scale data; training scale and search cost remain part of that comparison.",
+      "citationKeys": [
+        "fan2023opengait",
+        "fan2025opengait",
+        "guo2025sposgait"
+      ],
+      "paperIds": [
+        "fan2023opengait-cvpr-2023",
+        "fan2025opengait-tpami-2025",
+        "guo2025gait-tpami-2025"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-fbd324f14a68",
+      "nodeId": "backbones",
+      "section": "IV-B",
+      "subtopic": "Graphs, Recurrence and Attention",
+      "line": 571,
+      "text": "GPGait emphasizes generalizable body coordinates and graph learning; symmetry- and condition-aware graph designs explore complementary joint relations. This provides a compact articulation prior, but transfers uncertainty from the pose source into the learned dependencies. Flexible adjacency helps only if those dependencies remain informative across conditions.",
+      "citationKeys": [
+        "fu2023gpgait",
+        "liu2022symmetry",
+        "huang2023condition"
+      ],
+      "paperIds": [
+        "fu2023gpgait-iccv-2023",
+        "liu2022symmetry-pr-2022",
+        "huang2023condition-tip-2023"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-8d9e650e3ea6",
+      "nodeId": "backbones",
+      "section": "IV-B",
+      "subtopic": "Graphs, Recurrence and Attention",
+      "line": 574,
+      "text": "Recurrent encoders maintain an ordered state, as in disentangled gait sequence modeling; attention connects selected spatial and temporal tokens. SwinGait uses hierarchical 3D window attention, DeepGaitV2 develops convolutional baselines, and GaT studies a gait-specific Transformer. These mechanisms provide different temporal access, motivating analysis of the identity cues retained by each design.",
+      "citationKeys": [
+        "zhang2020learning",
+        "fan2023exploring",
+        "hou2026gat"
+      ],
+      "paperIds": [
+        "zhang2020learning-tpami-2022",
+        "ref-fan2023exploring",
+        "hou2026gat-aaai-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-04e2699dcb82",
+      "nodeId": "backbones",
+      "section": "IV-B",
+      "subtopic": "Graphs, Recurrence and Attention",
+      "line": 580,
+      "text": "A published GaitMax ablation illustrates why the temporal question benefits from condition-specific analysis. Its kinematic branch exceeds the order-invariant semantic branch by 6.7 points on CCPG clothing change, while the semantic branch leads by 2.7 points on bag carrying. Fusion improves mean rank-1 to 89.8%, but its clothing score of 85.4% remains below the kinematic branch's 87.6%. These ablation settings differ from the final comparison in Table III. The ablation reveals condition-dependent complementarity between semantic and kinematic cues. Fusion should therefore be assessed against the strongest individual branch for each condition as well as by its aggregate score. A repeated-frame control would test whether a single frame supports the gain; frame shuffling would probe order dependence, and matched-duration sampling would probe temporal coverage. Applying these controls within each covariate condition would help distinguish useful temporal evidence from architectural sensitivity to sequence order.",
+      "citationKeys": [
+        "huang2026gaitmax"
+      ],
+      "paperIds": [
+        "huang2026gaitmax-cvpr-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-e7100eb9ccb9",
+      "nodeId": "learning",
+      "section": "IV-C",
+      "subtopic": "Supervised Discrimination and Sampling",
+      "line": 582,
+      "text": "A common recipe combines identity classification with metric learning. For an anchor z_a, positive z_p, and negative z_n, a representative triplet objective is L_ tri=[d(z_a,z_p)-d(z_a,z_n)+m]_+, where m is a margin. Classification separates training identities; metric learning shapes relations used to match unseen people. Part-wise heads, normalization, and batch construction determine how these objectives act on gait sequences.",
+      "citationKeys": [
+        "fan2023opengait",
+        "han2022unified"
+      ],
+      "paperIds": [
+        "fan2023opengait-cvpr-2023",
+        "han2022unified-pr-2022"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-5c3c15350a72",
+      "nodeId": "learning",
+      "section": "IV-C",
+      "subtopic": "Disentanglement, Invariance, and Causal Formulations",
+      "line": 595,
+      "text": "GaitNet separates identity-related factors from appearance through reconstruction and latent exchange; group supervision supplies further constraints. GaitGCI and GaitC3I model covariate effects using causality-inspired formulations, alongside interventions across several feature domains. These approaches pursue identity relations that persist under changes to nuisance factors.",
+      "citationKeys": [
+        "zhang2020learning",
+        "yao2022improving",
+        "dou2023gaitgci",
+        "wang2025gaitc",
+        "xiong2024causality"
+      ],
+      "paperIds": [
+        "zhang2020learning-tpami-2022",
+        "yao2022improving-tcsvt-2023",
+        "dou2023gaitgci-cvpr-2023",
+        "wang2025gaitc-tcsvt-2025",
+        "xiong2024causality-eccv-2024"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-0d69e2abefd9",
+      "nodeId": "learning",
+      "section": "IV-C",
+      "subtopic": "Learning with Limited Labels and Domain Shift",
+      "line": 600,
+      "text": "Unsupervised methods infer identity relations from clustering and pseudo-labels; selective fusion and multimodal mutual learning provide complementary cues. Their reliability depends on whether inferred identities remain consistent across conditions. GaitSSB instead develops self-supervised learning from unlabeled walking observations, followed by supervised adaptation. Temporal and augmentation correspondences broaden usable data, although they offer less explicit cross-clothing supervision than identity-linked sessions.",
+      "citationKeys": [
+        "ren2025unsupervised",
+        "yang2025multimodal",
+        "fan2023learning"
+      ],
+      "paperIds": [
+        "ren2025unsupervised-tbiom-2025",
+        "yang2025multimodal-tifs-2025",
+        "fan2023learning-tpami-2023"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-faa8fd2be166",
+      "nodeId": "learning",
+      "section": "IV-C",
+      "subtopic": "Learning with Limited Labels and Domain Shift",
+      "line": 603,
+      "text": "Fine-grained domain adaptation uses unlabeled target observations; single-source generalization and weak-shot transfer address different data-access settings. Distinguishing target observations, target labels, and source-only training makes their gains interpretable.",
+      "citationKeys": [
+        "ma2023fine",
+        "wang2023progressive",
+        "hou2024adaptive"
+      ],
+      "paperIds": [
+        "ma2023fine-iccv-2023",
+        "wang2023progressive-tifs-2023",
+        "hou2024adaptive-tifs-2024"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-6dc326d1eb80",
+      "nodeId": "learning",
+      "section": "IV-C",
+      "subtopic": "Transfer from Large Models and Semantic Guidance",
+      "line": 605,
+      "text": "BigGait and BiggerGait adapt visual representations, whereas GaitLLM brings language-model sequence processing to gait features. Teacher choice and adapted layers determine the knowledge retained. GaitMax combines semantic and kinematic information; related language-guided and cross-modal methods use descriptions to structure motion or nuisance learning. Description quality and training-only versus inference-time access are relevant to these comparisons.",
+      "citationKeys": [
+        "ye2024biggait",
+        "ye2025biggergait",
+        "yang2025bridging",
+        "huang2026gaitmax",
+        "wu2026lmgait",
+        "lu2026textguided"
+      ],
+      "paperIds": [
+        "ye2024biggait-cvpr-2024",
+        "ref-ye2025biggergait",
+        "yang2025bridging-cvpr-2025",
+        "huang2026gaitmax-cvpr-2026",
+        "wu2026lmgait-aaai-2026",
+        "lu2026textguided-cvpr-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-ede9a497a70a",
+      "nodeId": "learning",
+      "section": "IV-C",
+      "subtopic": "Transfer from Large Models and Semantic Guidance",
+      "line": 608,
+      "text": "Gait-specific pretraining pursues reuse more directly. FoundationGait aggregates public silhouette datasets for self-supervision and downstream transfer, while skeleton-based work studies data and model scaling. Frozen transfer and target fine-tuning provide complementary views of the resulting representations.",
+      "citationKeys": [
+        "ye2026foundationgait",
+        "cosma2026scaling"
+      ],
+      "paperIds": [
+        "ye2026foundationgait-eccv-2026",
+        "cosma2026scaling-aaai-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-56f19b9f6cbd",
+      "nodeId": "learning",
+      "section": "IV-C",
+      "subtopic": "Generation as Data, Representation, and Supervision",
+      "line": 610,
+      "text": "DenoisingGait uses diffusion and geometric priors to reduce nuisance information in walking-video features. CoD^2 studies collaboration between discriminative and generative diffusion models. BarbieGait supplies identity-linked synthetic clothing diversity together with GaitCLIF learning. These approaches act on different parts of training, from representation construction to supervision coverage.",
+      "citationKeys": [
+        "jin2025denoising",
+        "xiong2026cod2",
+        "cai2026barbiegait"
+      ],
+      "paperIds": [
+        "jin2025denoising-cvpr-2025",
+        "xiong2026cod2-aaai-2026",
+        "cai2026barbiegait-cvpr-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-b27ff9c9811c",
+      "nodeId": "learning",
+      "section": "IV-C",
+      "subtopic": "Generation as Data, Representation, and Supervision",
+      "line": 613,
+      "text": "Their utility can arise through more training examples, broader conditions per identity, or improved upstream features. BarbieGait evaluates both recognizer pretraining and pose-estimator adaptation, illustrating distinct routes that should remain identifiable. Source-identity separation, ordinary-augmentation baselines, and transfer to unseen real conditions help determine whether synthesis adds useful coverage.",
+      "citationKeys": [
+        "cai2026barbiegait"
+      ],
+      "paperIds": [
+        "cai2026barbiegait-cvpr-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-86bba3880b0e",
+      "nodeId": "robustness",
+      "section": "IV-D",
+      "subtopic": "Occlusion",
+      "line": 622,
+      "text": "Missing regions call for selective aggregation or structural inference. The mixture-of-experts method of Huang et al. selects evidence according to visibility; mesh completion and distillation from unobstructed observations introduce additional priors. Aggregation can recover a body region visible in other frames. Persistent occlusion instead forces reliance on remaining evidence or inferred structure, whose confidence should reflect that it was not directly observed.",
+      "citationKeys": [
+        "huang2024occluded",
+        "xu2023occlusion",
+        "gupta2025mimicgait"
+      ],
+      "paperIds": [
+        "huang2024occluded-eccv-2024",
+        "xu2023occlusion-tifs-2023",
+        "gupta2025mimicgait-wacv-2025"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-d3c1c7bb992a",
+      "nodeId": "robustness",
+      "section": "IV-D",
+      "subtopic": "Clothing Changes",
+      "line": 626,
+      "text": "Garments alter contour, surface geometry, and sometimes movement. GaitGCI and GaitC3I address covariate-dependent learning; GaitCLIF uses the clothing diversity of BarbieGait to learn more stable identity features. Disentanglement, clothing-balanced supervision, and multimodal cues provide related routes. The remaining difficulty is transfer to garment combinations and body deformations absent from training.",
+      "citationKeys": [
+        "dou2023gaitgci",
+        "wang2025gaitc",
+        "cai2026barbiegait",
+        "yao2022improving",
+        "hou2024cloth",
+        "li2023depth"
+      ],
+      "paperIds": [
+        "dou2023gaitgci-cvpr-2023",
+        "wang2025gaitc-tcsvt-2025",
+        "cai2026barbiegait-cvpr-2026",
+        "yao2022improving-tcsvt-2023",
+        "hou2024cloth-tcsvt-2024",
+        "li2023depth-cvpr-2023"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-3d048531eae9",
+      "nodeId": "robustness",
+      "section": "IV-D",
+      "subtopic": "Carrying Conditions",
+      "line": 629,
+      "text": "Bags and other objects both obscure body regions and modify arm swing or posture. Local motion models such as GaitPart and DyGait can reduce reliance on affected regions, while semantic and structural inputs support body–object separation. These are partial remedies: excluding the object's pixels does not undo the resulting change in walking dynamics. CCGR's combined conditions provide a broader test than bag presence alone.",
+      "citationKeys": [
+        "fan2020gaitpart",
+        "wang2023dygait",
+        "zheng2024takes",
+        "fan2024skeletongait",
+        "zou2024cross"
+      ],
+      "paperIds": [
+        "fan2020gaitpart-cvpr-2020",
+        "wang2023dygait-iccv-2023",
+        "zheng2024takes-acmmm-2024",
+        "fan2024skegait-aaai-2024",
+        "zou2024cross-aaai-2024"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-b4c5b76883e3",
+      "nodeId": "robustness",
+      "section": "IV-D",
+      "subtopic": "Cross-View Variation",
+      "line": 632,
+      "text": "KoopmanGait and LagrangeGait model transformations or motion across views; body-coordinate normalization and 3D observations provide geometric alternatives. Their assumptions become more demanding for continuously changing trajectories and elevated cameras than for fixed laboratory views.",
+      "citationKeys": [
+        "zhang2021cross",
+        "chai2022lagrange",
+        "fu2023gpgait",
+        "shen2023lidargait",
+        "li2024aerialgait"
+      ],
+      "paperIds": [
+        "zhang2021cross-cvpr-2021",
+        "chai2022lagrange-cvpr-2022",
+        "fu2023gpgait-iccv-2023",
+        "shen2023lidargait-cvpr-2023",
+        "li2024aerialgait-acmmm-2024"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-99b92076ffb0",
+      "nodeId": "robustness",
+      "section": "IV-D",
+      "subtopic": "Low-Quality Observations",
+      "line": 635,
+      "text": "Low resolution, blur, weak illumination, and unstable crops couple sensing errors with feature learning. GaitEdge improves preprocessing; quality-aware aggregation reduces unreliable frames' influence. RobustGait evaluates corruption propagated through RGB-to-silhouette processing. Recognition quality also depends on visible identity detail and temporal coverage: a clean mask can still be uninformative. Weighting cannot recover evidence absent throughout a sequence, whereas LiDAR or event sensing changes the available measurement. Selective recognition should report retained coverage alongside accuracy.",
+      "citationKeys": [
+        "liang2022gaitedge",
+        "hou2022gait",
+        "wang2024qagait",
+        "peng2025rsanet",
+        "sayera2026robustgait",
+        "shen2025lidargait++",
+        "xu2026eventgait"
+      ],
+      "paperIds": [
+        "liang2022gaitedge-eccv-2022",
+        "hou2022gait-tnnls-2023",
+        "wang2024qagait-aaai-2024",
+        "peng2025rsanet-pr-2025",
+        "sayera2026robustgait-wacv-2026",
+        "shen2025lidargait-cvpr-2025",
+        "xu2026eventgait-cvpr-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-ab5f344dcb89",
+      "nodeId": "metrics",
+      "section": "IV-E",
+      "subtopic": "Embedding Geometry and Difficulty-Aware Learning",
+      "line": 645,
+      "text": "Building on the classification and triplet objectives in Section IV-C, metric design refines embedding geometry; a unified analysis relates classification- and distance-based objectives. Generalized Inter-class Loss adjusts pairwise weighting and class-level separation. Progressive memory-based learning further addresses hard positives and negatives beyond an individual mini-batch. WaveLoss adapts the emphasis placed on parts of unequal difficulty. These methods refine how limited training identities define a space for unseen people.",
+      "citationKeys": [
+        "han2022unified",
+        "yu2022interclass",
+        "dou2024gaitmpl",
+        "wang2025waveloss"
+      ],
+      "paperIds": [
+        "han2022unified-pr-2022",
+        "yu2022generalized-acmmm-2022",
+        "dou2022gaitmpl-tip-2024",
+        "wang2025waveloss-aaai-2025"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-d2d3ce861bac",
+      "nodeId": "metrics",
+      "section": "IV-E",
+      "subtopic": "Embedding Geometry and Difficulty-Aware Learning",
+      "line": 649,
+      "text": "Covariate imbalance motivates additional constraints. Condition-aware comparison and clothing-balanced learning account for uneven observation conditions; GaitC3I revisits the positive and negative relations used for metric supervision. In 2026, GaitMax's conditional decorrelation objective uses nuisance descriptions to complement identity discrimination. Such objectives seek stable matching relations, with their benefit depending on the quality and coverage of the conditioning information.",
+      "citationKeys": [
+        "wu2020condition",
+        "hou2024cloth",
+        "wang2025gaitc",
+        "huang2026gaitmax"
+      ],
+      "paperIds": [
+        "wu2020condition-tip-2021",
+        "hou2024cloth-tcsvt-2024",
+        "wang2025gaitc-tcsvt-2025",
+        "huang2026gaitmax-cvpr-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-1a5e58daad30",
+      "nodeId": "metrics",
+      "section": "IV-E",
+      "subtopic": "Similarity and Retrieval Refinement",
+      "line": 651,
+      "text": "Euclidean, cosine, and part-wise comparisons provide inexpensive retrieval from fixed descriptors. Learned comparison can additionally exploit interactions between a probe and candidate. CarGait re-ranks a shortlist through cross-attention over local features; its benefit depends on candidate recall and pairwise computation. Gallery structure also affects scoring: the LocalScore preprint studies local-density normalization in broader biometric recognition. This is relevant to gait deployment, with its multimodal evidence distinguished from gait-only evaluation.",
+      "citationKeys": [
+        "habib2025cargait",
+        "su2026localscore"
+      ],
+      "paperIds": [
+        "habib2025cargait-iccv-2025",
+        "ref-su2026localscore"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-2e1c1071f9e9",
+      "nodeId": "metrics",
+      "section": "IV-E",
+      "subtopic": "Evaluation and Decision Calibration",
+      "line": 654,
+      "text": "Rank-1 measures the first match; mAP summarizes retrieval across relevant gallery items; mINP emphasizes the last relevant item's rank. Verification and open-set identification additionally require a rejection operating point. Verification can report true-accept rate (TAR) at fixed false-accept rates (FAR), while open-set identification can report false-negative identification rate (FNIR) at fixed false-positive identification rates (FPIR), with gallery size and mated/non-mated probe composition specified. Holding a validation threshold fixed while varying gallery size or acquisition tests a different capability from recomputing the best threshold for each test set. Subject-level uncertainty and the fraction of retained probes show how calibration and abstention affect reliability and coverage.",
+      "citationKeys": [
+        "su2024open"
+      ],
+      "paperIds": [
+        "ref-su2024open"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-9e8ddcb8dab1",
+      "nodeId": "metrics",
+      "section": "IV-E",
+      "subtopic": "Evaluation and Decision Calibration",
+      "line": 658,
+      "text": "Across these dimensions, a practical comparison includes observation duration, upstream extraction, embedding computation, and gallery search. GaitMax, for example, separates backbone and head costs and specifies frame count and resolution. Per-frame computation differs from sequence latency, which also includes waiting for useful observations; deployment cost includes both upstream feature extraction and the recognition head. These constraints connect the methodological choices to the uses considered next.",
+      "citationKeys": [
+        "huang2026gaitmax"
+      ],
+      "paperIds": [
+        "huang2026gaitmax-cvpr-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-5cb037cf6267",
+      "nodeId": "coverage",
+      "section": "V-A",
+      "subtopic": "Large-Scale In-the-Wild Benchmarks: Coverage and Attribution",
+      "line": 683,
+      "text": "Controlled collections provide covariate labels and matched conditions, making model failures easier to attribute, but often simplify acquisition or limit population diversity. In-the-wild collections broaden scale and realism, yet rarely provide comparably balanced combinations of people and conditions. GREW's attributes, RA-GAR's richer attribute supervision, and recent language descriptions help characterize these observations. The difficulty is obtaining reliable coverage of interacting factors.",
+      "citationKeys": [
+        "zou2024cross",
+        "guo2025sposgait",
+        "wang2025ra",
+        "huang2026gaitmax"
+      ],
+      "paperIds": [
+        "zou2024cross-aaai-2024",
+        "guo2025gait-tpami-2025",
+        "wang2025ra-aaai-2025",
+        "huang2026gaitmax-cvpr-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-a8770d76d3da",
+      "nodeId": "coverage",
+      "section": "V-A",
+      "subtopic": "Large-Scale In-the-Wild Benchmarks: Coverage and Attribution",
+      "line": 688,
+      "text": "Covariate imbalance can also make aggregate accuracy optimistic about robustness. GaitC3I analyzes how identity–covariate correlations in wild data bias metric learning; stronger results on the dominant, similar-condition pairs need not imply reliable matching across rarer changes. A promising benchmark design couples large natural collections with a smaller, densely annotated diagnostic subset. Pair-conditioned reporting, longitudinal sampling, and held-out combinations would preserve realism while making gains and failures more interpretable.",
+      "citationKeys": [
+        "wang2025gaitc"
+      ],
+      "paperIds": [
+        "wang2025gaitc-tcsvt-2025"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-ff7a7b8d342b",
+      "nodeId": "missing-inputs",
+      "section": "V-A",
+      "subtopic": "Multimodal Gait Modeling: Complementarity under Missing Data",
+      "line": 690,
+      "text": "MMGait and long-range camera–LiDAR learning enable heterogeneous observations. The challenge is to retain fusion benefits when sensors are missing, asynchronous, or unequally reliable. Quality-conditioned fusion and modality dropout are plausible directions, but evaluations should distinguish measured information from imputed features. Predictable degradation under partial availability may matter more in deployment than the best complete-input score.",
+      "citationKeys": [
+        "wang2026mmgait",
+        "lu2026walking"
+      ],
+      "paperIds": [
+        "wang2026mmgait-cvpr-2026",
+        "lu2026walking-aaai-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-6f43eafc29d1",
+      "nodeId": "whole-body",
+      "section": "V-A",
+      "subtopic": "Whole-Body Recognition: Heterogeneous Biometric Fusion",
+      "line": 693,
+      "text": "Face, body shape, appearance, and gait differ in spatial resolution, observation duration, permanence, and failure modes. FarSight integrates these cues under altitude and range, while VILLS studies local and global information for long-range recognition. SapiensID provides a complementary unified model for face and body recognition across pose and scale variations, offering a related foundation for whole-body identity representation. Effective fusion combines complementary evidence while accounting for differences in score scale and input quality. Quality-guided score-fusion experts explicitly address score misalignment and variable input quality.",
+      "citationKeys": [
+        "liu2025person",
+        "huang2025vills",
+        "kim2025sapiensid",
+        "zhu2025qme"
+      ],
+      "paperIds": [
+        "ref-liu2025person",
+        "ref-huang2025vills",
+        "ref-kim2025sapiensid",
+        "ref-zhu2025qme"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-77c5d473879e",
+      "nodeId": "compound-noise",
+      "section": "V-A",
+      "subtopic": "Robust Gait Recognition: Interacting Failures",
+      "line": 698,
+      "text": "Real failures combine clothing, occlusion, sensor degradation, and preprocessing error. Factorial stress tests could reveal interactions that single-corruption evaluation misses. Models also need to distinguish recoverable corruption from insufficient observation; quality-aware abstention should report retained coverage, including people with atypical gaits or walking aids.",
+      "citationKeys": [
+        "huang2024occluded",
+        "sayera2026robustgait"
+      ],
+      "paperIds": [
+        "huang2024occluded-eccv-2024",
+        "sayera2026robustgait-wacv-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-01036b7693a0",
+      "nodeId": "generalization",
+      "section": "V-A",
+      "subtopic": "Generalized Gait Recognition: Unseen Acquisition and Time",
+      "line": 701,
+      "text": "Cross-dataset tests bundle changes in population, cameras, and preprocessing, often obscuring the dominant cause. Unseen-site evaluation paired with controlled shifts could connect laboratory remedies to deployment. Multi-year studies further motivate separating identity persistence from aging, injury, and changing appearance. Session-separated enrollment updates would test adaptation without accumulating incorrect associations.",
+      "citationKeys": [
+        "freire2026multiyear"
+      ],
+      "paperIds": [
+        "freire2026multiyear-pr-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-39864579113d",
+      "nodeId": "open-set",
+      "section": "V-A",
+      "subtopic": "Open-Set Recognition: Stable Decisions over Time",
+      "line": 704,
+      "text": "Unknown people, changing galleries, and repeated encounters require more than closed-set retrieval. A useful next test freezes calibration on held-out validation identities, then expands the gallery or changes the site. Reporting false identifications, missed identifications, and retained coverage would reveal whether thresholds remain usable. Repeated observations may support enrollment updates, but identity-switch recovery and update errors should be measured alongside search speed and storage.",
+      "citationKeys": [
+        "su2024open"
+      ],
+      "paperIds": [
+        "ref-su2024open"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-4e6f9cd616ef",
+      "nodeId": "foundation",
+      "section": "V-B",
+      "subtopic": "Toward Generative Gait Foundation Models",
+      "line": 714,
+      "text": "BarbieGait, DenoisingGait, and CoD^2 use generation as data, prior, and representation learning. For broader reuse, clip count should be distinguished from the number of separable identities and useful conditions per identity. Repeated clothing or background variants can increase volume without equally increasing effective coverage. Gait adds constraints of identity consistency, temporal continuity, and plausible biomechanics. Independent recognizers and held-out real conditions can test identity retention without relying only on the model used to supervise generation; ordinary augmentation remains a relevant baseline.",
+      "citationKeys": [
+        "cai2026barbiegait",
+        "jin2025denoising",
+        "xiong2026cod2"
+      ],
+      "paperIds": [
+        "cai2026barbiegait-cvpr-2026",
+        "jin2025denoising-cvpr-2025",
+        "xiong2026cod2-aaai-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-7abb81c8e6f2",
+      "nodeId": "foundation",
+      "section": "V-B",
+      "subtopic": "Gait Recognition with Large Models: Retaining Individual Detail",
+      "line": 717,
+      "text": "General visual pretraining supplies transferable structure, but its objectives need not preserve every distinction between individual walking patterns. BiggerGait finds useful gait information in intermediate layers that is less accessible in the final representation; GaitMax identifies temporal information omitted by order-invariant aggregation of visual features. Together, these findings identify feature selection and temporal encoding as useful interfaces for gait-specific adaptation.",
+      "citationKeys": [
+        "ye2025biggergait",
+        "huang2026gaitmax"
+      ],
+      "paperIds": [
+        "ref-ye2025biggergait",
+        "huang2026gaitmax-cvpr-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-a242163c99b0",
+      "nodeId": "foundation",
+      "section": "V-B",
+      "subtopic": "Gait Recognition with Large Models: Retaining Individual Detail",
+      "line": 720,
+      "text": "Gait-specific pretraining, including FoundationGait and skeleton-based scaling, offers a complementary route, with greater demands on walking data and training resources. A productive comparison would hold target labels and model capacity as closely matched as possible while contrasting general-model adaptation, dedicated pretraining, and their combination. Reporting pretraining and deployment costs separately would help establish when gait-specific temporal learning, adapters, or distilled students add value to reusable spatial features.",
+      "citationKeys": [
+        "ye2026foundationgait",
+        "cosma2026scaling"
+      ],
+      "paperIds": [
+        "ye2026foundationgait-eccv-2026",
+        "cosma2026scaling-aaai-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-719fa257b421",
+      "nodeId": "healthcare",
+      "section": "V-C",
+      "subtopic": "From action assessment to everyday observation",
+      "line": 723,
+      "text": "Action-based rehabilitation analysis evaluates prescribed movements with known intent and expert quality labels. FineRehab, for example, combines visual and inertial observations for exercise recognition and multidimensional quality assessment. Walking offers a complementary opportunity: it is frequent in daily life and can support repeated observation with less task-specific instruction. Video-based scoliosis studies, ScoliGaitX, and recent skeletal-health modeling demonstrate interest in this direction. Together, these studies motivate task-specific models for repeated assessment of everyday walking.",
+      "citationKeys": [
+        "li2024finerehab",
+        "zhou2024gait",
+        "vishwakarma2026scoligaitx",
+        "gabet2026health"
+      ],
+      "paperIds": [
+        "ref-li2024finerehab",
+        "ref-zhou2024gait",
+        "vishwakarma2026scoligaitx-wacv-2026",
+        "gabet2026health-arxiv-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-7a4119b0a1f5",
+      "nodeId": "healthcare",
+      "section": "V-C",
+      "subtopic": "Separating personal baseline from clinically meaningful change",
+      "line": 726,
+      "text": "Atypical gait may reflect pathology, fatigue, footwear, or a person's usual style. Identity-pretrained features can encode a personal baseline, but matching invariance may suppress asymmetry or temporal change needed for assessment. A key comparison is whether identity pretraining improves longitudinal change detection over action- or pose-pretrained features under matched labels and capacity. Task-specific readouts could preserve this distinction. Comparing a patient's change with their own baseline, alongside population-level assessment, would help test whether the representation separates stable personal style from clinically relevant variation. Generative approaches such as GAITGen likewise need condition-relevant biomechanics, beyond visually plausible walking.",
+      "citationKeys": [
+        "adeli2026gaitgen"
+      ],
+      "paperIds": [
+        "adeli2026gaitgen-wacv-2026"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-144980930d91",
+      "nodeId": "robotics",
+      "section": "V-D",
+      "subtopic": "Identity continuity within embodied perception",
+      "line": 730,
+      "text": "Human detection, pose, gestures, tracking, and appearance ReID already support robot interaction. FollowMe integrates ReID and gesture recognition with navigation; online continual ReID adapts person-following features to changing viewpoints and appearance. Gait could complement these systems when a person faces away or facial detail is unavailable, particularly during reacquisition after occlusion. Existing components establish a feasible integration context, while gait's incremental value still needs robot-based evaluation.",
+      "citationKeys": [
+        "rollo2023followme",
+        "ye2024robotreid"
+      ],
+      "paperIds": [
+        "ref-rollo2023followme",
+        "ref-ye2024robotreid"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-e6cab3706af4",
+      "nodeId": "privacy",
+      "section": "VI",
+      "subtopic": "",
+      "line": 737,
+      "text": "Gait can support identification and linkage when facial detail is unavailable. Identity information can persist in silhouettes and compact embeddings. Relevant risks include unwanted identification, cross-release linkage, and sensitive-attribute inference; security additionally concerns impersonation, evasion, and tampering.",
+      "citationKeys": [
+        "shen2024comprehensive"
+      ],
+      "paperIds": [
+        "shen2024comprehensive-tbiom-2025"
+      ],
+      "basis": "Survey discussion"
+    },
+    {
+      "id": "e-90019d39b8a0",
+      "nodeId": "privacy",
+      "section": "VI",
+      "subtopic": "",
+      "line": 741,
+      "text": "Protection can act on videos, derived representations, templates, or access to outputs. Each protection claim should specify the released object, the adversary's access, and the downstream utility to be retained. Adversarial gait methods manipulate temporal or contour information, while GaitProtector uses diffusion-latent optimization for gait de-identification. GaitEditor explores a complementary route through semantic attribute editing in a GAN latent space, using stronger and repeated edits to reduce identity recognizability while retaining visually plausible walking sequences. Their protection depends on attacker access, transfer to unseen recognizers, and survival through compression and re-extraction. Evaluation can examine transfer to independent recognizers, adaptation to protected data, and linkage across repeated releases. For example, testing a new recognizer trained on protected outputs would ask whether identity information remains learnable, beyond whether protection transfers to an already trained model. Repeated-release tests should also examine whether observations that are individually difficult to identify become linkable when combined.",
+      "citationKeys": [
+        "he2023temporal",
+        "hou2025edge",
+        "duan2026gaitprotector",
+        "ma2024gaiteditor"
+      ],
+      "paperIds": [
+        "he2023temporal-pr-2023",
+        "hou2025edge-ijcv-2024",
+        "gaitprotector2026-arxiv-2026",
+        "ref-ma2024gaiteditor"
+      ],
+      "basis": "Survey discussion"
+    }
+  ],
+  "links": [
+    {
+      "paperId": "ref-chao2019gaitset",
+      "nodeId": "modalities",
+      "evidenceId": "e-f0a6cfbba426",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "fan2020gaitpart-cvpr-2020",
+      "nodeId": "modalities",
+      "evidenceId": "e-f0a6cfbba426",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "lin2021gait-iccv-2021",
+      "nodeId": "modalities",
+      "evidenceId": "e-f0a6cfbba426",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "liang2022gaitedge-eccv-2022",
+      "nodeId": "modalities",
+      "evidenceId": "e-f0a6cfbba426",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "okimura2024cropping-ijcb-2024",
+      "nodeId": "modalities",
+      "evidenceId": "e-f0a6cfbba426",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "fu2023gpgait-iccv-2023",
+      "nodeId": "modalities",
+      "evidenceId": "e-c15793c1af38",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "fan2024skegait-aaai-2024",
+      "nodeId": "modalities",
+      "evidenceId": "e-c15793c1af38",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "fan2025opengait-tpami-2025",
+      "nodeId": "modalities",
+      "evidenceId": "e-c15793c1af38",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "meng2025fastposegait-tpami-2025",
+      "nodeId": "modalities",
+      "evidenceId": "e-c15793c1af38",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "zheng2023parsing-acmmm-2023",
+      "nodeId": "modalities",
+      "evidenceId": "e-cd867994823b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "zheng2024takes-acmmm-2024",
+      "nodeId": "modalities",
+      "evidenceId": "e-cd867994823b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2023gaitparsing-tmm-2024",
+      "nodeId": "modalities",
+      "evidenceId": "e-cd867994823b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "zheng2026hypergait-cvpr-2026",
+      "nodeId": "modalities",
+      "evidenceId": "e-cd867994823b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "zheng2022gait-cvpr-2022",
+      "nodeId": "modalities",
+      "evidenceId": "e-cd867994823b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "xu2023occlusion-tifs-2023",
+      "nodeId": "modalities",
+      "evidenceId": "e-cd867994823b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "zhang2020learning-tpami-2022",
+      "nodeId": "modalities",
+      "evidenceId": "e-1d58a12dbc01",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ye2024biggait-cvpr-2024",
+      "nodeId": "modalities",
+      "evidenceId": "e-1d58a12dbc01",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-ye2025biggergait",
+      "nodeId": "modalities",
+      "evidenceId": "e-1d58a12dbc01",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2025gaitx-acmmm-2025",
+      "nodeId": "modalities",
+      "evidenceId": "e-1d58a12dbc01",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "castro2024attengait-pr-2024",
+      "nodeId": "modalities",
+      "evidenceId": "e-14b0f3c08b34",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "jin2025exploring-aaai-2025",
+      "nodeId": "modalities",
+      "evidenceId": "e-14b0f3c08b34",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "shen2023lidargait-cvpr-2023",
+      "nodeId": "modalities",
+      "evidenceId": "e-780145688acc",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "shen2025lidargait-cvpr-2025",
+      "nodeId": "modalities",
+      "evidenceId": "e-780145688acc",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2023pointgait-ijcb-2023",
+      "nodeId": "modalities",
+      "evidenceId": "e-780145688acc",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "xu2026ms2gait-cvpr-2026",
+      "nodeId": "modalities",
+      "evidenceId": "e-780145688acc",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-wang2019ev",
+      "nodeId": "modalities",
+      "evidenceId": "e-48d82bef520f",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "xu2026eventgait-cvpr-2026",
+      "nodeId": "modalities",
+      "evidenceId": "e-48d82bef520f",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2021event-tpami-2022",
+      "nodeId": "modalities",
+      "evidenceId": "e-48d82bef520f",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "chen2024egst-tifs-2024",
+      "nodeId": "modalities",
+      "evidenceId": "e-48d82bef520f",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "cui2023multi-cvpr-2023",
+      "nodeId": "modalities",
+      "evidenceId": "e-ab8a218e784b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "fan2024skegait-aaai-2024",
+      "nodeId": "modalities",
+      "evidenceId": "e-ab8a218e784b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "jin2025exploring-aaai-2025",
+      "nodeId": "modalities",
+      "evidenceId": "e-ab8a218e784b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "sun2024trigait-tbiom-2025",
+      "nodeId": "modalities",
+      "evidenceId": "e-ab8a218e784b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "guo2024camera-eccv-2024",
+      "nodeId": "modalities",
+      "evidenceId": "e-ab8a218e784b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "lu2026walking-aaai-2026",
+      "nodeId": "modalities",
+      "evidenceId": "e-ab8a218e784b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "lu2026textguided-cvpr-2026",
+      "nodeId": "modalities",
+      "evidenceId": "e-ab8a218e784b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2026mmgait-cvpr-2026",
+      "nodeId": "modalities",
+      "evidenceId": "e-ab8a218e784b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-chao2019gaitset",
+      "nodeId": "backbones",
+      "evidenceId": "e-1ad751688e96",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "fan2020gaitpart-cvpr-2020",
+      "nodeId": "backbones",
+      "evidenceId": "e-931bbdeaf5b7",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "lin2021gait-iccv-2021",
+      "nodeId": "backbones",
+      "evidenceId": "e-931bbdeaf5b7",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2023dygait-iccv-2023",
+      "nodeId": "backbones",
+      "evidenceId": "e-931bbdeaf5b7",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2023hierarchical-iccv-2023",
+      "nodeId": "backbones",
+      "evidenceId": "e-931bbdeaf5b7",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ma2023dynamic-cvpr-2023",
+      "nodeId": "backbones",
+      "evidenceId": "e-931bbdeaf5b7",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "zheng2022mtsgait-acmmm-2022",
+      "nodeId": "backbones",
+      "evidenceId": "e-931bbdeaf5b7",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2024qagait-aaai-2024",
+      "nodeId": "backbones",
+      "evidenceId": "e-931bbdeaf5b7",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "fan2023opengait-cvpr-2023",
+      "nodeId": "backbones",
+      "evidenceId": "e-109aae104424",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "fan2025opengait-tpami-2025",
+      "nodeId": "backbones",
+      "evidenceId": "e-109aae104424",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "guo2025gait-tpami-2025",
+      "nodeId": "backbones",
+      "evidenceId": "e-109aae104424",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "fu2023gpgait-iccv-2023",
+      "nodeId": "backbones",
+      "evidenceId": "e-fbd324f14a68",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "liu2022symmetry-pr-2022",
+      "nodeId": "backbones",
+      "evidenceId": "e-fbd324f14a68",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "huang2023condition-tip-2023",
+      "nodeId": "backbones",
+      "evidenceId": "e-fbd324f14a68",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "zhang2020learning-tpami-2022",
+      "nodeId": "backbones",
+      "evidenceId": "e-8d9e650e3ea6",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-fan2023exploring",
+      "nodeId": "backbones",
+      "evidenceId": "e-8d9e650e3ea6",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "hou2026gat-aaai-2026",
+      "nodeId": "backbones",
+      "evidenceId": "e-8d9e650e3ea6",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "huang2026gaitmax-cvpr-2026",
+      "nodeId": "backbones",
+      "evidenceId": "e-04e2699dcb82",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "fan2023opengait-cvpr-2023",
+      "nodeId": "learning",
+      "evidenceId": "e-e7100eb9ccb9",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "han2022unified-pr-2022",
+      "nodeId": "learning",
+      "evidenceId": "e-e7100eb9ccb9",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "zhang2020learning-tpami-2022",
+      "nodeId": "learning",
+      "evidenceId": "e-5c3c15350a72",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "yao2022improving-tcsvt-2023",
+      "nodeId": "learning",
+      "evidenceId": "e-5c3c15350a72",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "dou2023gaitgci-cvpr-2023",
+      "nodeId": "learning",
+      "evidenceId": "e-5c3c15350a72",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2025gaitc-tcsvt-2025",
+      "nodeId": "learning",
+      "evidenceId": "e-5c3c15350a72",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "xiong2024causality-eccv-2024",
+      "nodeId": "learning",
+      "evidenceId": "e-5c3c15350a72",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ren2025unsupervised-tbiom-2025",
+      "nodeId": "learning",
+      "evidenceId": "e-0d69e2abefd9",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "yang2025multimodal-tifs-2025",
+      "nodeId": "learning",
+      "evidenceId": "e-0d69e2abefd9",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "fan2023learning-tpami-2023",
+      "nodeId": "learning",
+      "evidenceId": "e-0d69e2abefd9",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ma2023fine-iccv-2023",
+      "nodeId": "learning",
+      "evidenceId": "e-faa8fd2be166",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2023progressive-tifs-2023",
+      "nodeId": "learning",
+      "evidenceId": "e-faa8fd2be166",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "hou2024adaptive-tifs-2024",
+      "nodeId": "learning",
+      "evidenceId": "e-faa8fd2be166",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ye2024biggait-cvpr-2024",
+      "nodeId": "learning",
+      "evidenceId": "e-6dc326d1eb80",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-ye2025biggergait",
+      "nodeId": "learning",
+      "evidenceId": "e-6dc326d1eb80",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "yang2025bridging-cvpr-2025",
+      "nodeId": "learning",
+      "evidenceId": "e-6dc326d1eb80",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "huang2026gaitmax-cvpr-2026",
+      "nodeId": "learning",
+      "evidenceId": "e-6dc326d1eb80",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wu2026lmgait-aaai-2026",
+      "nodeId": "learning",
+      "evidenceId": "e-6dc326d1eb80",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "lu2026textguided-cvpr-2026",
+      "nodeId": "learning",
+      "evidenceId": "e-6dc326d1eb80",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ye2026foundationgait-eccv-2026",
+      "nodeId": "learning",
+      "evidenceId": "e-ede9a497a70a",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "cosma2026scaling-aaai-2026",
+      "nodeId": "learning",
+      "evidenceId": "e-ede9a497a70a",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "jin2025denoising-cvpr-2025",
+      "nodeId": "learning",
+      "evidenceId": "e-56f19b9f6cbd",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "xiong2026cod2-aaai-2026",
+      "nodeId": "learning",
+      "evidenceId": "e-56f19b9f6cbd",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "cai2026barbiegait-cvpr-2026",
+      "nodeId": "learning",
+      "evidenceId": "e-56f19b9f6cbd",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "cai2026barbiegait-cvpr-2026",
+      "nodeId": "learning",
+      "evidenceId": "e-b27ff9c9811c",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "huang2024occluded-eccv-2024",
+      "nodeId": "robustness",
+      "evidenceId": "e-86bba3880b0e",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "xu2023occlusion-tifs-2023",
+      "nodeId": "robustness",
+      "evidenceId": "e-86bba3880b0e",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "gupta2025mimicgait-wacv-2025",
+      "nodeId": "robustness",
+      "evidenceId": "e-86bba3880b0e",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "dou2023gaitgci-cvpr-2023",
+      "nodeId": "robustness",
+      "evidenceId": "e-d3c1c7bb992a",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2025gaitc-tcsvt-2025",
+      "nodeId": "robustness",
+      "evidenceId": "e-d3c1c7bb992a",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "cai2026barbiegait-cvpr-2026",
+      "nodeId": "robustness",
+      "evidenceId": "e-d3c1c7bb992a",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "yao2022improving-tcsvt-2023",
+      "nodeId": "robustness",
+      "evidenceId": "e-d3c1c7bb992a",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "hou2024cloth-tcsvt-2024",
+      "nodeId": "robustness",
+      "evidenceId": "e-d3c1c7bb992a",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "li2023depth-cvpr-2023",
+      "nodeId": "robustness",
+      "evidenceId": "e-d3c1c7bb992a",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "fan2020gaitpart-cvpr-2020",
+      "nodeId": "robustness",
+      "evidenceId": "e-3d048531eae9",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2023dygait-iccv-2023",
+      "nodeId": "robustness",
+      "evidenceId": "e-3d048531eae9",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "zheng2024takes-acmmm-2024",
+      "nodeId": "robustness",
+      "evidenceId": "e-3d048531eae9",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "fan2024skegait-aaai-2024",
+      "nodeId": "robustness",
+      "evidenceId": "e-3d048531eae9",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "zou2024cross-aaai-2024",
+      "nodeId": "robustness",
+      "evidenceId": "e-3d048531eae9",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "zhang2021cross-cvpr-2021",
+      "nodeId": "robustness",
+      "evidenceId": "e-b4c5b76883e3",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "chai2022lagrange-cvpr-2022",
+      "nodeId": "robustness",
+      "evidenceId": "e-b4c5b76883e3",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "fu2023gpgait-iccv-2023",
+      "nodeId": "robustness",
+      "evidenceId": "e-b4c5b76883e3",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "shen2023lidargait-cvpr-2023",
+      "nodeId": "robustness",
+      "evidenceId": "e-b4c5b76883e3",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "li2024aerialgait-acmmm-2024",
+      "nodeId": "robustness",
+      "evidenceId": "e-b4c5b76883e3",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "liang2022gaitedge-eccv-2022",
+      "nodeId": "robustness",
+      "evidenceId": "e-99b92076ffb0",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "hou2022gait-tnnls-2023",
+      "nodeId": "robustness",
+      "evidenceId": "e-99b92076ffb0",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2024qagait-aaai-2024",
+      "nodeId": "robustness",
+      "evidenceId": "e-99b92076ffb0",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "peng2025rsanet-pr-2025",
+      "nodeId": "robustness",
+      "evidenceId": "e-99b92076ffb0",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "sayera2026robustgait-wacv-2026",
+      "nodeId": "robustness",
+      "evidenceId": "e-99b92076ffb0",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "shen2025lidargait-cvpr-2025",
+      "nodeId": "robustness",
+      "evidenceId": "e-99b92076ffb0",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "xu2026eventgait-cvpr-2026",
+      "nodeId": "robustness",
+      "evidenceId": "e-99b92076ffb0",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "han2022unified-pr-2022",
+      "nodeId": "metrics",
+      "evidenceId": "e-ab5f344dcb89",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "yu2022generalized-acmmm-2022",
+      "nodeId": "metrics",
+      "evidenceId": "e-ab5f344dcb89",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "dou2022gaitmpl-tip-2024",
+      "nodeId": "metrics",
+      "evidenceId": "e-ab5f344dcb89",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2025waveloss-aaai-2025",
+      "nodeId": "metrics",
+      "evidenceId": "e-ab5f344dcb89",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wu2020condition-tip-2021",
+      "nodeId": "metrics",
+      "evidenceId": "e-d2d3ce861bac",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "hou2024cloth-tcsvt-2024",
+      "nodeId": "metrics",
+      "evidenceId": "e-d2d3ce861bac",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2025gaitc-tcsvt-2025",
+      "nodeId": "metrics",
+      "evidenceId": "e-d2d3ce861bac",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "huang2026gaitmax-cvpr-2026",
+      "nodeId": "metrics",
+      "evidenceId": "e-d2d3ce861bac",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "habib2025cargait-iccv-2025",
+      "nodeId": "metrics",
+      "evidenceId": "e-1a5e58daad30",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-su2026localscore",
+      "nodeId": "metrics",
+      "evidenceId": "e-1a5e58daad30",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-su2024open",
+      "nodeId": "metrics",
+      "evidenceId": "e-2e1c1071f9e9",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "huang2026gaitmax-cvpr-2026",
+      "nodeId": "metrics",
+      "evidenceId": "e-9e8ddcb8dab1",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "zou2024cross-aaai-2024",
+      "nodeId": "coverage",
+      "evidenceId": "e-5cb037cf6267",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "guo2025gait-tpami-2025",
+      "nodeId": "coverage",
+      "evidenceId": "e-5cb037cf6267",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2025ra-aaai-2025",
+      "nodeId": "coverage",
+      "evidenceId": "e-5cb037cf6267",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "huang2026gaitmax-cvpr-2026",
+      "nodeId": "coverage",
+      "evidenceId": "e-5cb037cf6267",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2025gaitc-tcsvt-2025",
+      "nodeId": "coverage",
+      "evidenceId": "e-a8770d76d3da",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "wang2026mmgait-cvpr-2026",
+      "nodeId": "missing-inputs",
+      "evidenceId": "e-ff7a7b8d342b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "lu2026walking-aaai-2026",
+      "nodeId": "missing-inputs",
+      "evidenceId": "e-ff7a7b8d342b",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-liu2025person",
+      "nodeId": "whole-body",
+      "evidenceId": "e-6f43eafc29d1",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-huang2025vills",
+      "nodeId": "whole-body",
+      "evidenceId": "e-6f43eafc29d1",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-kim2025sapiensid",
+      "nodeId": "whole-body",
+      "evidenceId": "e-6f43eafc29d1",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-zhu2025qme",
+      "nodeId": "whole-body",
+      "evidenceId": "e-6f43eafc29d1",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "huang2024occluded-eccv-2024",
+      "nodeId": "compound-noise",
+      "evidenceId": "e-77c5d473879e",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "sayera2026robustgait-wacv-2026",
+      "nodeId": "compound-noise",
+      "evidenceId": "e-77c5d473879e",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "freire2026multiyear-pr-2026",
+      "nodeId": "generalization",
+      "evidenceId": "e-01036b7693a0",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-su2024open",
+      "nodeId": "open-set",
+      "evidenceId": "e-39864579113d",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "cai2026barbiegait-cvpr-2026",
+      "nodeId": "foundation",
+      "evidenceId": "e-4e6f9cd616ef",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "jin2025denoising-cvpr-2025",
+      "nodeId": "foundation",
+      "evidenceId": "e-4e6f9cd616ef",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "xiong2026cod2-aaai-2026",
+      "nodeId": "foundation",
+      "evidenceId": "e-4e6f9cd616ef",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-ye2025biggergait",
+      "nodeId": "foundation",
+      "evidenceId": "e-7abb81c8e6f2",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "huang2026gaitmax-cvpr-2026",
+      "nodeId": "foundation",
+      "evidenceId": "e-7abb81c8e6f2",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ye2026foundationgait-eccv-2026",
+      "nodeId": "foundation",
+      "evidenceId": "e-a242163c99b0",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "cosma2026scaling-aaai-2026",
+      "nodeId": "foundation",
+      "evidenceId": "e-a242163c99b0",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-li2024finerehab",
+      "nodeId": "healthcare",
+      "evidenceId": "e-719fa257b421",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-zhou2024gait",
+      "nodeId": "healthcare",
+      "evidenceId": "e-719fa257b421",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "vishwakarma2026scoligaitx-wacv-2026",
+      "nodeId": "healthcare",
+      "evidenceId": "e-719fa257b421",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "gabet2026health-arxiv-2026",
+      "nodeId": "healthcare",
+      "evidenceId": "e-719fa257b421",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "adeli2026gaitgen-wacv-2026",
+      "nodeId": "healthcare",
+      "evidenceId": "e-7a4119b0a1f5",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-rollo2023followme",
+      "nodeId": "robotics",
+      "evidenceId": "e-144980930d91",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-ye2024robotreid",
+      "nodeId": "robotics",
+      "evidenceId": "e-144980930d91",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "shen2024comprehensive-tbiom-2025",
+      "nodeId": "privacy",
+      "evidenceId": "e-e6cab3706af4",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "he2023temporal-pr-2023",
+      "nodeId": "privacy",
+      "evidenceId": "e-90019d39b8a0",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "hou2025edge-ijcv-2024",
+      "nodeId": "privacy",
+      "evidenceId": "e-90019d39b8a0",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "gaitprotector2026-arxiv-2026",
+      "nodeId": "privacy",
+      "evidenceId": "e-90019d39b8a0",
+      "basis": "Survey discussion"
+    },
+    {
+      "paperId": "ref-ma2024gaiteditor",
+      "nodeId": "privacy",
+      "evidenceId": "e-90019d39b8a0",
+      "basis": "Survey discussion"
+    }
+  ],
+  "aliases": {
+    "guo2024clgait": "guo2024camera",
+    "guo2025sposgait": "guo2025gait",
+    "yu2022interclass": "yu2022generalized"
+  }
+}

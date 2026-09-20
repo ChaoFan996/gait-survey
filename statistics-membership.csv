@@ -1,0 +1,161 @@
+paperId,citationKey,year,venue,title,datasets,modalities,archiveRow
+dong2024hybridgait-aaai-2024,dong2024hybridgait,2024,AAAI,HybridGait: A benchmark for spatial-temporal cloth-changing gait recognition with hybrid explorations,CCGait; Gait3D,SMPL / mesh; Silhouette,2
+fan2024skegait-aaai-2024,fan2024skegait,2024,AAAI,Skeletongait: Gait recognition using skeleton maps,CCPG; GREW; Gait3D; OU-MVLP; SUSTech1K,Silhouette; Skeleton,3
+wang2024qagait-aaai-2024,wang2024qagait,2024,AAAI,Qagait: Revisit gait recognition from a quality perspective,CASIA-B; GREW; Gait3D,Silhouette,4
+zou2024cross-aaai-2024,zou2024cross,2024,AAAI,Cross-covariate gait recognition: A benchmark,CCGR,Parsing,5
+jin2025exploring-aaai-2025,jin2025exploring,2025,AAAI,Exploring more from multiple gait modalities for human identification,CCPG; GREW; Gait3D; SUSTech1K,Optical flow; Parsing; Silhouette,6
+wang2025ra-aaai-2025,wang2025ra,2025,AAAI,RA-GAR: A Richly Annotated Benchmark for Gait Attribute Recognition,RA-GAR,Silhouette,7
+wang2025waveloss-aaai-2025,wang2025waveloss,2025,AAAI,WaveLoss: An Adaptive Dynamic Loss for Deep Gait Recognition,CASIA-B; Gait3D; OU-MVLP,Silhouette,8
+li2020end-accv-2020,li2020end,2020,ACCV,End-to-end model-based gait recognition,CASIA-B; OU-MVLP,RGB,10
+wang2022gaitstrip-accv-2022,wang2022gaitstrip,2022,ACCV,Gaitstrip: Gait recognition via effective strip-based feature representations and multi-level framework,CASIA-B; OU-MVLP,Silhouette,11
+thapar2024gaitw-accv-2024,thapar2024gaitw,2024,ACCV,GaitW: Enhancing Gait Recognition in the Wild Using Dynamic Information,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette,12
+lin2021gaitmask-bmvc-2021,lin2021gaitmask,2021,BMVC,GaitMask: Mask-based Model for Gait Recognition.,CASIA-B; OU-MVLP,Silhouette,14
+fan2020gaitpart-cvpr-2020,fan2020gaitpart,2020,CVPR,Gaitpart: Temporal part-based model for gait recognition,CASIA-B; OU-MVLP,Silhouette,16
+li2020gait-cvpr-2020,li2020gait,2020,CVPR,Gait Recognition via Semi-supervised Disentangled Representation Learning to Identity and Covariate Features,CASIA-B; OU-LP-Bag,Silhouette,17
+zhang2021cross-cvpr-2021,zhang2021cross,2021,CVPR,Cross-view gait recognition with deep universal linear embeddings,OU-MVLP,Silhouette,18
+chai2022lagrange-cvpr-2022,chai2022lagrange,2022,CVPR,Lagrange motion analysis and view embeddings for improved gait recognition,CASIA-B; OU-MVLP,Silhouette,19
+zheng2022gait-cvpr-2022,zheng2022gait,2022,CVPR,Gait recognition in the wild with dense 3d representations and a benchmark,Gait3D,SMPL / mesh; Silhouette,20
+cui2023multi-cvpr-2023,cui2023multi,2023,CVPR,Multi-modal gait recognition via effective spatial-temporal feature fusion,CASIA-B; OU-MVLP,Silhouette; Skeleton,21
+dou2023gaitgci-cvpr-2023,dou2023gaitgci,2023,CVPR,Gaitgci: Generative counterfactual intervention for gait recognition,CASIA-B; Gait3D; OU-MVLP,Silhouette,22
+fan2023opengait-cvpr-2023,fan2023opengait,2023,CVPR,Opengait: Revisiting gait recognition towards better practicality,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette,23
+li2023depth-cvpr-2023,li2023depth,2023,CVPR,An in-depth exploration of person re-identification and gait recognition in cloth-changing conditions,CCPG,Silhouette,24
+ma2023dynamic-cvpr-2023,ma2023dynamic,2023,CVPR,Dynamic aggregated network for gait recognition,CASIA-B; Gait3D; OU-MVLP,Silhouette,25
+shen2023lidargait-cvpr-2023,shen2023lidargait,2023,CVPR,Lidargait: Benchmarking 3d gait recognition with point clouds,SUSTech1K,Point cloud,26
+ma2024learning-cvpr-2024,ma2024learning,2024,CVPR,Learning visual prompt for gait recognition,CASIA-B; Gait3D; OU-MVLP,Silhouette,27
+ye2024biggait-cvpr-2024,ye2024biggait,2024,CVPR,Biggait: Learning gait representation you want by large vision models,CASIA-B; CCPG; SUSTech1K,RGB,28
+jin2025denoising-cvpr-2025,jin2025denoising,2025,CVPR,On Denoising Walking Videos for Gait Recognition,CASIA-B; CCPG; SUSTech1K,RGB; Silhouette,29
+shen2025lidargait-cvpr-2025,shen2025lidargait++,2025,CVPR,LidarGait++: Learning Local Features and Size Awareness from LiDAR Point Clouds for 3D Gait Recognition,FreeGait; SUSTech1K,Point cloud,30
+yang2025bridging-cvpr-2025,yang2025bridging,2025,CVPR,Bridging gait recognition and large language models sequence modeling,CCPG; GREW; Gait3D; SUSTech1K,Silhouette,31
+hou2020gait-eccv-2020,hou2020gait,2020,ECCV,Gait lateral network: Learning discriminative and compact representations for gait recognition,CASIA-B; OU-MVLP,Silhouette,33
+xu2020gait-eccv-2020,xu2020gait,2020,ECCV,Gait recognition from a single image using a phase-aware gait cycle reconstruction network,CASIA-B; OU-MVLP,Silhouette,34
+liang2022gaitedge-eccv-2022,liang2022gaitedge,2022,ECCV,Gaitedge: Beyond plain end-to-end gait recognition for better practicality,CASIA-B; TTG-200,RGB; Silhouette,35
+dou2022metagait-eccv-2022,dou2022metagait,2022,ECCV,Metagait: Learning to learn an omni sample adaptive representation for gait recognition,CASIA-B; OU-MVLP,Silhouette,36
+xiong2024causality-eccv-2024,xiong2024causality,2024,ECCV,Causality-inspired discriminative feature learning in triple domains for gait recognition,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette,37
+huang2024occluded-eccv-2024,huang2024occluded,2024,ECCV,Occluded gait recognition with mixture of experts: an action detection perspective,GREW; Gait3D; OccCASIA-B; OccGait,Silhouette,38
+fu2024cut-eccv-2024,fu2024cut,2024,ECCV,Cut out the middleman: Revisiting pose-based gait recognition,CASIA-B; CCPG; SUSTech1K,RGB,39
+guo2024camera-eccv-2024,guo2024camera,2024,ECCV,Camera-lidar cross-modality gait recognition,HITSZ-VCM; LIP; SUSTech1K,Point cloud; Silhouette,40
+wang2024free-eccv-2024,wang2024free,2024,ECCV,Free lunch for gait recognition: A novel relation descriptor,CASIA-B; CCPG; GREW; Gait3D; OU-MVLP,Silhouette,41
+huang20213d-iccv-2021,huang20213d,2021,ICCV,3d local convolutional neural networks for gait recognition,CASIA-B; OU-MVLP,Silhouette,43
+huang2021context-iccv-2021,huang2021context,2021,ICCV,Context-sensitive temporal feature learning for gait recognition,CASIA-B; OU-MVLP,Silhouette,44
+lin2021gait-iccv-2021,lin2021gait,2021,ICCV,Gait recognition via effective global-local feature representation and local temporal aggregation,CASIA-B; OU-MVLP,Silhouette,45
+zhu2021gait-iccv-2021,zhu2021gait,2021,ICCV,Gait recognition in the wild: A benchmark,GREW,Optical flow; Pose; Silhouette,46
+fu2023gpgait-iccv-2023,fu2023gpgait,2023,ICCV,Gpgait: Generalized pose-based gait recognition,CASIA-B; GREW; Gait3D; OU-MVLP,Skeleton,47
+guo2023physics-iccv-2023,guo2023physics,2023,ICCV,Physics-augmented autoencoder for 3d skeleton-based gait recognition,GREW; Gait3D; KinectGait,Skeleton,48
+ma2023fine-iccv-2023,ma2023fine,2023,ICCV,Fine-grained unsupervised domain adaptation for gait recognition,CASIA-B; GREW; OU-MVLP,Silhouette,49
+wang2023dygait-iccv-2023,wang2023dygait,2023,ICCV,DyGait: Exploiting Dynamic Representations for High-performance Gait Recognition,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette,50
+wang2023hierarchical-iccv-2023,wang2023hierarchical,2023,ICCV,Hierarchical spatio-temporal representation learning for gait recognition,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette,51
+habib2025cargait-iccv-2025,habib2025cargait,2025,ICCV,CarGait: Cross-Attention based Re-ranking for Gait recognition,GREW; Gait3D; OU-MVLP,Silhouette,52
+huang2025origins-iccv-2025,huang2025origins,2025,ICCV,Learning A Unified Template for Gait Recognition,CASIA-B; CCGR-MINI; CCPG; GREW; Gait3D; SUSTech1K,Silhouette,53
+mu2021resgait-ijcb-2021,mu2021resgait,2021,IJCB,ReSGait: The real-scene gait dataset,ReSGait,Pose; Silhouette,55
+gupta2025mind-ijcb-2025,gupta2025mind,2025,IJCB,Mind the Gap Bridging Occlusion in Gait Recognition via Residual Gap Correction,BRIAR; GREW; Gait3D,Silhouette,57
+tian2025qgait-ijcb-2025,tian2025qgait,2025,IJCB,QGait Toward Accurate Quantization for Gait Recognition,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette,58
+zhou2025tdgait-ijcb-2025,Zhou2025TDGait,2025,IJCB,TDGait Modeling Temporal Dynamics for Gait Recognition,GREW; Gait3D; SUSTech1K,Silhouette,59
+li2025cvvnet-ijcb-2025,Li2025CVVNet,2025,IJCB,CVVNet A Cross-Vertical-View Network for Gait Recognition,DroneGait; Gait3D,Silhouette,60
+cao2025dyuda-ijcb-2025,Cao2025DyUDA,2025,IJCB,Learning Dynamic Gait Regions Adaptive Part Weighting UDA for Cross-domain Gait Recognition,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette,61
+lu2025csca-ijcb-2025,Lu2025CSCA,2025,IJCB,Collaborative Spatial and Channel Attention for Structural Vibration-based Gait Recognition,VIBEID,Silhouette,62
+zhou2025cgtgait-ijcb-2025,Zhou2025CGTGait,2025,IJCB,CGTGait Collaborative Graph and Transformer for Gait Emotion Recognition,ELMD; EMOGAIT,Silhouette,63
+zou2024multi-ijcb-2023,zou2024multi,2023,IJCB,A Multi-Stage Adaptive Feature Fusion Neural Network for Multimodal Gait Recognition,CASIA-B; GREW; Gait3D,Silhouette; Skeleton,65
+zhu2023gaitref-ijcb-2023,zhu2023gaitref,2023,IJCB,Gaitref: Gait recognition with refined sequential skeletons,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette; Skeleton,66
+wang2023pointgait-ijcb-2023,wang2023pointgait,2023,IJCB,Pointgait: Boosting end-to-end 3d gait recognition with point clouds via spatiotemporal modeling,SUSTech1K,Point cloud,67
+guo2024distillation-ijcb-2024,guo2024distillation,2024,IJCB,Distillation-guided representation learning for unconstrained gait recognition,BRIAR; CASIA-B; Gait3D,RGB; Silhouette,68
+okimura2024cropping-ijcb-2024,okimura2024cropping,2024,IJCB,On Cropping for Gait Recognition: Does Constant-velocity Locomotion Assumption Improve Gait Recognition Accuracy?,OU-MVLP,RGB; SMPL / mesh; Silhouette,69
+lin2020gait-acmmm-2020,lin2020gait,2020,ACM MM,Gait recognition with multiple-temporal-scale 3d convolutional neural network,CASIA-B; OU-LP,Silhouette,71
+zheng2022mtsgait-acmmm-2022,zheng2022mtsgait,2022,ACM MM,Gait recognition in the wild with multi-hop temporal switch,GREW; Gait3D,Silhouette,72
+yu2022generalized-acmmm-2022,yu2022generalized,2022,ACM MM,Generalized inter-class loss for gait recognition,CASIA-B; OU-MVLP,Silhouette,73
+xiang2022multi-acmmm-2022,xiang2022multi,2022,ACM MM,Multi-view gait video synthesis,CASIA-B,RGB; Silhouette,74
+zheng2023parsing-acmmm-2023,zheng2023parsing,2023,ACM MM,Parsing is all you need for accurate gait recognition in the wild,Gait3D,Parsing; Silhouette,75
+wang2023landmarkgait-acmmm-2023,wang2023landmarkgait,2023,ACM MM,LandmarkGait: intrinsic human parsing for gait recognition,CASIA-B; CCPG; CCVID; FVG,Silhouette,76
+wang2023causal-acmmm-2023,wang2023causal,2023,ACM MM,Causal intervention for sparse-view gait recognition,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette,77
+li2024aerialgait-acmmm-2024,li2024aerialgait,2024,ACM MM,AerialGait: Bridging aerial and ground views for gait recognition,AerialGait; DroneGait,Silhouette,78
+peng2024glgait-acmmm-2024,peng2024glgait,2024,ACM MM,Glgait: a global-local temporal receptive field network for gait recognition in the wild,GREW; Gait3D,Silhouette,79
+zheng2024takes-acmmm-2024,zheng2024takes,2024,ACM MM,It takes two: Accurate gait recognition in the wild via cross-granularity alignment,CCPG; Gait3D,Parsing; Silhouette,80
+han2024gait-acmmm-2024,han2024gait,2024,ACM MM,Gait recognition in large-scale free environment via single lidar,FreeGait; SUSTech1K,Point cloud,81
+lang2025dpgait-acmmm-2025,lang2025dpgait,2025,ACM MM,Beyond Sparse Keypoints: Dense Pose Modeling for Robust Gait Recognition,CASIA-B; CCPG; SUSTech1K,Skeleton,82
+wang2025gaitx-acmmm-2025,wang2025gaitx,2025,ICCV,Gait-X: Exploring X modality for Generalized Gait Recognition,CASIA-B; CCPG; SUSTech1K,RGB,83
+meng2025mirrorgait-acmmm-2025,meng2025mirrorgait,2025,ACM MM,Seeing from Magic Mirror: Contrastive Learning from Reconstruction for Pose-based Gait Recognition,GREW; Gait3D; OU-MVLP; StreamGait,Skeleton,84
+zhu2023gait-wacv-2023,zhu2023gait,2023,WACV,Gait recognition using 3-d human body shape inference,CASIA-B; OU-MVLP,Silhouette,86
+gupta2024you-wacv-2024,gupta2024you,2024,WACV,You can run but not hide: Improving gait recognition with intrinsic occlusion type awareness,BRIAR; GREW,Silhouette,87
+habib2024watch-wacv-2024,habib2024watch,2024,WACV,Watch where you head: A view-biased domain gap in gait recognition and unsupervised adaptation,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette,88
+guo2025gaitcontour-wacv-2025,guo2025gaitcontour,2025,WACV,GaitContour: Efficient Gait Recognition Based on a Contour-Pose Representation,BRIAR; CCPG; GREW; Gait3D; OU-MVLP; SUSTech1K,Silhouette,89
+gupta2025mimicgait-wacv-2025,gupta2025mimicgait,2025,WACV,MimicGait: A Model Agnostic approach for Occluded Gait Recognition Using Correlational Knowledge Distillation,BRIAR; GREW; Gait3D,Silhouette,90
+wang2025vm-wacv-2025,wang2025vm,2025,WACV,VM-Gait: Multi-Modal 3D Representation Based on Virtual Marker for Gait Recognition,BRIAR; Gait3D; OU-MVLP,SMPL / mesh; Silhouette,91
+zhang2025gaitcloud-wacv-2025,zhang2025gaitcloud,2025,WACV,Gaitcloud: Leveraging Spatial-Temporal Information for Lidar-Base Gait Recognition With a True-3D Gait Representation,SUSTech1K,Point cloud,92
+hou2025edge-ijcv-2024,hou2025edge,2025,IJCV,Edge-oriented adversarial attack for deep gait recognition,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette,94
+liao2020model-pr-2020,liao2020model,2020,PR,A model-based gait recognition method with body pose and human prior knowledge,CASIA-B; CASIA-E,Skeleton,96
+li2020gait-pr-2020,li2020gait,2020,PR,Gait Recognition Invariant to Carried Objects Using Alpha Blending Generative Adversarial Networks,CASIA-B; OU-MVLP,Silhouette,97
+sheng2021multi-pr-2021,sheng2021multi,2021,PR,Multi-task learning for gait-based identity recognition and emotion recognition using attention enhanced temporal graph convolutional network,EMOGAIT; TUM GAID,Skeleton,98
+han2022unified-pr-2022,han2022unified,2022,PR,A unified perspective of classification-based loss and distance-based loss for cross-view gait recognition,CASIA-B; TUM GAID,Silhouette,99
+li2022gaitslice-pr-2022,li2022gaitslice,2022,PR,GaitSlice: A Gait Recognition Model Based on Spatio-temporal Slice Features,CASIA-B; OU-MVLP,Silhouette,100
+liu2022symmetry-pr-2022,liu2022symmetry,2022,PR,Symmetry-driven hyper feature GCN for skeleton-based gait recognition,CASIA-B; OU-MVLP,Skeleton,101
+he2023temporal-pr-2023,he2023temporal,2023,PR,Temporal sparse adversarial attack on sequence-based gait recognition,CASIA-A; CASIA-B,Silhouette,103
+castro2024attengait-pr-2024,castro2024attengait,2024,PR,AttenGait: Gait recognition with attention and rich modalities,CASIA-B; GREW,Optical flow; RGB; Silhouette,104
+chen2024gait-pr-2024,chen2024gait,2024,PR,Gait Feature Learning via Spatio-temporal Two-branch Networks,CASIA-B; OU-MVLP,Silhouette,106
+yin2024msa-pr-2024,yin2024msa,2024,PR,MSA-GCN: Multiscale Adaptive Graph Convolution Network for Gait Emotion Recognition,EMOGAIT,Skeleton,107
+peng2025rsanet-pr-2025,peng2025rsanet,2025,PR,RSANet: Relative-sequence quality assessment network for gait recognition in the wild,BUAA-Duke-Gait; GREW; Gait3D,Silhouette,109
+an2020performance-tbiom-2020,an2020performance,2020,TBIOM,Performance evaluation of model-based gait on multi-view very large population database with pose sequences,OU-MVLP,Skeleton,117
+hou2021set-tbiom-2021,hou2021set,2021,TBIOM,Set Residual Network for Silhouette-Based Gait Recognition,CASIA-B; OU-MVLP,Silhouette,118
+sepas2020view-tbiom-2021,sepas2020view,2021,TBIOM,View-Invariant Gait Recognition With Attentive Recurrent Learning of Partial Representations,CASIA-B; OU-MVLP,Silhouette,119
+chen2022gait-tbiom-2022,chen2022gait,2022,TBIOM,Gait Pyramid Attention Network Toward Silhouette Semantic Relation Learning for Gait Recognition,CASIA-B; OU-MVLP,Silhouette,120
+li2022multi-tbiom-2022,li2022multi,2022,TBIOM,Multi-View Large Population Gait Database With Human Meshes and Its Performance Evaluation,OU-MVLP,RGB; Silhouette,121
+hou2022comprehensive-tbiom-2023,hou2022comprehensive,2023,TBIOM,A Comprehensive Study on the Evaluation of Silhouette-Based Gait Recognition,CASIA-B; MHG; OU-MVLP,Silhouette,122
+wang2023gait-tbiom-2023,wang2023gait,2023,TBIOM,Gait Recognition via Gait Period Set,CASIA-B; OU-MVLP,Silhouette,123
+huang2022star-tbiom-2023,huang2022star,2023,TBIOM,STAR Spatio-Temporal Augmented Relation Network for Gait Recognition,CASIA-B; OU-MVLP,Silhouette,124
+zou2024multi-tbiom-2024,zou2024multi,2024,TBIOM,A multi-stage adaptive feature fusion neural network for multimodal gait recognition,CASIA-B; GREW; Gait3D,Silhouette; Skeleton,125
+thejaswin2024exploring-tbiom-2024,thejaswin2024exploring,2024,TBIOM,Exploring Fusion Techniques and Explainable AI on Adapt-FuseNet Context-Adaptive Fusion of Face and Gait for Person Identification,CASIA-A; CASIA-B,RGB,126
+zheng2024gaitstr-tbiom-2024,zheng2024gaitstr,2024,TBIOM,GaitSTR Gait Recognition With Sequential Two-Stream Refinement,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette; Skeleton,127
+shen2024comprehensive-tbiom-2025,shen2024comprehensive,2025,TBIOM,"A comprehensive survey on deep gait recognition: Algorithms, datasets, and challenges",CASIA-B; GREW; Gait3D; OU-MVLP,,128
+liao2024denseposegait-tbiom-2025,liao2024denseposegait,2025,TBIOM,DensePoseGait Dense Human Pose Part-Guided for Gait Recognition,CASIA-B; GREW; Gait3D; OU-MVLP,DensePose,129
+sun2024trigait-tbiom-2025,sun2024trigait,2024,TBIOM,TriGait: Hybrid Fusion Strategy for Multimodal Alignment and Integration in Gait Recognition,CASIA-B; Gait3D; OU-MVLP,Silhouette; Skeleton,130
+ren2025unsupervised-tbiom-2025,ren2025unsupervised,2025,TBIOM,Unsupervised gait recognition with selective fusion,CASIA-BN; GREW; Outdoor-Gait,Silhouette,131
+guo2025distillation-tbiom-2025,guo2025distillation,2025,TBIOM,Distillation-Guided Representation Learning for Unconstrained Video Human Authentication,CASIA-B; CCPG; Gait3D,RGB; Silhouette; Skeleton,132
+ben2019coupled-tcsvt-2020,ben2019coupled,2020,TCSVT,Coupled Bilinear Discriminant Projection for Cross-View Gait Recognition,CASIA-B; OU-LP,Silhouette,134
+xu2020cross-tcsvt-2021,xu2020cross,2021,TCSVT,Cross-View Gait Recognition Using Pairwise Spatial Transformer Networks,CASIA-B; OU-LP; OU-MVLP,Silhouette,135
+yao2021collaborative-tcsvt-2022,yao2021collaborative,2022,TCSVT,Collaborative Feature Learning for Gait Recognition Under Cloth Changes,CASIA-B,RGB; Silhouette; Skeleton,136
+huang2022enhanced-tcsvt-2022,huang2022enhanced,2022,TCSVT,Enhanced Spatial-Temporal Salience for Cross-View Gait Recognition,CASIA-B; OU-LP; OU-MVLP,Silhouette,137
+qin2021rpnet-tcsvt-2022,qin2021rpnet,2022,TCSVT,RPNet Gait Recognition With Relationships Between Each Body-Parts,CASIA-B; OU-LP; OU-MVLP,Silhouette,138
+zhao2022gait-tcsvt-2023,zhao2022gait,2023,TCSVT,Gait-Assisted Video Person Retrieval,DukeMTMC-VideoReID; MARS,RGB; Silhouette,140
+yao2022improving-tcsvt-2023,yao2022improving,2023,TMM,Improving Disentangled Representation Learning for Gait Recognition Using Group Supervision,CASIA-B; OU-ISIR Cloth,RGB; Silhouette,141
+hou2024cloth-tcsvt-2024,hou2024cloth,2024,TCSVT,Cloth-Imbalanced Gait Recognition via Hallucination,CASIA-B; Outdoor-Gait,Silhouette,142
+wang2023gait-tcsvt-2024,wang2023gait,2024,TMM,Gait Recognition With Multi-Level Skeleton-Guided Refinement,CASIA-B; GREW; OU-MVLP,Silhouette; Skeleton,143
+huang2024gaitdan-tcsvt-2024,huang2024gaitdan,2024,TCSVT,GaitDAN Cross-View Gait Recognition via Adversarial Domain Adaptation,CASIA-B; OU-LP; OU-MVLP,Silhouette,144
+wang2025gaitc-tcsvt-2025,wang2025gaitc,2025,TCSVT,GaitC3I: Robust Cross-Covariate Gait Recognition via Causal Intervention,CASIA-B; CCGR; CCPG; GREW; Gait3D; OU-MVLP,Silhouette,145
+zhai2024multi-tcsvt-2025,zhai2024multi,2025,TCSVT,Multi-View Gait Recognition With Joint Local Multi-Scale and Global Contextual Spatio-Temporal Features,CASIA-B; OU-MVLP,Silhouette,146
+lu2024flag-tcsvt-2025,lu2024flag,2025,TCSVT,FLAG A Framework With Explicit Learning Based on Appearance and Gait for Video-Based Clothes-Changing Person Re-Identification,CCVID,RGB; Silhouette,147
+chen2025fusiongait-tcsvt-2025,Chen2025FusionGait,2025,TCSVT,Fusing Events and Frames for Robust Gait Recognition,CASIA-B; EV-CASIA-B,Silhouette,148
+limcharoen2020view-tifs-2020,limcharoen2020view,2020,TIFS,View-Independent Gait Recognition Using Joint Replacement Coordinates JRCs and Convolutional Neural Network,SIIT-CN-A; SIIT-CN-B,Skeleton,151
+xu2023occlusion-tifs-2023,xu2023occlusion,2023,TIFS,Occlusion-aware human mesh model-based gait recognition,OU-MVLP,RGB,152
+wang2023progressive-tifs-2023,wang2023progressive,2023,TIFS,Progressive sub-domain information mining for single-source generalizable gait recognition,CASIA-B; GREW; OU-MVLP,Silhouette,153
+pan2023toward-tifs-2023,pan2023toward,2023,TIFS,Toward Complete-View and High-Level Pose-Based Gait Recognition,CASIA-B; NLPR; OU-MVLP-Pose,Skeleton,154
+hou2024adaptive-tifs-2024,hou2024adaptive,2024,TIFS,Adaptive Knowledge Transfer for Weak-Shot Gait Recognition,CASIA-B; CASIA-E; Outdoor-Gait,Silhouette,155
+chen2024egst-tifs-2024,chen2024egst,2024,TIFS,EGST: An efficient solution for human gaits recognition using neuromorphic vision sensor,CASIA-B; DVS128-Gait-Day; DVS128-Gait-Night,Event,157
+song2023gait-tifs-2024,song2023gait,2024,TIFS,Gait Attribute Recognition A New Benchmark for Learning Richer Attributes From Human Gait Patterns,MA-Gait,RGB; Silhouette; Skeleton,158
+huang2024integral-tifs-2024,huang2024integral,2024,TIFS,Integral Pose Learning via Appearance Transfer for Gait Recognition,CASIA-B; FVG,Silhouette,159
+yang2025multimodal-tifs-2025,yang2025multimodal,2025,TIFS,Multimodal Mutual Learning for Unsupervised Gait Recognition,CASIA-B; GREW; Gait3D; SUSTech1K,Silhouette; Skeleton,160
+lu2025mojo-tifs-2025,lu2025mojo,2025,TIFS,MOJO MOtion Pattern Learning and JOint-Based Fine-Grained Mining for Person Re-Identification Based on 4D LiDAR Point Clouds,LReID; SUSTech1K,Point cloud,161
+wang2025new-tifs-2025,wang2025new,2025,TIFS,A New Benchmark and Algorithm for Clothes-Changing Video Person Re-Identification,,RGB; Silhouette,162
+zhang2019cross-tip-2020,zhang2019cross,2020,TIP,Cross-view gait recognition by discriminative feature learning,CASIA-B; OU-LP; OU-MVLP,Silhouette,164
+wu2020condition-tip-2021,wu2020condition,2020,TIP,Condition-aware comparison scheme for gait recognition,CASIA-B; OU-LP,Silhouette,165
+chen2021multi-tip-2021,chen2021multi,2021,TIP,Multi-View Gait Image Generation for Cross-View Gait Recognition,CASIA-B; OU-MVLP,Silhouette,166
+huang2023condition-tip-2023,huang2023condition,2023,TIP,Condition-adaptive graph convolution learning for skeleton-based gait recognition,CASIA-B; OU-MVLP,Skeleton,167
+dou2022gaitmpl-tip-2024,dou2022gaitmpl,2024,TIP,GaitMPL: Gait Recognition With Memory-Augmented Progressive Learning,CASIA-B; OU-MVLP,Silhouette,168
+dou2024clash-tip-2025,dou2024clash,2025,TIP,CLASH Complementary Learning With Neural Architecture Search for Gait Recognition,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette,169
+zhao2021associated-tmm-2022,zhao2021associated,2022,TMM,Associated Spatio-Temporal Capsule Network for Gait Recognition,CASIA-A; NDDs; PD; SDUgait; UNITO,RGB; Skeleton,171
+xu2021gait-tmm-2022,xu2021gait,2022,TMM,Gait Recognition Based on Local Graphical Skeleton Descriptor With Pairwise Similarity Network,CASIA-B; CASIA-C; NLPR,RGB; Skeleton,172
+li2022strong-tmm-2023,li2022strong,2023,TMM,A Strong and Robust Skeleton-Based Gait Recognition Method with Gait Periodicity Priors,CASIA-B; OG RGB+D,Skeleton,173
+li2023gait-tmm-2024,li2023gait,2023,TMM,Gait recognition with drones: A benchmark,DroneGait,Optical flow; Pose; SMPL / mesh; Silhouette,175
+wang2023gaitparsing-tmm-2024,wang2023gaitparsing,2023,TMM,GaitParsing: Human semantic parsing for gait recognition,CASIA-BP; FVG-P,Parsing; Silhouette,176
+deng2023human-tmm-2024,deng2023human,2024,TMM,Human Gait Recognition Based on Frontal-View Sequences Using Gait Dynamics and Deep Learning,CASIA-B; CMU MoBo,RGB; Silhouette,177
+peng2024masked-tmm-2025,peng2024masked,2025,TMM,Masked Attribute Description Embedding for Cloth-Changing Person Re-Identification,LTCC; PRCC,RGB,178
+zhang2025trackletgait-tmm-2025,Zhang2025TrackletGait,2025,TMM,TrackletGait A Robust Framework for Gait Recognition in the Wild,CASIA-B; CCPG; GREW; Gait3D; OU-MVLP; SUSTech1K,Silhouette,179
+hou2022gait-tnnls-2023,hou2022gait,2023,TNNLS,Gait quality aware network: toward the interpretability of silhouette-based gait recognition,CASIA-B; OU-MVLP,Silhouette,181
+chen2023adaptive-tnnls-2025,chen2023adaptive,2025,TNNLS,Adaptive Gait Feature Learning Using Mixed Gait Sequence,CASIA-B; OU-MVLP,Silhouette,182
+li2025rethinking-tnnls-2025,li2025rethinking,2025,TNNLS,Rethinking Appearance-Based Deep Gait Recognition Reviews Analysis and Insights From Gait Recognition Evolution,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette,183
+wang2021event-tpami-2022,wang2021event,2021,TPAMI,Event-stream representation for human gaits identification using deep neural networks,CASIA-B,Event,185
+chao2021gaitset-tpami-2022,chao2021gaitset,2022,TPAMI,GaitSet Cross-View Gait Recognition Through Utilizing Gait As a Deep Set,CASIA-B; OU-MVLP,Silhouette,186
+zhang2020learning-tpami-2022,zhang2020learning,2020,TPAMI,On learning disentangled representations for gait recognition,CASIA-B; FVG; USF,RGB,187
+song2022casia-tpami-2023,song2022casia,2022,TPAMI,CASIA-E: A large comprehensive dataset for gait recognition,CASIA-E,Silhouette,188
+sepas2022deep-tpami-2023,sepas2022deep,2023,TPAMI,Deep gait recognition: A survey,,,189
+fan2023learning-tpami-2023,fan2023learning,2023,TPAMI,Learning gait representation from massive unlabelled walking videos: A benchmark,CASIA-B; GREW; Gait3D; OU-MVLP,Silhouette,190
+meng2025fastposegait-tpami-2025,meng2025fastposegait,2025,TPAMI,From FastPoseGait to GPGait++: Bridging the Past and Future for Pose-based Gait Recognition,CASIA-B; CCPG; GREW; Gait3D; OU-MVLP; SUSTech1K,Skeleton,191
+fan2025opengait-tpami-2025,fan2025opengait,2025,TPAMI,OpenGait: A Comprehensive Benchmark Study for Gait Recognition towards Better Practicality,CASIA-B; CCGR; CCPG; GREW; Gait3D; OU-MVLP; SUSTech1K; VG,Parsing; Point cloud; RGB; SMPL / mesh; Silhouette; Skeleton,192
+guo2025gait-tpami-2025,guo2025gait,2025,TPAMI,Gait recognition in the wild: A large-scale benchmark and NAS-based baseline,CASIA-B; GREW; Gait3D; OU-MVLP,Optical flow; Pose; SMPL / mesh; Silhouette,193

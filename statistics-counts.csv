@@ -1,0 +1,72 @@
+kind,label,publications,denominator,percent
+dataset,CASIA-B,105,160,65.6
+dataset,OU-MVLP,78,160,48.8
+dataset,Gait3D,56,160,35.0
+dataset,GREW,50,160,31.2
+dataset,SUSTech1K,22,160,13.8
+dataset,CCPG,19,160,11.9
+dataset,OU-LP,8,160,5.0
+dataset,BRIAR,6,160,3.8
+dataset,CASIA-A,3,160,1.9
+dataset,CASIA-E,3,160,1.9
+dataset,CCGR,3,160,1.9
+dataset,DroneGait,3,160,1.9
+dataset,EMOGAIT,3,160,1.9
+dataset,FVG,3,160,1.9
+dataset,Outdoor-Gait,3,160,1.9
+dataset,CCVID,2,160,1.2
+dataset,FreeGait,2,160,1.2
+dataset,NLPR,2,160,1.2
+dataset,TUM GAID,2,160,1.2
+dataset,AerialGait,1,160,0.6
+dataset,BUAA-Duke-Gait,1,160,0.6
+dataset,CASIA-BN,1,160,0.6
+dataset,CASIA-BP,1,160,0.6
+dataset,CASIA-C,1,160,0.6
+dataset,CCGR-MINI,1,160,0.6
+dataset,CCGait,1,160,0.6
+dataset,CMU MoBo,1,160,0.6
+dataset,DVS128-Gait-Day,1,160,0.6
+dataset,DVS128-Gait-Night,1,160,0.6
+dataset,DukeMTMC-VideoReID,1,160,0.6
+dataset,ELMD,1,160,0.6
+dataset,EV-CASIA-B,1,160,0.6
+dataset,FVG-P,1,160,0.6
+dataset,HITSZ-VCM,1,160,0.6
+dataset,KinectGait,1,160,0.6
+dataset,LIP,1,160,0.6
+dataset,LReID,1,160,0.6
+dataset,LTCC,1,160,0.6
+dataset,MA-Gait,1,160,0.6
+dataset,MARS,1,160,0.6
+dataset,MHG,1,160,0.6
+dataset,NDDs,1,160,0.6
+dataset,OG RGB+D,1,160,0.6
+dataset,OU-ISIR Cloth,1,160,0.6
+dataset,OU-LP-Bag,1,160,0.6
+dataset,OU-MVLP-Pose,1,160,0.6
+dataset,OccCASIA-B,1,160,0.6
+dataset,OccGait,1,160,0.6
+dataset,PD,1,160,0.6
+dataset,PRCC,1,160,0.6
+dataset,RA-GAR,1,160,0.6
+dataset,ReSGait,1,160,0.6
+dataset,SDUgait,1,160,0.6
+dataset,SIIT-CN-A,1,160,0.6
+dataset,SIIT-CN-B,1,160,0.6
+dataset,StreamGait,1,160,0.6
+dataset,TTG-200,1,160,0.6
+dataset,UNITO,1,160,0.6
+dataset,USF,1,160,0.6
+dataset,VG,1,160,0.6
+dataset,VIBEID,1,160,0.6
+modality,Silhouette,124,160,77.5
+modality,Skeleton,29,160,18.1
+modality,RGB,26,160,16.2
+modality,Point cloud,8,160,5.0
+modality,SMPL / mesh,7,160,4.4
+modality,Parsing,6,160,3.8
+modality,Optical flow,5,160,3.1
+modality,Pose,4,160,2.5
+modality,Event,2,160,1.2
+modality,DensePose,1,160,0.6

@@ -1,0 +1,247 @@
+{
+  "recordCount": 160,
+  "excludedRows": [
+    {
+      "archiveRow": 102,
+      "citationKey": "delgado2023exploring",
+      "archiveVenue": "PR'23",
+      "method": "Proposed Transformer",
+      "paperId": "delgado2023exploring-pr-2023",
+      "year": 2023,
+      "venue": "PR",
+      "title": "Exploring Transformers for Behavioural Biometrics: A Case Study in Gait Recognition",
+      "url": "https://doi.org/10.1016/j.patcog.2023.109798",
+      "reason": "Wearable inertial-sensor study; outside visual gait scope"
+    },
+    {
+      "archiveRow": 111,
+      "citationKey": "yao2021robust",
+      "archiveVenue": "PRL'21",
+      "method": "Ssil",
+      "reason": "Venue outside the specified list"
+    },
+    {
+      "archiveRow": 112,
+      "citationKey": "song2022distilled",
+      "archiveVenue": "PRL'22",
+      "method": "DLGS",
+      "reason": "Venue outside the specified list"
+    },
+    {
+      "archiveRow": 113,
+      "citationKey": "parashar2023data",
+      "archiveVenue": "PRL'23",
+      "method": "-",
+      "reason": "Venue outside the specified list"
+    },
+    {
+      "archiveRow": 114,
+      "citationKey": "yue2024deep",
+      "archiveVenue": "PRL'24",
+      "method": "GAN-LSTM",
+      "reason": "Venue outside the specified list"
+    },
+    {
+      "archiveRow": 115,
+      "citationKey": "mehmood2024human",
+      "archiveVenue": "PRL'24",
+      "method": "Two-Stream CNN-55",
+      "reason": "Venue outside the specified list"
+    },
+    {
+      "archiveRow": 139,
+      "citationKey": "chen2022understanding",
+      "archiveVenue": "TCSVT'22",
+      "method": "CSTAN",
+      "paperId": "chen2022understanding-tcsvt-2022",
+      "year": 2022,
+      "venue": "TCSVT",
+      "title": "Understanding Dynamic Associations Gait Recognition via Cross-view Spatiotemporal Aggregation Network",
+      "url": "https://doi.org/10.1109/TCSVT.2022.3185642",
+      "reason": "Withdrawn publication (status in the author catalogue)"
+    },
+    {
+      "archiveRow": 174,
+      "citationKey": "yao2022improving",
+      "archiveVenue": "TMM'23",
+      "method": "GSDRL",
+      "paperId": "yao2022improving-tcsvt-2023",
+      "year": 2023,
+      "venue": "TMM",
+      "title": "Improving Disentangled Representation Learning for Gait Recognition Using Group Supervision",
+      "url": "https://doi.org/10.1109/tmm.2022.3171961",
+      "reason": "Same publication already counted; corrected venue resolves the repeated row"
+    }
+  ],
+  "datasetCounts": {
+    "CCGait": 1,
+    "Gait3D": 56,
+    "CCPG": 19,
+    "GREW": 50,
+    "OU-MVLP": 78,
+    "SUSTech1K": 22,
+    "CASIA-B": 105,
+    "CCGR": 3,
+    "RA-GAR": 1,
+    "OU-LP-Bag": 1,
+    "FreeGait": 2,
+    "TTG-200": 1,
+    "OccCASIA-B": 1,
+    "OccGait": 1,
+    "HITSZ-VCM": 1,
+    "LIP": 1,
+    "KinectGait": 1,
+    "CCGR-MINI": 1,
+    "ReSGait": 1,
+    "BRIAR": 6,
+    "DroneGait": 3,
+    "VIBEID": 1,
+    "ELMD": 1,
+    "EMOGAIT": 3,
+    "OU-LP": 8,
+    "CCVID": 2,
+    "FVG": 3,
+    "AerialGait": 1,
+    "StreamGait": 1,
+    "CASIA-E": 3,
+    "TUM GAID": 2,
+    "CASIA-A": 3,
+    "BUAA-Duke-Gait": 1,
+    "MHG": 1,
+    "CASIA-BN": 1,
+    "Outdoor-Gait": 3,
+    "DukeMTMC-VideoReID": 1,
+    "MARS": 1,
+    "OU-ISIR Cloth": 1,
+    "EV-CASIA-B": 1,
+    "SIIT-CN-A": 1,
+    "SIIT-CN-B": 1,
+    "NLPR": 2,
+    "OU-MVLP-Pose": 1,
+    "DVS128-Gait-Day": 1,
+    "DVS128-Gait-Night": 1,
+    "MA-Gait": 1,
+    "LReID": 1,
+    "NDDs": 1,
+    "PD": 1,
+    "SDUgait": 1,
+    "UNITO": 1,
+    "CASIA-C": 1,
+    "OG RGB+D": 1,
+    "CASIA-BP": 1,
+    "FVG-P": 1,
+    "CMU MoBo": 1,
+    "LTCC": 1,
+    "PRCC": 1,
+    "USF": 1,
+    "VG": 1
+  },
+  "modalities": {
+    "SMPL / mesh": 7,
+    "Silhouette": 124,
+    "Skeleton": 29,
+    "Parsing": 6,
+    "Optical flow": 5,
+    "RGB": 26,
+    "Point cloud": 8,
+    "Pose": 4,
+    "DensePose": 1,
+    "Event": 2
+  },
+  "yearCounts": {
+    "2024": 36,
+    "2025": 43,
+    "2020": 14,
+    "2022": 20,
+    "2021": 13,
+    "2023": 34
+  },
+  "results": 120,
+  "catalogueEntries": 28,
+  "topCombinations": [
+    {
+      "datasets": [
+        "CASIA-B",
+        "OU-MVLP"
+      ],
+      "count": 68,
+      "percentage": 42.5
+    },
+    {
+      "datasets": [
+        "Gait3D",
+        "GREW"
+      ],
+      "count": 43,
+      "percentage": 26.9
+    },
+    {
+      "datasets": [
+        "CASIA-B",
+        "Gait3D"
+      ],
+      "count": 36,
+      "percentage": 22.5
+    },
+    {
+      "datasets": [
+        "OU-MVLP",
+        "Gait3D"
+      ],
+      "count": 34,
+      "percentage": 21.2
+    },
+    {
+      "datasets": [
+        "CASIA-B",
+        "GREW"
+      ],
+      "count": 33,
+      "percentage": 20.6
+    },
+    {
+      "datasets": [
+        "OU-MVLP",
+        "GREW"
+      ],
+      "count": 31,
+      "percentage": 19.4
+    },
+    {
+      "datasets": [
+        "CASIA-B",
+        "Gait3D",
+        "GREW"
+      ],
+      "count": 29,
+      "percentage": 18.1
+    },
+    {
+      "datasets": [
+        "CASIA-B",
+        "OU-MVLP",
+        "Gait3D"
+      ],
+      "count": 29,
+      "percentage": 18.1
+    },
+    {
+      "datasets": [
+        "OU-MVLP",
+        "Gait3D",
+        "GREW"
+      ],
+      "count": 28,
+      "percentage": 17.5
+    },
+    {
+      "datasets": [
+        "CASIA-B",
+        "OU-MVLP",
+        "GREW"
+      ],
+      "count": 27,
+      "percentage": 16.9
+    }
+  ]
+}
