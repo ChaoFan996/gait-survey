@@ -8,12 +8,13 @@ subprocess.run([sys.executable,str(ROOT/'sync_data.py')],check=True)
 D=json.loads((ROOT/'companion.json').read_text())
 P=json.loads((ROOT/'papers.json').read_text())
 R=json.loads((ROOT/'research-map.json').read_text())
+C=json.loads((ROOT/'codebases.json').read_text())
 members={r['paperId'] for r in D['records']}
 for p in P['papers']:
     p['statisticsEligible']=p['id'] in members
     p['venueInScope']=p['venue'] in D['meta']['allowedVenues']
 P['meta']['updated']=D['meta']['updated']
-for filename,data,var in [('papers',P,'GAIT_DATA'),('companion',D,'GAIT_COMPANION'),('research-map',R,'GAIT_MAP')]:
+for filename,data,var in [('papers',P,'GAIT_DATA'),('companion',D,'GAIT_COMPANION'),('research-map',R,'GAIT_MAP'),('codebases',C,'GAIT_CODEBASES')]:
     (ROOT/(filename+'.json')).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     js='papers.js' if filename=='papers' else filename+'-data.js'
     (ROOT/js).write_text('window.'+var+' = '+json.dumps(data,ensure_ascii=False)+';\n')

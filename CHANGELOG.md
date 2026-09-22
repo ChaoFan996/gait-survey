@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-23 — Code & openness
+
+- Added a fifth view for eight selected repository star counts, an inspectable OpenGait history curve, and annual code-release statements from the existing 160-publication collection.
+- Added shareable year/status/search filters, paper details, paraphrased audit notes with PDF-page references, and JSON selection export.
+- Separated 38 statements of availability from 17 promises of release; documented exclusions and the limits of the source-text audit.
+- Added the vector single-column PDF, public data, counting rules, and validation of membership, aggregates, history continuity, and browser bundles.
+
 ## 2026-09-21 — Survey companion integration
 
 - Added within-domain and cross-domain benchmark explorers corresponding to Tables III–IV, with 120 experimental records, source dialogs, and CSV export.

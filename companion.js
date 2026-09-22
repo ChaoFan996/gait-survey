@@ -14,10 +14,10 @@ const B={domain:qs.get('domain')==='cross'?'cross':'within',target:qs.get('targe
 const S={kind:['datasets','modalities','resources'].includes(qs.get('stats'))?qs.get('stats'):'datasets',year:qs.get('statyear')||'',venue:qs.get('statvenue')||'',selection:null};
 function saveParams(obj){const q=new URLSearchParams(location.search);for(const [k,v] of Object.entries(obj)){if(v)q.set(k,v);else q.delete(k);}try{history.replaceState(null,'',location.pathname+'?'+q+location.hash);}catch{}}
 function showView(view){
- if(!['library','benchmarks','statistics','map'].includes(view))view='library';
- for(const name of ['library','benchmarks','statistics','map']){$('view-'+name).hidden=name!==view;const b=document.querySelector(`[data-view="${name}"]`);if(name===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');}
+ if(!['library','benchmarks','statistics','map','codebases'].includes(view))view='library';
+ for(const name of ['library','benchmarks','statistics','map','codebases']){$('view-'+name).hidden=name!==view;const b=document.querySelector(`[data-view="${name}"]`);if(name===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');}
  saveParams({view:view==='library'?'':view});
- if(view==='map')window.GAIT_MAP_UI?.render();if(view==='benchmarks')renderBench();if(view==='statistics')renderStats();if(view==='library')window.dispatchEvent(new Event('resize'));
+ if(view==='map')window.GAIT_MAP_UI?.render();if(view==='codebases')window.GAIT_CODEBASES_UI?.render();if(view==='benchmarks')renderBench();if(view==='statistics')renderStats();if(view==='library')window.dispatchEvent(new Event('resize'));
 }
 document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
 $('library-scope').innerHTML=`The catalogue retains ${window.GAIT_DATA.papers.length} references. Word-cloud and publication-year statistics use the <strong>${D.meta.recordCount}-publication, 2020–2025 collection</strong> from the specified venues. <button class="inline-button" id="view-scope">View scope and membership ↗</button>`;

@@ -1,0 +1,142 @@
+{
+  "dong2024hybridgait-aaai-2024": {
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/27926",
+    "basis": "AAAI official publication page, verified against title",
+    "checkedOn": "2026-09-23"
+  },
+  "fan2024skegait-aaai-2024": {
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/27933",
+    "basis": "AAAI official publication page, verified against title",
+    "checkedOn": "2026-09-23"
+  },
+  "wang2024qagait-aaai-2024": {
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/28391",
+    "basis": "AAAI official publication page, verified against title",
+    "checkedOn": "2026-09-23"
+  },
+  "zou2024cross-aaai-2024": {
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/28621",
+    "basis": "AAAI official publication page, verified against title",
+    "checkedOn": "2026-09-23"
+  },
+  "wang2025ra-aaai-2025": {
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/32817",
+    "basis": "AAAI official publication page, verified against title",
+    "checkedOn": "2026-09-23"
+  },
+  "wang2025waveloss-aaai-2025": {
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/32891",
+    "basis": "AAAI official publication page, verified against title",
+    "checkedOn": "2026-09-23"
+  },
+  "li2020end-accv-2020": {
+    "url": "https://openaccess.thecvf.com/content/ACCV2020/html/Li_End-to-end_Model-based_Gait_Recognition_ACCV_2020_paper.html",
+    "basis": "Official conference publication page",
+    "checkedOn": "2026-09-23"
+  },
+  "wang2022gaitstrip-accv-2022": {
+    "url": "https://openaccess.thecvf.com/content/ACCV2022/papers/Wang_GaitStrip_Gait_Recognition_via_Effective_Strip-based_Feature_Representations_and_Multi-Level_ACCV_2022_paper.pdf",
+    "basis": "Official conference publication page",
+    "checkedOn": "2026-09-23"
+  },
+  "thapar2024gaitw-accv-2024": {
+    "url": "https://openaccess.thecvf.com/content/ACCV2024/html/Thapar_GaitW_Enhancing_Gait_Recognition_in_the_Wild_using_Dynamic_Information_ACCV_2024_paper.html",
+    "basis": "Official conference publication page",
+    "checkedOn": "2026-09-23"
+  },
+  "lin2021gaitmask-bmvc-2021": {
+    "url": "https://bmva-archive.org.uk/bmvc/2021/conference/papers/paper_0471.html",
+    "basis": "Official conference publication page",
+    "checkedOn": "2026-09-23"
+  },
+  "hou2020gait-eccv-2020": {
+    "url": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/800_ECCV_2020_paper.php",
+    "basis": "ECVA official paper catalogue",
+    "checkedOn": "2026-09-23"
+  },
+  "xu2020gait-eccv-2020": {
+    "url": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/3238_ECCV_2020_paper.php",
+    "basis": "ECVA official paper catalogue",
+    "checkedOn": "2026-09-23"
+  },
+  "xiong2024causality-eccv-2024": {
+    "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7107_ECCV_2024_paper.php",
+    "basis": "ECVA official paper catalogue",
+    "checkedOn": "2026-09-23"
+  },
+  "huang2024occluded-eccv-2024": {
+    "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/1016_ECCV_2024_paper.php",
+    "basis": "ECVA official paper catalogue",
+    "checkedOn": "2026-09-23"
+  },
+  "fu2024cut-eccv-2024": {
+    "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/4501_ECCV_2024_paper.php",
+    "basis": "ECVA official paper catalogue",
+    "checkedOn": "2026-09-23"
+  },
+  "guo2024camera-eccv-2024": {
+    "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/5072_ECCV_2024_paper.php",
+    "basis": "ECVA official paper catalogue",
+    "checkedOn": "2026-09-23"
+  },
+  "wang2024free-eccv-2024": {
+    "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/5495_ECCV_2024_paper.php",
+    "basis": "ECVA official paper catalogue",
+    "checkedOn": "2026-09-23"
+  },
+  "an2020performance-tbiom-2020": {
+    "url": "https://doi.org/10.1109/TBIOM.2020.3008862",
+    "basis": "DOI printed on the inspected publication first page",
+    "checkedOn": "2026-09-23"
+  },
+  "zou2024multi-tbiom-2024": {
+    "url": "https://doi.org/10.1109/TBIOM.2024.3384704",
+    "basis": "DOI printed on the inspected publication first page",
+    "checkedOn": "2026-09-23"
+  },
+  "sun2024trigait-tbiom-2025": {
+    "url": "https://doi.org/10.1109/TBIOM.2024.3435046",
+    "basis": "DOI printed on the inspected publication first page",
+    "checkedOn": "2026-09-23"
+  },
+  "wu2020condition-tip-2021": {
+    "url": "https://doi.org/10.1109/TIP.2020.3039888",
+    "basis": "DOI printed on the inspected publication first page",
+    "checkedOn": "2026-09-23"
+  },
+  "li2023gait-tmm-2024": {
+    "url": "https://doi.org/10.1109/TMM.2023.3312931",
+    "basis": "DOI printed on the inspected publication first page",
+    "checkedOn": "2026-09-23"
+  },
+  "wang2023gaitparsing-tmm-2024": {
+    "url": "https://doi.org/10.1109/TMM.2023.3325962",
+    "basis": "DOI printed on the inspected publication first page",
+    "checkedOn": "2026-09-23"
+  },
+  "wang2021event-tpami-2022": {
+    "url": "https://doi.org/10.1109/TPAMI.2021.3054886",
+    "basis": "DOI printed on the inspected publication first page",
+    "checkedOn": "2026-09-23"
+  },
+  "zhang2020learning-tpami-2022": {
+    "url": "https://doi.org/10.1109/TPAMI.2020.2998790",
+    "basis": "DOI printed on the inspected publication first page",
+    "checkedOn": "2026-09-23"
+  },
+  "song2022casia-tpami-2023": {
+    "url": "https://doi.org/10.1109/TPAMI.2022.3183288",
+    "basis": "DOI printed on the inspected publication first page",
+    "checkedOn": "2026-09-23"
+  },
+  "fan2023learning-tpami-2023": {
+    "url": "https://doi.org/10.1109/TPAMI.2023.3312419",
+    "basis": "DOI printed on the inspected publication first page",
+    "checkedOn": "2026-09-23"
+  },
+  "guo2025gait-tpami-2025": {
+    "url": "https://doi.org/10.1109/TPAMI.2025.3546482",
+    "basis": "DOI printed on the inspected publication first page",
+    "checkedOn": "2026-09-23"
+  }
+}
