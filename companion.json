@@ -30,7 +30,7 @@
     "exclusionCount": 8,
     "modalityUses": 212,
     "selection": "The smaller 2020–2025 modality archive defines membership. Specified venues only; corrected publication identity removes exact duplicates; withdrawn and wearable-only studies are excluded. Distinct conference/journal publications are separate.",
-    "benchmarkPolicy": "Representative results corresponding to Tables III–IV, not an exhaustive leaderboard. Ranking is within the selected dataset, protocol, metric and training source. CCGR-Mini selects the highest R1 per listed configuration among imported sources; accompanying metrics remain from the same record. Result sources are independent of the literature-statistics venue list.",
+    "benchmarkPolicy": "Representative results corresponding to Table III and Figure 5, not an exhaustive leaderboard. Ranking is within the selected dataset, protocol, metric and training source. CCGR-Mini selects the highest R1 per listed configuration among imported sources; accompanying metrics remain from the same record. Result sources are independent of the literature-statistics venue list. Cross-domain rankings and matrices use one reporting source at a time. CASIA-B and CASIA-B* retain their source labels. R1 preserves a source-reported overall score; missing aggregates are not inferred from condition means.",
     "datasetPolicy": "One use per publication and dataset; co-usage is inclusive (other datasets may also occur). Missing dataset or modality information is not counted as a use.",
     "modalityPolicy": "Recorded inputs, including training auxiliaries; multiple recorded modalities do not necessarily imply test-time fusion. Skeleton and Pose preserve the archive labels.",
     "catalogueNotes": [
@@ -3358,9 +3358,12 @@
       ]
     },
     "CASIA-B*": {
-      "protocol": "Resegmented silhouettes in the BiggerGait comparison; clothing-change rank-1.",
+      "protocol": "CASIA-B with resegmented silhouettes, as identified by the reporting source. Source-specific cross-domain scores; R1 denotes the reported overall score.",
       "metrics": [
-        "CL"
+        "NM",
+        "BG",
+        "CL",
+        "R1"
       ]
     }
   },
@@ -5508,7 +5511,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5532,7 +5535,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5556,7 +5559,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5581,7 +5584,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5605,7 +5608,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5629,7 +5632,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5654,7 +5657,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5678,7 +5681,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5702,7 +5705,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5727,7 +5730,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5751,7 +5754,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5775,7 +5778,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5800,7 +5803,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5824,7 +5827,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5848,7 +5851,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5873,7 +5876,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5897,7 +5900,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5921,7 +5924,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5946,7 +5949,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5970,7 +5973,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5994,7 +5997,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6019,7 +6022,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Stable Diffusion prior",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6043,7 +6046,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Stable Diffusion prior",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6067,7 +6070,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Stable Diffusion prior",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6092,7 +6095,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6116,7 +6119,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6140,7 +6143,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6165,7 +6168,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6189,7 +6192,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6214,7 +6217,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6238,7 +6241,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6263,7 +6266,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6287,7 +6290,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6312,7 +6315,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6336,10 +6339,1482 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "Table IV / BiggerGait final paper, Table 1",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
+    },
+    {
+      "id": "cross-ye2024biggait-ccpg-casia-bstar-gaitset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "CASIA-B*",
+      "metrics": {
+        "NM": 47.4,
+        "BG": 40.9,
+        "CL": 25.8
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(a)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-ccpg-casia-bstar-gaitbase",
+      "method": "GaitBase",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "CASIA-B*",
+      "metrics": {
+        "NM": 59.1,
+        "BG": 52.7,
+        "CL": 30.4
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(a)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-ccpg-casia-bstar-biggait",
+      "method": "BigGait",
+      "year": 2024,
+      "input": "R",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "CASIA-B*",
+      "metrics": {
+        "NM": 77.4,
+        "BG": 71.5,
+        "CL": 33.6
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(a)",
+      "configuration": "DINOv2-S",
+      "resources": "DINOv2-S pretrained visual backbone",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-ccpg-sustech1k-gaitset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "SUSTech1K",
+      "metrics": {
+        "CL": 8.2,
+        "Night": 11.0,
+        "R1": 12.8
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(a)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-ccpg-sustech1k-gaitbase",
+      "method": "GaitBase",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "SUSTech1K",
+      "metrics": {
+        "CL": 9.5,
+        "Night": 13.1,
+        "R1": 16.8
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(a)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-ccpg-sustech1k-biggait",
+      "method": "BigGait",
+      "year": 2024,
+      "input": "R",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "SUSTech1K",
+      "metrics": {
+        "CL": 43.7,
+        "Night": 44.8,
+        "R1": 56.4
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(a)",
+      "configuration": "DINOv2-S",
+      "resources": "DINOv2-S pretrained visual backbone",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-casia-bstar-ccpg-gaitset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "CASIA-B*",
+      "target": "CCPG",
+      "metrics": {
+        "CL": 10.6,
+        "UP": 16.4,
+        "DN": 17.2,
+        "BG": 24.9
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(b)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-casia-bstar-ccpg-gaitbase",
+      "method": "GaitBase",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "CASIA-B*",
+      "target": "CCPG",
+      "metrics": {
+        "CL": 10.6,
+        "UP": 18.1,
+        "DN": 21.4,
+        "BG": 28.7
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(b)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-casia-bstar-ccpg-biggait",
+      "method": "BigGait",
+      "year": 2024,
+      "input": "R",
+      "domain": "cross",
+      "train": "CASIA-B*",
+      "target": "CCPG",
+      "metrics": {
+        "CL": 7.5,
+        "UP": 19.5,
+        "DN": 14.2,
+        "BG": 43.0
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(b)",
+      "configuration": "DINOv2-S",
+      "resources": "DINOv2-S pretrained visual backbone",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-casia-bstar-sustech1k-gaitset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "CASIA-B*",
+      "target": "SUSTech1K",
+      "metrics": {
+        "CL": 7.2,
+        "Night": 12.2,
+        "R1": 12.8
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(b)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-casia-bstar-sustech1k-gaitbase",
+      "method": "GaitBase",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "CASIA-B*",
+      "target": "SUSTech1K",
+      "metrics": {
+        "CL": 8.1,
+        "Night": 11.8,
+        "R1": 15.6
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(b)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-casia-bstar-sustech1k-biggait",
+      "method": "BigGait",
+      "year": 2024,
+      "input": "R",
+      "domain": "cross",
+      "train": "CASIA-B*",
+      "target": "SUSTech1K",
+      "metrics": {
+        "CL": 36.9,
+        "Night": 60.2,
+        "R1": 64.8
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(b)",
+      "configuration": "DINOv2-S",
+      "resources": "DINOv2-S pretrained visual backbone",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-sustech1k-ccpg-gaitset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "SUSTech1K",
+      "target": "CCPG",
+      "metrics": {
+        "CL": 14,
+        "UP": 23.7,
+        "DN": 20.3,
+        "BG": 43.2
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(c)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-sustech1k-ccpg-gaitbase",
+      "method": "GaitBase",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "SUSTech1K",
+      "target": "CCPG",
+      "metrics": {
+        "CL": 16.8,
+        "UP": 21.7,
+        "DN": 26.0,
+        "BG": 42.7
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(c)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-sustech1k-ccpg-biggait",
+      "method": "BigGait",
+      "year": 2024,
+      "input": "R",
+      "domain": "cross",
+      "train": "SUSTech1K",
+      "target": "CCPG",
+      "metrics": {
+        "CL": 4.5,
+        "UP": 11.5,
+        "DN": 11.9,
+        "BG": 45.5
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(c)",
+      "configuration": "DINOv2-S",
+      "resources": "DINOv2-S pretrained visual backbone",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-sustech1k-casia-bstar-gaitset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "SUSTech1K",
+      "target": "CASIA-B*",
+      "metrics": {
+        "NM": 63.3,
+        "BG": 50.8,
+        "CL": 26.4
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(c)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-sustech1k-casia-bstar-gaitbase",
+      "method": "GaitBase",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "SUSTech1K",
+      "target": "CASIA-B*",
+      "metrics": {
+        "NM": 73.1,
+        "BG": 61.2,
+        "CL": 28.2
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(c)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-ye2024biggait-sustech1k-casia-bstar-biggait",
+      "method": "BigGait",
+      "year": 2024,
+      "input": "R",
+      "domain": "cross",
+      "train": "SUSTech1K",
+      "target": "CASIA-B*",
+      "metrics": {
+        "NM": 91.1,
+        "BG": 85.8,
+        "CL": 18.7
+      },
+      "source": {
+        "key": "ye2024biggait",
+        "title": "BigGait: Learning Gait Representation You Want by Large Vision Models",
+        "venue": "CVPR",
+        "year": 2024,
+        "paperId": "ye2024biggait-cvpr-2024",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Ye_BigGait_Learning_Gait_Representation_You_Want_by_Large_Vision_Models_CVPR_2024_paper.pdf"
+      },
+      "origin": "BigGait, Table 4(c)",
+      "configuration": "DINOv2-S",
+      "resources": "DINOv2-S pretrained visual backbone",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-ccpg-casia-bstar-gaitset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "CASIA-B*",
+      "metrics": {
+        "NM": 47.4,
+        "BG": 40.9,
+        "CL": 25.8,
+        "R1": 38.0
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(a)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-ccpg-casia-bstar-gaitbase",
+      "method": "GaitBase",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "CASIA-B*",
+      "metrics": {
+        "NM": 59.1,
+        "BG": 52.7,
+        "CL": 30.4,
+        "R1": 47.4
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(a)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-ccpg-casia-bstar-biggait",
+      "method": "BigGait",
+      "year": 2024,
+      "input": "R",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "CASIA-B*",
+      "metrics": {
+        "NM": 77.4,
+        "BG": 71.5,
+        "CL": 33.6,
+        "R1": 60.8
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(a)",
+      "configuration": "DINOv2-S",
+      "resources": "DINOv2-S pretrained visual backbone",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-ccpg-casia-bstar-denoisinggait",
+      "method": "DenoisingGait",
+      "year": 2025,
+      "input": "R+S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "CASIA-B*",
+      "metrics": {
+        "NM": 83.9,
+        "BG": 76.1,
+        "CL": 34.8,
+        "R1": 64.9
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(a)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Pretrained Stable Diffusion prior; RGB and silhouettes",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-ccpg-sustech1k-gaitset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "SUSTech1K",
+      "metrics": {
+        "NM": 11.5,
+        "BG": 14.5,
+        "CL": 8.2,
+        "UB": 9.7,
+        "UM": 11,
+        "OC": 11.4,
+        "R1": 12.8
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(a)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-ccpg-sustech1k-gaitbase",
+      "method": "GaitBase",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "SUSTech1K",
+      "metrics": {
+        "NM": 16.6,
+        "BG": 19.7,
+        "CL": 9.7,
+        "UB": 11.8,
+        "UM": 13.8,
+        "OC": 16.8,
+        "R1": 17.3
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(a)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-ccpg-sustech1k-biggait",
+      "method": "BigGait",
+      "year": 2024,
+      "input": "R",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "SUSTech1K",
+      "metrics": {
+        "NM": 60.7,
+        "BG": 57.2,
+        "CL": 43.7,
+        "UB": 48.5,
+        "UM": 41.1,
+        "OC": 63.6,
+        "R1": 56.4
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(a)",
+      "configuration": "DINOv2-S",
+      "resources": "DINOv2-S pretrained visual backbone",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-ccpg-sustech1k-denoisinggait",
+      "method": "DenoisingGait",
+      "year": 2025,
+      "input": "R+S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "SUSTech1K",
+      "metrics": {
+        "NM": 66.9,
+        "BG": 59.7,
+        "CL": 37.3,
+        "UB": 55,
+        "UM": 45.7,
+        "OC": 64,
+        "R1": 59.1
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(a)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Pretrained Stable Diffusion prior; RGB and silhouettes",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-casia-bstar-sustech1k-gaitset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "CASIA-B*",
+      "target": "SUSTech1K",
+      "metrics": {
+        "NM": 13.6,
+        "BG": 13.8,
+        "CL": 7.2,
+        "UB": 10.3,
+        "UM": 10.3,
+        "OC": 11.5,
+        "R1": 12.8
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(b)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-casia-bstar-sustech1k-gaitbase",
+      "method": "GaitBase",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "CASIA-B*",
+      "target": "SUSTech1K",
+      "metrics": {
+        "NM": 19.2,
+        "BG": 16.7,
+        "CL": 8.1,
+        "UB": 12,
+        "UM": 14.5,
+        "OC": 15.6,
+        "R1": 15.6
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(b)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-casia-bstar-sustech1k-biggait",
+      "method": "BigGait",
+      "year": 2024,
+      "input": "R",
+      "domain": "cross",
+      "train": "CASIA-B*",
+      "target": "SUSTech1K",
+      "metrics": {
+        "NM": 68.6,
+        "BG": 62.8,
+        "CL": 36.9,
+        "UB": 60.3,
+        "UM": 55.6,
+        "OC": 68.9,
+        "R1": 64.8
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(b)",
+      "configuration": "DINOv2-S",
+      "resources": "DINOv2-S pretrained visual backbone",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-casia-bstar-sustech1k-denoisinggait",
+      "method": "DenoisingGait",
+      "year": 2025,
+      "input": "R+S",
+      "domain": "cross",
+      "train": "CASIA-B*",
+      "target": "SUSTech1K",
+      "metrics": {
+        "NM": 69.8,
+        "BG": 63.5,
+        "CL": 36.9,
+        "UB": 64.4,
+        "UM": 57.1,
+        "OC": 68.2,
+        "R1": 63.9
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(b)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Pretrained Stable Diffusion prior; RGB and silhouettes",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-casia-bstar-ccpg-gaitset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "CASIA-B*",
+      "target": "CCPG",
+      "metrics": {
+        "CL": 10.6,
+        "UP": 16.4,
+        "DN": 17.2,
+        "BG": 24.9,
+        "R1": 17.3
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(b)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-casia-bstar-ccpg-gaitbase",
+      "method": "GaitBase",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "CASIA-B*",
+      "target": "CCPG",
+      "metrics": {
+        "CL": 10.6,
+        "UP": 18.1,
+        "DN": 21.4,
+        "BG": 28.7,
+        "R1": 19.7
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(b)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-casia-bstar-ccpg-biggait",
+      "method": "BigGait",
+      "year": 2024,
+      "input": "R",
+      "domain": "cross",
+      "train": "CASIA-B*",
+      "target": "CCPG",
+      "metrics": {
+        "CL": 7.5,
+        "UP": 19.5,
+        "DN": 14.2,
+        "BG": 43,
+        "R1": 24.6
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(b)",
+      "configuration": "DINOv2-S",
+      "resources": "DINOv2-S pretrained visual backbone",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-casia-bstar-ccpg-denoisinggait",
+      "method": "DenoisingGait",
+      "year": 2025,
+      "input": "R+S",
+      "domain": "cross",
+      "train": "CASIA-B*",
+      "target": "CCPG",
+      "metrics": {
+        "CL": 6.2,
+        "UP": 13,
+        "DN": 13.8,
+        "BG": 34.7,
+        "R1": 16.9
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(b)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Pretrained Stable Diffusion prior; RGB and silhouettes",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-sustech1k-casia-bstar-gaitset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "SUSTech1K",
+      "target": "CASIA-B*",
+      "metrics": {
+        "NM": 63.3,
+        "BG": 50.8,
+        "CL": 26.4,
+        "R1": 46.8
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(c)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-sustech1k-casia-bstar-gaitbase",
+      "method": "GaitBase",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "SUSTech1K",
+      "target": "CASIA-B*",
+      "metrics": {
+        "NM": 73.1,
+        "BG": 61.2,
+        "CL": 28.2,
+        "R1": 54.2
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(c)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-sustech1k-casia-bstar-biggait",
+      "method": "BigGait",
+      "year": 2024,
+      "input": "R",
+      "domain": "cross",
+      "train": "SUSTech1K",
+      "target": "CASIA-B*",
+      "metrics": {
+        "NM": 91.1,
+        "BG": 85.8,
+        "CL": 18.7,
+        "R1": 65.2
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(c)",
+      "configuration": "DINOv2-S",
+      "resources": "DINOv2-S pretrained visual backbone",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-sustech1k-casia-bstar-denoisinggait",
+      "method": "DenoisingGait",
+      "year": 2025,
+      "input": "R+S",
+      "domain": "cross",
+      "train": "SUSTech1K",
+      "target": "CASIA-B*",
+      "metrics": {
+        "NM": 87,
+        "BG": 81.6,
+        "CL": 21.1,
+        "R1": 63.2
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(c)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Pretrained Stable Diffusion prior; RGB and silhouettes",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-sustech1k-ccpg-gaitset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "SUSTech1K",
+      "target": "CCPG",
+      "metrics": {
+        "CL": 14,
+        "UP": 23.7,
+        "DN": 20.3,
+        "BG": 43.2,
+        "R1": 25.3
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(c)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-sustech1k-ccpg-gaitbase",
+      "method": "GaitBase",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "SUSTech1K",
+      "target": "CCPG",
+      "metrics": {
+        "CL": 16.8,
+        "UP": 21.7,
+        "DN": 26,
+        "BG": 42.7,
+        "R1": 26.8
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(c)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-sustech1k-ccpg-biggait",
+      "method": "BigGait",
+      "year": 2024,
+      "input": "R",
+      "domain": "cross",
+      "train": "SUSTech1K",
+      "target": "CCPG",
+      "metrics": {
+        "CL": 4.5,
+        "UP": 11.5,
+        "DN": 11.9,
+        "BG": 45.5,
+        "R1": 18.4
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(c)",
+      "configuration": "DINOv2-S",
+      "resources": "DINOv2-S pretrained visual backbone",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-jin2025denoising-sustech1k-ccpg-denoisinggait",
+      "method": "DenoisingGait",
+      "year": 2025,
+      "input": "R+S",
+      "domain": "cross",
+      "train": "SUSTech1K",
+      "target": "CCPG",
+      "metrics": {
+        "CL": 5.5,
+        "UP": 11,
+        "DN": 15.4,
+        "BG": 45.3,
+        "R1": 19.3
+      },
+      "source": {
+        "key": "jin2025denoising",
+        "title": "On Denoising Walking Videos for Gait Recognition",
+        "venue": "CVPR",
+        "year": 2025,
+        "paperId": "jin2025denoising-cvpr-2025",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+      },
+      "origin": "DenoisingGait supplementary material, Table 9(c)",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Pretrained Stable Diffusion prior; RGB and silhouettes",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources."
+    },
+    {
+      "id": "cross-huang2026gaitmax-ccpg-casia-b-gaitset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 47.4,
+        "BG": 40.9,
+        "CL": 25.8
+      },
+      "source": {
+        "key": "huang2026gaitmax",
+        "title": "Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf",
+        "venue": "CVPR",
+        "year": 2026,
+        "paperId": "huang2026gaitmax-cvpr-2026"
+      },
+      "origin": "GaitMax, Table 3",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources. CASIA-B is named as in this source, without assuming CASIA-B* preprocessing equivalence. Condition scores only: its SUSTech1K Mean is not the overall score in BiggerGait or DenoisingGait."
+    },
+    {
+      "id": "cross-huang2026gaitmax-ccpg-casia-b-gaitbase",
+      "method": "GaitBase",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 66.3,
+        "BG": 57.7,
+        "CL": 33.9
+      },
+      "source": {
+        "key": "huang2026gaitmax",
+        "title": "Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf",
+        "venue": "CVPR",
+        "year": 2026,
+        "paperId": "huang2026gaitmax-cvpr-2026"
+      },
+      "origin": "GaitMax, Table 3",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources. CASIA-B is named as in this source, without assuming CASIA-B* preprocessing equivalence. Condition scores only: its SUSTech1K Mean is not the overall score in BiggerGait or DenoisingGait."
+    },
+    {
+      "id": "cross-huang2026gaitmax-ccpg-casia-b-deepgaitv2",
+      "method": "DeepGaitV2",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 72,
+        "BG": 62,
+        "CL": 36.6
+      },
+      "source": {
+        "key": "huang2026gaitmax",
+        "title": "Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf",
+        "venue": "CVPR",
+        "year": 2026,
+        "paperId": "huang2026gaitmax-cvpr-2026"
+      },
+      "origin": "GaitMax, Table 3",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources. CASIA-B is named as in this source, without assuming CASIA-B* preprocessing equivalence. Condition scores only: its SUSTech1K Mean is not the overall score in BiggerGait or DenoisingGait."
+    },
+    {
+      "id": "cross-huang2026gaitmax-ccpg-casia-b-denoisinggait",
+      "method": "DenoisingGait",
+      "year": 2025,
+      "input": "R+S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 83.9,
+        "BG": 76.1,
+        "CL": 34.8
+      },
+      "source": {
+        "key": "huang2026gaitmax",
+        "title": "Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf",
+        "venue": "CVPR",
+        "year": 2026,
+        "paperId": "huang2026gaitmax-cvpr-2026"
+      },
+      "origin": "GaitMax, Table 3",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Pretrained Stable Diffusion prior; RGB and silhouettes",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources. CASIA-B is named as in this source, without assuming CASIA-B* preprocessing equivalence. Condition scores only: its SUSTech1K Mean is not the overall score in BiggerGait or DenoisingGait."
+    },
+    {
+      "id": "cross-huang2026gaitmax-ccpg-casia-b-biggait",
+      "method": "BigGait",
+      "year": 2024,
+      "input": "R",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 77.4,
+        "BG": 71.5,
+        "CL": 33.6
+      },
+      "source": {
+        "key": "huang2026gaitmax",
+        "title": "Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf",
+        "venue": "CVPR",
+        "year": 2026,
+        "paperId": "huang2026gaitmax-cvpr-2026"
+      },
+      "origin": "GaitMax, Table 3",
+      "configuration": "DINOv2-S",
+      "resources": "DINOv2-S pretrained visual backbone",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources. CASIA-B is named as in this source, without assuming CASIA-B* preprocessing equivalence. Condition scores only: its SUSTech1K Mean is not the overall score in BiggerGait or DenoisingGait."
+    },
+    {
+      "id": "cross-huang2026gaitmax-ccpg-casia-b-gaitmax",
+      "method": "GaitMax",
+      "year": 2026,
+      "input": "R",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 85.6,
+        "BG": 86.9,
+        "CL": 46.2
+      },
+      "source": {
+        "key": "huang2026gaitmax",
+        "title": "Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf",
+        "venue": "CVPR",
+        "year": 2026,
+        "paperId": "huang2026gaitmax-cvpr-2026"
+      },
+      "origin": "GaitMax, Table 3",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Frozen large vision backbone; GCaption descriptions and OpenCLIP text supervision",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources. CASIA-B is named as in this source, without assuming CASIA-B* preprocessing equivalence. Condition scores only: its SUSTech1K Mean is not the overall score in BiggerGait or DenoisingGait."
+    },
+    {
+      "id": "cross-huang2026gaitmax-ccpg-sustech1k-gaitset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "SUSTech1K",
+      "metrics": {
+        "NM": 11.5,
+        "BG": 14.5,
+        "CL": 8.2,
+        "UM": 11
+      },
+      "source": {
+        "key": "huang2026gaitmax",
+        "title": "Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf",
+        "venue": "CVPR",
+        "year": 2026,
+        "paperId": "huang2026gaitmax-cvpr-2026"
+      },
+      "origin": "GaitMax, Table 3",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources. CASIA-B is named as in this source, without assuming CASIA-B* preprocessing equivalence. Condition scores only: its SUSTech1K Mean is not the overall score in BiggerGait or DenoisingGait."
+    },
+    {
+      "id": "cross-huang2026gaitmax-ccpg-sustech1k-gaitbase",
+      "method": "GaitBase",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "SUSTech1K",
+      "metrics": {
+        "NM": 12.1,
+        "BG": 14.7,
+        "CL": 9.5,
+        "UM": 14.3
+      },
+      "source": {
+        "key": "huang2026gaitmax",
+        "title": "Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf",
+        "venue": "CVPR",
+        "year": 2026,
+        "paperId": "huang2026gaitmax-cvpr-2026"
+      },
+      "origin": "GaitMax, Table 3",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources. CASIA-B is named as in this source, without assuming CASIA-B* preprocessing equivalence. Condition scores only: its SUSTech1K Mean is not the overall score in BiggerGait or DenoisingGait."
+    },
+    {
+      "id": "cross-huang2026gaitmax-ccpg-sustech1k-deepgaitv2",
+      "method": "DeepGaitV2",
+      "year": 2023,
+      "input": "S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "SUSTech1K",
+      "metrics": {
+        "NM": 40.5,
+        "BG": 40.3,
+        "CL": 27,
+        "UM": 37.5
+      },
+      "source": {
+        "key": "huang2026gaitmax",
+        "title": "Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf",
+        "venue": "CVPR",
+        "year": 2026,
+        "paperId": "huang2026gaitmax-cvpr-2026"
+      },
+      "origin": "GaitMax, Table 3",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Silhouette gait training on the listed source; source settings apply",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources. CASIA-B is named as in this source, without assuming CASIA-B* preprocessing equivalence. Condition scores only: its SUSTech1K Mean is not the overall score in BiggerGait or DenoisingGait."
+    },
+    {
+      "id": "cross-huang2026gaitmax-ccpg-sustech1k-denoisinggait",
+      "method": "DenoisingGait",
+      "year": 2025,
+      "input": "R+S",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "SUSTech1K",
+      "metrics": {
+        "NM": 66.9,
+        "BG": 59.7,
+        "CL": 37.3,
+        "UM": 45.7
+      },
+      "source": {
+        "key": "huang2026gaitmax",
+        "title": "Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf",
+        "venue": "CVPR",
+        "year": 2026,
+        "paperId": "huang2026gaitmax-cvpr-2026"
+      },
+      "origin": "GaitMax, Table 3",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Pretrained Stable Diffusion prior; RGB and silhouettes",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources. CASIA-B is named as in this source, without assuming CASIA-B* preprocessing equivalence. Condition scores only: its SUSTech1K Mean is not the overall score in BiggerGait or DenoisingGait."
+    },
+    {
+      "id": "cross-huang2026gaitmax-ccpg-sustech1k-biggait",
+      "method": "BigGait",
+      "year": 2024,
+      "input": "R",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "SUSTech1K",
+      "metrics": {
+        "NM": 60.7,
+        "BG": 57.2,
+        "CL": 43.7,
+        "UM": 57.1
+      },
+      "source": {
+        "key": "huang2026gaitmax",
+        "title": "Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf",
+        "venue": "CVPR",
+        "year": 2026,
+        "paperId": "huang2026gaitmax-cvpr-2026"
+      },
+      "origin": "GaitMax, Table 3",
+      "configuration": "DINOv2-S",
+      "resources": "DINOv2-S pretrained visual backbone",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources. CASIA-B is named as in this source, without assuming CASIA-B* preprocessing equivalence. Condition scores only: its SUSTech1K Mean is not the overall score in BiggerGait or DenoisingGait."
+    },
+    {
+      "id": "cross-huang2026gaitmax-ccpg-sustech1k-gaitmax",
+      "method": "GaitMax",
+      "year": 2026,
+      "input": "R",
+      "domain": "cross",
+      "train": "CCPG",
+      "target": "SUSTech1K",
+      "metrics": {
+        "NM": 67.1,
+        "BG": 62.8,
+        "CL": 55,
+        "UM": 61.3
+      },
+      "source": {
+        "key": "huang2026gaitmax",
+        "title": "Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf",
+        "venue": "CVPR",
+        "year": 2026,
+        "paperId": "huang2026gaitmax-cvpr-2026"
+      },
+      "origin": "GaitMax, Table 3",
+      "configuration": "Source-reported cross-domain configuration",
+      "resources": "Frozen large vision backbone; GCaption descriptions and OpenCLIP text supervision",
+      "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources. CASIA-B is named as in this source, without assuming CASIA-B* preprocessing equivalence. Condition scores only: its SUSTech1K Mean is not the overall score in BiggerGait or DenoisingGait."
     }
   ],
   "catalogue": [

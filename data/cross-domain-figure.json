@@ -1,0 +1,222 @@
+{
+  "source": "BiggerGait Table 1; GaitMax Table 3; DenoisingGait supplementary Table 9. Source-specific settings; only panel (c) computes differences.",
+  "metric": "Rank-1 accuracy (%)",
+  "targets": [
+    "SUSTech1K\nOverall",
+    "SUSTech1K\nCL",
+    "CASIA-B*\nCL",
+    "CCGR-Mini\nOverall"
+  ],
+  "ccpg": {
+    "methods": [
+      "GaitSet",
+      "GaitPart",
+      "GaitGL",
+      "GaitBase",
+      "DeepGaitV2",
+      "GaitEdge",
+      "BigGait",
+      "DenoisingGait",
+      "BiggerGait"
+    ],
+    "values": [
+      [
+        12.8,
+        8.2,
+        25.8,
+        2.4
+      ],
+      [
+        13.5,
+        8.1,
+        26.0,
+        2.4
+      ],
+      [
+        33.6,
+        25.4,
+        46.3,
+        3.3
+      ],
+      [
+        16.8,
+        9.5,
+        30.4,
+        2.8
+      ],
+      [
+        38.4,
+        27.0,
+        50.2,
+        3.7
+      ],
+      [
+        19.6,
+        8.9,
+        44.8,
+        null
+      ],
+      [
+        56.4,
+        43.7,
+        33.6,
+        7.4
+      ],
+      [
+        59.1,
+        37.3,
+        34.8,
+        null
+      ],
+      [
+        79.6,
+        70.9,
+        55.6,
+        15.5
+      ]
+    ]
+  },
+  "ccgr_mini": {
+    "methods": [
+      "GaitBase",
+      "DeepGaitV2",
+      "BigGait",
+      "BiggerGait"
+    ],
+    "values": [
+      [
+        48.0,
+        28.7,
+        33.9
+      ],
+      [
+        51.7,
+        32.1,
+        36.6
+      ],
+      [
+        85.6,
+        71.9,
+        58.4
+      ],
+      [
+        93.8,
+        82.1,
+        66.7
+      ]
+    ]
+  },
+  "gaitmax_cl": {
+    "source": {
+      "key": "huang2026gaitmax",
+      "title": "Unlocking Motion from Large Vision Models with a Semantic and Kinematic Duality for Gait Recognition",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Unlocking_Motion_from_Large_Vision_Models_with_a_Semantic_and_CVPR_2026_paper.pdf",
+      "venue": "CVPR",
+      "year": 2026,
+      "paperId": "huang2026gaitmax-cvpr-2026"
+    },
+    "methods": [
+      "BigGait",
+      "DenoisingGait",
+      "GaitMax"
+    ],
+    "directions": [
+      {
+        "train": "CCPG",
+        "target": "CASIA-B"
+      },
+      {
+        "train": "CCPG",
+        "target": "SUSTech1K"
+      }
+    ],
+    "values": [
+      [
+        33.6,
+        43.7
+      ],
+      [
+        34.8,
+        37.3
+      ],
+      [
+        46.2,
+        55
+      ]
+    ],
+    "recordIds": [
+      [
+        "cross-huang2026gaitmax-ccpg-casia-b-biggait",
+        "cross-huang2026gaitmax-ccpg-sustech1k-biggait"
+      ],
+      [
+        "cross-huang2026gaitmax-ccpg-casia-b-denoisinggait",
+        "cross-huang2026gaitmax-ccpg-sustech1k-denoisinggait"
+      ],
+      [
+        "cross-huang2026gaitmax-ccpg-casia-b-gaitmax",
+        "cross-huang2026gaitmax-ccpg-sustech1k-gaitmax"
+      ]
+    ]
+  },
+  "other_sources_cl": {
+    "source": {
+      "key": "jin2025denoising",
+      "title": "On Denoising Walking Videos for Gait Recognition",
+      "venue": "CVPR",
+      "year": 2025,
+      "paperId": "jin2025denoising-cvpr-2025",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+    },
+    "methods": [
+      "BigGait",
+      "DenoisingGait"
+    ],
+    "directions": [
+      {
+        "train": "CASIA-B*",
+        "target": "CCPG"
+      },
+      {
+        "train": "CASIA-B*",
+        "target": "SUSTech1K"
+      },
+      {
+        "train": "SUSTech1K",
+        "target": "CCPG"
+      },
+      {
+        "train": "SUSTech1K",
+        "target": "CASIA-B*"
+      }
+    ],
+    "values": [
+      [
+        7.5,
+        36.9,
+        4.5,
+        18.7
+      ],
+      [
+        6.2,
+        36.9,
+        5.5,
+        21.1
+      ]
+    ],
+    "recordIds": [
+      [
+        "cross-jin2025denoising-casia-bstar-ccpg-biggait",
+        "cross-jin2025denoising-casia-bstar-sustech1k-biggait",
+        "cross-jin2025denoising-sustech1k-ccpg-biggait",
+        "cross-jin2025denoising-sustech1k-casia-bstar-biggait"
+      ],
+      [
+        "cross-jin2025denoising-casia-bstar-ccpg-denoisinggait",
+        "cross-jin2025denoising-casia-bstar-sustech1k-denoisinggait",
+        "cross-jin2025denoising-sustech1k-ccpg-denoisinggait",
+        "cross-jin2025denoising-sustech1k-casia-bstar-denoisinggait"
+      ]
+    ]
+  }
+}

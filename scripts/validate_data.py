@@ -39,8 +39,26 @@ assert big['metrics']['R1']==88.0 and big['metrics'].get('mAP') is None and big[
 baseline=[r for r in best.values() if r['method']=='GaitBase'][0]
 assert baseline['metrics']=={'R1':27.0,'mAP':24.9,'mINP':9.7}
 cross=[r for r in D['results'] if r['domain']=='cross']
-cell=lambda method,train,target,metric:next(r['metrics'][metric] for r in cross if r['method']==method and r['train']==train and r['target']==target)
+cell=lambda method,train,target,metric:next(r['metrics'][metric] for r in cross if r['source']['key']=='ye2025biggergait' and r['method']==method and r['train']==train and r['target']==target)
 assert round(cell('DeepGaitV2','CCGR-Mini','CASIA-B*','CL')-cell('DeepGaitV2','CCPG','CASIA-B*','CL'),1)==-13.6
+# Source identity is part of an experiment: do not overwrite differing baselines.
+keys=[(r['source']['key'],r['method'],r['configuration'],r['train'],r['target']) for r in cross]
+assert len(keys)==len(set(keys)), 'Ambiguous cross-domain experiment'
+gb={r['source']['key']:r['metrics'].get('R1') for r in cross if r['method']=='GaitBase' and r['train']=='CCPG' and r['target']=='SUSTech1K'}
+assert gb['ye2025biggergait']==16.8 and gb['jin2025denoising']==17.3
+assert all('R1' not in r['metrics'] for r in cross if r['source']['key']=='huang2026gaitmax'), 'Do not relabel GaitMax condition means as overall accuracy'
+F=load('data/cross-domain-figure.json');by_id={r['id']:r for r in cross}
+for key in ['gaitmax_cl','other_sources_cl']:
+    panel=F[key]
+    for method,values,record_ids in zip(panel['methods'],panel['values'],panel['recordIds']):
+        for direction,value,rid in zip(panel['directions'],values,record_ids):
+            r=by_id[rid]
+            assert (r['method'],r['train'],r['target'],r['source']['key'],r['metrics']['CL'])==(method,direction['train'],direction['target'],panel['source']['key'],value)
+for section,train in [('ccpg','CCPG'),('ccgr_mini','CCGR-Mini')]:
+    for method,values in zip(F[section]['methods'],F[section]['values']):
+        for (target,metric),value in zip([('SUSTech1K','R1'),('SUSTech1K','CL'),('CASIA-B*','CL'),('CCGR-Mini','R1')],values):
+            assert cell(method,train,target,metric)==value
+assert (ROOT/'assets/cross-domain-transfer.pdf').read_bytes().startswith(b'%PDF-')
 nodes={n['id'] for n in M['nodes']};evidence={e['id']:e for e in M['evidence']}
 assert len(nodes)==len(M['nodes']) and sum(n['group']=='dimension' for n in M['nodes'])==5
 for link in M['links']:
