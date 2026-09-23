@@ -2,6 +2,8 @@
 
 ## 2026-09-23 — Code & openness
 
+- Moved the code-claim legend inside panel (c) and removed its redundant axis annotation; reduced figure height while preserving all values.
+
 - Reflowed the manuscript figure into a two-column, single-row layout and updated the downloadable vector PDF.
 
 - Placed the single-column figure's subfigure captions below their panels, matching the revised manuscript section, “Code and Openness.”

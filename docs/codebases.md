@@ -41,7 +41,7 @@ Corrections are welcome through an [issue](https://github.com/ChaoFan996/gait-su
 
 - `codebases.json` is canonical: metadata, repository snapshot, aggregate history, annual counts, and 160 public audit records. `data/code-source-links.json` documents 28 primary-publication links added where the older catalogue lacked a URL; all 160 audit records now have a source link.
 - `codebases-data.js` is generated for static/offline browsing. `codebases.js` and `codebases.css` provide filters, charts, and selection export.
-- `assets/public-codebases-statistics.pdf` is the fixed manuscript figure, 7.16 × 2.65 inches, with three panels in one row, with embedded Times New Roman and vector graphics. It retains its own snapshot date if the interactive data are later refreshed.
+- `assets/public-codebases-statistics.pdf` is the fixed manuscript figure, 7.16 × 2.25 inches, with three panels in one row, with embedded Times New Roman and vector graphics. It retains its own snapshot date if the interactive data are later refreshed.
 - For a new star snapshot, retrieve the selected repositories and **all** aggregate-history pages, validate daily/weekly totals, update retrieval dates, and preserve the publication audit date and corpus membership. Never infer paper claims from current GitHub links.
 - For a claim correction, update the record, its evidence page and decision, the annual counts, and `meta.claimAuditDate`. Document the change in `CHANGELOG.md`.
 - Rebuild with `python3 scripts/build_data.py`, then run `python3 scripts/validate_data.py` and `node --check codebases.js`. Validation checks membership, annual numerators/denominators, daily continuity, history totals, and generated-bundle parity.
