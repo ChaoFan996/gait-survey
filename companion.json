@@ -30,7 +30,7 @@
     "exclusionCount": 8,
     "modalityUses": 212,
     "selection": "The smaller 2020–2025 modality archive defines membership. Specified venues only; corrected publication identity removes exact duplicates; withdrawn and wearable-only studies are excluded. Distinct conference/journal publications are separate.",
-    "benchmarkPolicy": "Representative results corresponding to Table III and Figure 5, not an exhaustive leaderboard. Ranking is within the selected dataset, protocol, metric and training source. CCGR-Mini selects the highest R1 per listed configuration among imported sources; accompanying metrics remain from the same record. Result sources are independent of the literature-statistics venue list. Cross-domain rankings and matrices use one reporting source at a time. CASIA-B and CASIA-B* retain their source labels. R1 preserves a source-reported overall score; missing aggregates are not inferred from condition means. GREW (1,000-ID subset) is a separate target from the standard GREW test split. OU-LP and OUMVLP-Pose are distinct datasets. Skeleton inputs may be coordinate sequences or rendered maps; record-level preprocessing applies.",
+    "benchmarkPolicy": "Representative results corresponding to Tables III and IV, not an exhaustive leaderboard. Ranking is within the selected dataset, protocol, metric and training source. CCGR-Mini selects the highest R1 per listed configuration among imported sources; accompanying metrics remain from the same record. Result sources are independent of the literature-statistics venue list. Cross-domain rankings and matrices use one reporting source at a time. CASIA-B and CASIA-B* retain their source labels. R1 preserves a source-reported overall score; missing aggregates are not inferred from condition means. GREW (1,000-ID subset) is a separate target from the standard GREW test split. OU-LP and OUMVLP-Pose are distinct datasets. Skeleton inputs may be coordinate sequences or rendered maps; record-level preprocessing applies.",
     "datasetPolicy": "One use per publication and dataset; co-usage is inclusive (other datasets may also occur). Missing dataset or modality information is not counted as a use.",
     "modalityPolicy": "Recorded inputs, including training auxiliaries; multiple recorded modalities do not necessarily imply test-time fusion. Skeleton and Pose preserve the archive labels.",
     "catalogueNotes": [
@@ -5533,7 +5533,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5557,7 +5557,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5581,7 +5581,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5606,7 +5606,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5630,7 +5630,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5654,7 +5654,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5679,7 +5679,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5703,7 +5703,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5727,7 +5727,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5752,7 +5752,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5776,7 +5776,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5800,7 +5800,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5825,7 +5825,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5849,7 +5849,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5873,7 +5873,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5898,7 +5898,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5922,7 +5922,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5946,7 +5946,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5971,7 +5971,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5995,7 +5995,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6019,7 +6019,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6044,7 +6044,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Stable Diffusion prior",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6068,7 +6068,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Stable Diffusion prior",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6092,7 +6092,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Stable Diffusion prior",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6117,7 +6117,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6141,7 +6141,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6165,7 +6165,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6190,7 +6190,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6214,7 +6214,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6239,7 +6239,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6263,7 +6263,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6288,7 +6288,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6312,7 +6312,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6337,7 +6337,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6361,7 +6361,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
+      "origin": "BiggerGait final paper, Table 1; survey Table IV(A)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."

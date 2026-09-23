@@ -67,6 +67,12 @@ poses=[r for r in cross if r['source']['key']=='fu2023gpgait']
 assert len(poses)==48 and all(r['input']=='K' and r['protocol'] for r in poses)
 assert next(r for r in poses if r['method']=='GaitTR' and r['train']=='OUMVLP-Pose' and r['target']=='CASIA-B')['metrics']['Mean']==7.84
 assert (ROOT/'assets/cross-domain-transfer.pdf').read_bytes().startswith(b'%PDF-')
+table_cells = load('data/cross-domain-table.json')['cells']
+assert len({(c['recordId'], c['metric']) for c in table_cells}) == len(table_cells)
+for c in table_cells:
+    assert by_id[c['recordId']]['metrics'][c['metric']] == c['value'], c
+assert sum(c['value'] is not None for c in table_cells) == 92
+assert r'\label{tab:transfer}' in (ROOT/'assets/cross-domain-table.tex').read_text()
 nodes={n['id'] for n in M['nodes']};evidence={e['id']:e for e in M['evidence']}
 assert len(nodes)==len(M['nodes']) and sum(n['group']=='dimension' for n in M['nodes'])==5
 for link in M['links']:
