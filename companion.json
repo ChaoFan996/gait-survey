@@ -30,7 +30,7 @@
     "exclusionCount": 8,
     "modalityUses": 212,
     "selection": "The smaller 2020–2025 modality archive defines membership. Specified venues only; corrected publication identity removes exact duplicates; withdrawn and wearable-only studies are excluded. Distinct conference/journal publications are separate.",
-    "benchmarkPolicy": "Representative results corresponding to Table III and Figure 5, not an exhaustive leaderboard. Ranking is within the selected dataset, protocol, metric and training source. CCGR-Mini selects the highest R1 per listed configuration among imported sources; accompanying metrics remain from the same record. Result sources are independent of the literature-statistics venue list. Cross-domain rankings and matrices use one reporting source at a time. CASIA-B and CASIA-B* retain their source labels. R1 preserves a source-reported overall score; missing aggregates are not inferred from condition means.",
+    "benchmarkPolicy": "Representative results corresponding to Table III and Figure 5, not an exhaustive leaderboard. Ranking is within the selected dataset, protocol, metric and training source. CCGR-Mini selects the highest R1 per listed configuration among imported sources; accompanying metrics remain from the same record. Result sources are independent of the literature-statistics venue list. Cross-domain rankings and matrices use one reporting source at a time. CASIA-B and CASIA-B* retain their source labels. R1 preserves a source-reported overall score; missing aggregates are not inferred from condition means. GREW (1,000-ID subset) is a separate target from the standard GREW test split. OU-LP and OUMVLP-Pose are distinct datasets. Skeleton inputs may be coordinate sequences or rendered maps; record-level preprocessing applies.",
     "datasetPolicy": "One use per publication and dataset; co-usage is inclusive (other datasets may also occur). Missing dataset or modality information is not counted as a use.",
     "modalityPolicy": "Recorded inputs, including training auxiliaries; multiple recorded modalities do not necessarily imply test-time fusion. Skeleton and Pose preserve the archive labels.",
     "catalogueNotes": [
@@ -3365,6 +3365,28 @@
         "CL",
         "R1"
       ]
+    },
+    "OU-LP": {
+      "protocol": "OU-ISIR large population dataset, as evaluated in the Gait3D source paper; distinct from OU-MVLP.",
+      "metrics": [
+        "R1",
+        "R5",
+        "mAP"
+      ]
+    },
+    "OUMVLP-Pose": {
+      "protocol": "OU-MVLP pose sequences; GPGait evaluation excludes identical views and maps AlphaPose joints to COCO17.",
+      "metrics": [
+        "R1"
+      ]
+    },
+    "GREW (1,000-ID subset)": {
+      "protocol": "Custom GREW evaluation in the Gait3D paper: 1,000 sampled identities, 1,000 query and 4,095 gallery sequences.",
+      "metrics": [
+        "R1",
+        "R5",
+        "mAP"
+      ]
     }
   },
   "results": [
@@ -5511,7 +5533,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5535,7 +5557,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5559,7 +5581,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5584,7 +5606,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5608,7 +5630,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5632,7 +5654,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5657,7 +5679,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5681,7 +5703,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5705,7 +5727,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5730,7 +5752,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5754,7 +5776,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5778,7 +5800,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5803,7 +5825,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5827,7 +5849,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5851,7 +5873,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5876,7 +5898,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5900,7 +5922,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5924,7 +5946,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5949,7 +5971,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5973,7 +5995,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -5997,7 +6019,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6022,7 +6044,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Stable Diffusion prior",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6046,7 +6068,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Stable Diffusion prior",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6070,7 +6092,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Stable Diffusion prior",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6095,7 +6117,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6119,7 +6141,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6143,7 +6165,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6168,7 +6190,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6192,7 +6214,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6217,7 +6239,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6241,7 +6263,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "Listed method version",
       "resources": "Gait training and upstream preprocessing follow the cited comparison; external resources are not fully specified in the survey table",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6266,7 +6288,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6290,7 +6312,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "DINOv2-S",
       "resources": "DINOv2-S",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6315,7 +6337,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -6339,7 +6361,7 @@
         "year": 2025,
         "paperId": "ref-ye2025biggergait"
       },
-      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–c)",
+      "origin": "BiggerGait final paper, Table 1; survey Fig. 5(a–b)",
       "configuration": "DINOv2-S; ungrouped",
       "resources": "DINOv2-S; ungrouped variant",
       "note": "Source-only transfer; no target-label adaptation. External pretraining differs across methods."
@@ -7815,6 +7837,1404 @@
       "configuration": "Source-reported cross-domain configuration",
       "resources": "Frozen large vision backbone; GCaption descriptions and OpenCLIP text supervision",
       "note": "Source-only transfer. Scores are retained separately by reporting paper; external pretraining and baseline values can differ across sources. CASIA-B is named as in this source, without assuming CASIA-B* preprocessing equivalence. Condition scores only: its SUSTech1K Mean is not the overall score in BiggerGait or DenoisingGait."
+    },
+    {
+      "id": "cross-zheng2022gait-gaitset-casia-b-gait3d",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "CASIA-B",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 6.9,
+        "R5": 14.6,
+        "mAP": 4.64
+      },
+      "source": {
+        "key": "zheng2022gait",
+        "title": "Gait Recognition in the Wild with Dense 3D Representations and a Benchmark",
+        "venue": "CVPR",
+        "year": 2022,
+        "paperId": "zheng2022gait-cvpr-2022",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/supplemental/Zheng_Gait_Recognition_in_CVPR_2022_supplemental.pdf"
+      },
+      "origin": "Gait3D supplementary material, Table 3",
+      "configuration": "GaitSet as evaluated by Gait3D authors",
+      "resources": "Precomputed 2D silhouettes; source-dataset gait supervision",
+      "protocol": "Gait3D supplementary Table 3: GaitSet on 2D silhouettes; official splits for CASIA-B, OU-LP and Gait3D. GREW target uses 1,000 IDs sampled from its training set, with 1,000 query and 4,095 gallery sequences; this is not the standard GREW test protocol.",
+      "note": "Gait3D supplementary Table 3: GaitSet on 2D silhouettes; official splits for CASIA-B, OU-LP and Gait3D. GREW target uses 1,000 IDs sampled from its training set, with 1,000 query and 4,095 gallery sequences; this is not the standard GREW test protocol."
+    },
+    {
+      "id": "cross-zheng2022gait-gaitset-ou-lp-gait3d",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "OU-LP",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 6.1,
+        "R5": 12.4,
+        "mAP": 4.42
+      },
+      "source": {
+        "key": "zheng2022gait",
+        "title": "Gait Recognition in the Wild with Dense 3D Representations and a Benchmark",
+        "venue": "CVPR",
+        "year": 2022,
+        "paperId": "zheng2022gait-cvpr-2022",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/supplemental/Zheng_Gait_Recognition_in_CVPR_2022_supplemental.pdf"
+      },
+      "origin": "Gait3D supplementary material, Table 3",
+      "configuration": "GaitSet as evaluated by Gait3D authors",
+      "resources": "Precomputed 2D silhouettes; source-dataset gait supervision",
+      "protocol": "Gait3D supplementary Table 3: GaitSet on 2D silhouettes; official splits for CASIA-B, OU-LP and Gait3D. GREW target uses 1,000 IDs sampled from its training set, with 1,000 query and 4,095 gallery sequences; this is not the standard GREW test protocol.",
+      "note": "Gait3D supplementary Table 3: GaitSet on 2D silhouettes; official splits for CASIA-B, OU-LP and Gait3D. GREW target uses 1,000 IDs sampled from its training set, with 1,000 query and 4,095 gallery sequences; this is not the standard GREW test protocol."
+    },
+    {
+      "id": "cross-zheng2022gait-gaitset-grew-gait3d",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "GREW",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 16.5,
+        "R5": 31.1,
+        "mAP": 11.71
+      },
+      "source": {
+        "key": "zheng2022gait",
+        "title": "Gait Recognition in the Wild with Dense 3D Representations and a Benchmark",
+        "venue": "CVPR",
+        "year": 2022,
+        "paperId": "zheng2022gait-cvpr-2022",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/supplemental/Zheng_Gait_Recognition_in_CVPR_2022_supplemental.pdf"
+      },
+      "origin": "Gait3D supplementary material, Table 3",
+      "configuration": "GaitSet as evaluated by Gait3D authors",
+      "resources": "Precomputed 2D silhouettes; source-dataset gait supervision",
+      "protocol": "Gait3D supplementary Table 3: GaitSet on 2D silhouettes; official splits for CASIA-B, OU-LP and Gait3D. GREW target uses 1,000 IDs sampled from its training set, with 1,000 query and 4,095 gallery sequences; this is not the standard GREW test protocol.",
+      "note": "Gait3D supplementary Table 3: GaitSet on 2D silhouettes; official splits for CASIA-B, OU-LP and Gait3D. GREW target uses 1,000 IDs sampled from its training set, with 1,000 query and 4,095 gallery sequences; this is not the standard GREW test protocol."
+    },
+    {
+      "id": "cross-zheng2022gait-gaitset-gait3d-casia-b",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "CASIA-B",
+      "metrics": {
+        "R1": 66.71,
+        "R5": 71.59,
+        "mAP": 33.88
+      },
+      "source": {
+        "key": "zheng2022gait",
+        "title": "Gait Recognition in the Wild with Dense 3D Representations and a Benchmark",
+        "venue": "CVPR",
+        "year": 2022,
+        "paperId": "zheng2022gait-cvpr-2022",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/supplemental/Zheng_Gait_Recognition_in_CVPR_2022_supplemental.pdf"
+      },
+      "origin": "Gait3D supplementary material, Table 3",
+      "configuration": "GaitSet as evaluated by Gait3D authors",
+      "resources": "Precomputed 2D silhouettes; source-dataset gait supervision",
+      "protocol": "Gait3D supplementary Table 3: GaitSet on 2D silhouettes; official splits for CASIA-B, OU-LP and Gait3D. GREW target uses 1,000 IDs sampled from its training set, with 1,000 query and 4,095 gallery sequences; this is not the standard GREW test protocol.",
+      "note": "Gait3D supplementary Table 3: GaitSet on 2D silhouettes; official splits for CASIA-B, OU-LP and Gait3D. GREW target uses 1,000 IDs sampled from its training set, with 1,000 query and 4,095 gallery sequences; this is not the standard GREW test protocol."
+    },
+    {
+      "id": "cross-zheng2022gait-gaitset-gait3d-ou-lp",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "OU-LP",
+      "metrics": {
+        "R1": 97.84,
+        "R5": 99.38,
+        "mAP": 68.06
+      },
+      "source": {
+        "key": "zheng2022gait",
+        "title": "Gait Recognition in the Wild with Dense 3D Representations and a Benchmark",
+        "venue": "CVPR",
+        "year": 2022,
+        "paperId": "zheng2022gait-cvpr-2022",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/supplemental/Zheng_Gait_Recognition_in_CVPR_2022_supplemental.pdf"
+      },
+      "origin": "Gait3D supplementary material, Table 3",
+      "configuration": "GaitSet as evaluated by Gait3D authors",
+      "resources": "Precomputed 2D silhouettes; source-dataset gait supervision",
+      "protocol": "Gait3D supplementary Table 3: GaitSet on 2D silhouettes; official splits for CASIA-B, OU-LP and Gait3D. GREW target uses 1,000 IDs sampled from its training set, with 1,000 query and 4,095 gallery sequences; this is not the standard GREW test protocol.",
+      "note": "Gait3D supplementary Table 3: GaitSet on 2D silhouettes; official splits for CASIA-B, OU-LP and Gait3D. GREW target uses 1,000 IDs sampled from its training set, with 1,000 query and 4,095 gallery sequences; this is not the standard GREW test protocol."
+    },
+    {
+      "id": "cross-zheng2022gait-gaitset-gait3d-grew-1000-id-subset",
+      "method": "GaitSet",
+      "year": 2019,
+      "input": "S",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "GREW (1,000-ID subset)",
+      "metrics": {
+        "R1": 43.86,
+        "R5": 60.89,
+        "mAP": 28.06
+      },
+      "source": {
+        "key": "zheng2022gait",
+        "title": "Gait Recognition in the Wild with Dense 3D Representations and a Benchmark",
+        "venue": "CVPR",
+        "year": 2022,
+        "paperId": "zheng2022gait-cvpr-2022",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/supplemental/Zheng_Gait_Recognition_in_CVPR_2022_supplemental.pdf"
+      },
+      "origin": "Gait3D supplementary material, Table 3",
+      "configuration": "GaitSet as evaluated by Gait3D authors",
+      "resources": "Precomputed 2D silhouettes; source-dataset gait supervision",
+      "protocol": "Gait3D supplementary Table 3: GaitSet on 2D silhouettes; official splits for CASIA-B, OU-LP and Gait3D. GREW target uses 1,000 IDs sampled from its training set, with 1,000 query and 4,095 gallery sequences; this is not the standard GREW test protocol.",
+      "note": "Gait3D supplementary Table 3: GaitSet on 2D silhouettes; official splits for CASIA-B, OU-LP and Gait3D. GREW target uses 1,000 IDs sampled from its training set, with 1,000 query and 4,095 gallery sequences; this is not the standard GREW test protocol."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph-casia-b-oumvlp-pose",
+      "method": "GaitGraph",
+      "year": 2021,
+      "input": "K",
+      "domain": "cross",
+      "train": "CASIA-B",
+      "target": "OUMVLP-Pose",
+      "metrics": {
+        "R1": 0.07
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph-casia-b-grew",
+      "method": "GaitGraph",
+      "year": 2021,
+      "input": "K",
+      "domain": "cross",
+      "train": "CASIA-B",
+      "target": "GREW",
+      "metrics": {
+        "R1": 0.45
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph-casia-b-gait3d",
+      "method": "GaitGraph",
+      "year": 2021,
+      "input": "K",
+      "domain": "cross",
+      "train": "CASIA-B",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 0.9
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph2-casia-b-oumvlp-pose",
+      "method": "GaitGraph2",
+      "year": 2022,
+      "input": "K",
+      "domain": "cross",
+      "train": "CASIA-B",
+      "target": "OUMVLP-Pose",
+      "metrics": {
+        "R1": 0.07
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph2-casia-b-grew",
+      "method": "GaitGraph2",
+      "year": 2022,
+      "input": "K",
+      "domain": "cross",
+      "train": "CASIA-B",
+      "target": "GREW",
+      "metrics": {
+        "R1": 0.48
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph2-casia-b-gait3d",
+      "method": "GaitGraph2",
+      "year": 2022,
+      "input": "K",
+      "domain": "cross",
+      "train": "CASIA-B",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 1.1
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaittr-casia-b-oumvlp-pose",
+      "method": "GaitTR",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "CASIA-B",
+      "target": "OUMVLP-Pose",
+      "metrics": {
+        "R1": 0.07
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaittr-casia-b-grew",
+      "method": "GaitTR",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "CASIA-B",
+      "target": "GREW",
+      "metrics": {
+        "R1": 0.62
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaittr-casia-b-gait3d",
+      "method": "GaitTR",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "CASIA-B",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 1.1
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gpgait-casia-b-oumvlp-pose",
+      "method": "GPGait",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "CASIA-B",
+      "target": "OUMVLP-Pose",
+      "metrics": {
+        "R1": 2.84
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gpgait-casia-b-grew",
+      "method": "GPGait",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "CASIA-B",
+      "target": "GREW",
+      "metrics": {
+        "R1": 9.97
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gpgait-casia-b-gait3d",
+      "method": "GPGait",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "CASIA-B",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 8.9
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph-oumvlp-pose-casia-b",
+      "method": "GaitGraph",
+      "year": 2021,
+      "input": "K",
+      "domain": "cross",
+      "train": "OUMVLP-Pose",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 4.85,
+        "BG": 4.84,
+        "CL": 3.9,
+        "Mean": 4.53
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph-oumvlp-pose-grew",
+      "method": "GaitGraph",
+      "year": 2021,
+      "input": "K",
+      "domain": "cross",
+      "train": "OUMVLP-Pose",
+      "target": "GREW",
+      "metrics": {
+        "R1": 0.67
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph-oumvlp-pose-gait3d",
+      "method": "GaitGraph",
+      "year": 2021,
+      "input": "K",
+      "domain": "cross",
+      "train": "OUMVLP-Pose",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 1.5
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph2-oumvlp-pose-casia-b",
+      "method": "GaitGraph2",
+      "year": 2022,
+      "input": "K",
+      "domain": "cross",
+      "train": "OUMVLP-Pose",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 8.83,
+        "BG": 7.62,
+        "CL": 5.13,
+        "Mean": 7.19
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph2-oumvlp-pose-grew",
+      "method": "GaitGraph2",
+      "year": 2022,
+      "input": "K",
+      "domain": "cross",
+      "train": "OUMVLP-Pose",
+      "target": "GREW",
+      "metrics": {
+        "R1": 0.85
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph2-oumvlp-pose-gait3d",
+      "method": "GaitGraph2",
+      "year": 2022,
+      "input": "K",
+      "domain": "cross",
+      "train": "OUMVLP-Pose",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 1.4
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaittr-oumvlp-pose-casia-b",
+      "method": "GaitTR",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "OUMVLP-Pose",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 10.1,
+        "BG": 8.26,
+        "CL": 5.17,
+        "Mean": 7.84
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaittr-oumvlp-pose-grew",
+      "method": "GaitTR",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "OUMVLP-Pose",
+      "target": "GREW",
+      "metrics": {
+        "R1": 1.06
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaittr-oumvlp-pose-gait3d",
+      "method": "GaitTR",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "OUMVLP-Pose",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 2.6
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gpgait-oumvlp-pose-casia-b",
+      "method": "GPGait",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "OUMVLP-Pose",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 44.36,
+        "BG": 31.97,
+        "CL": 22.35,
+        "Mean": 32.9
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gpgait-oumvlp-pose-grew",
+      "method": "GPGait",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "OUMVLP-Pose",
+      "target": "GREW",
+      "metrics": {
+        "R1": 11.13
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gpgait-oumvlp-pose-gait3d",
+      "method": "GPGait",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "OUMVLP-Pose",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 9.0
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph-grew-casia-b",
+      "method": "GaitGraph",
+      "year": 2021,
+      "input": "K",
+      "domain": "cross",
+      "train": "GREW",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 10.54,
+        "BG": 7.73,
+        "CL": 5.73,
+        "Mean": 8.0
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph-grew-oumvlp-pose",
+      "method": "GaitGraph",
+      "year": 2021,
+      "input": "K",
+      "domain": "cross",
+      "train": "GREW",
+      "target": "OUMVLP-Pose",
+      "metrics": {
+        "R1": 0.17
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph-grew-gait3d",
+      "method": "GaitGraph",
+      "year": 2021,
+      "input": "K",
+      "domain": "cross",
+      "train": "GREW",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 4.4
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph2-grew-casia-b",
+      "method": "GaitGraph2",
+      "year": 2022,
+      "input": "K",
+      "domain": "cross",
+      "train": "GREW",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 8.85,
+        "BG": 7.18,
+        "CL": 5.13,
+        "Mean": 7.05
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph2-grew-oumvlp-pose",
+      "method": "GaitGraph2",
+      "year": 2022,
+      "input": "K",
+      "domain": "cross",
+      "train": "GREW",
+      "target": "OUMVLP-Pose",
+      "metrics": {
+        "R1": 0.22
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph2-grew-gait3d",
+      "method": "GaitGraph2",
+      "year": 2022,
+      "input": "K",
+      "domain": "cross",
+      "train": "GREW",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 8.3
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaittr-grew-casia-b",
+      "method": "GaitTR",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "GREW",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 7.6,
+        "BG": 6.36,
+        "CL": 6.4,
+        "Mean": 6.79
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaittr-grew-oumvlp-pose",
+      "method": "GaitTR",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "GREW",
+      "target": "OUMVLP-Pose",
+      "metrics": {
+        "R1": 0.06
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaittr-grew-gait3d",
+      "method": "GaitTR",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "GREW",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 7.3
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gpgait-grew-casia-b",
+      "method": "GPGait",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "GREW",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 57.87,
+        "BG": 45.98,
+        "CL": 24.23,
+        "Mean": 42.69
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gpgait-grew-oumvlp-pose",
+      "method": "GPGait",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "GREW",
+      "target": "OUMVLP-Pose",
+      "metrics": {
+        "R1": 4.25
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gpgait-grew-gait3d",
+      "method": "GPGait",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "GREW",
+      "target": "Gait3D",
+      "metrics": {
+        "R1": 18.5
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph-gait3d-casia-b",
+      "method": "GaitGraph",
+      "year": 2021,
+      "input": "K",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 16.47,
+        "BG": 12.18,
+        "CL": 8.29,
+        "Mean": 12.31
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph-gait3d-oumvlp-pose",
+      "method": "GaitGraph",
+      "year": 2021,
+      "input": "K",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "OUMVLP-Pose",
+      "metrics": {
+        "R1": 0.27
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph-gait3d-grew",
+      "method": "GaitGraph",
+      "year": 2021,
+      "input": "K",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "GREW",
+      "metrics": {
+        "R1": 3.14
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph2-gait3d-casia-b",
+      "method": "GaitGraph2",
+      "year": 2022,
+      "input": "K",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 12.32,
+        "BG": 9.93,
+        "CL": 5.43,
+        "Mean": 9.23
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph2-gait3d-oumvlp-pose",
+      "method": "GaitGraph2",
+      "year": 2022,
+      "input": "K",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "OUMVLP-Pose",
+      "metrics": {
+        "R1": 0.09
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaitgraph2-gait3d-grew",
+      "method": "GaitGraph2",
+      "year": 2022,
+      "input": "K",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "GREW",
+      "metrics": {
+        "R1": 2.39
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaittr-gait3d-casia-b",
+      "method": "GaitTR",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 4.5,
+        "BG": 3.9,
+        "CL": 3.96,
+        "Mean": 4.12
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaittr-gait3d-oumvlp-pose",
+      "method": "GaitTR",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "OUMVLP-Pose",
+      "metrics": {
+        "R1": 0.06
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gaittr-gait3d-grew",
+      "method": "GaitTR",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "GREW",
+      "metrics": {
+        "R1": 4.38
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gpgait-gait3d-casia-b",
+      "method": "GPGait",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "CASIA-B",
+      "metrics": {
+        "NM": 48.83,
+        "BG": 40.26,
+        "CL": 19.43,
+        "Mean": 36.17
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gpgait-gait3d-oumvlp-pose",
+      "method": "GPGait",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "OUMVLP-Pose",
+      "metrics": {
+        "R1": 2.79
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
+    },
+    {
+      "id": "cross-fu2023gpgait-gpgait-gait3d-grew",
+      "method": "GPGait",
+      "year": 2023,
+      "input": "K",
+      "domain": "cross",
+      "train": "Gait3D",
+      "target": "GREW",
+      "metrics": {
+        "R1": 11.02
+      },
+      "source": {
+        "key": "fu2023gpgait",
+        "title": "GPGait: Generalized Pose-based Gait Recognition",
+        "venue": "ICCV",
+        "year": 2023,
+        "paperId": "fu2023gpgait-iccv-2023",
+        "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+      },
+      "origin": "GPGait, Table 1 (published CVF version)",
+      "configuration": "FastPoseGait reproduction",
+      "resources": "Estimated 2D keypoints; source-dataset gait supervision",
+      "protocol": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split.",
+      "note": "GPGait Table 1: direct transfer; HRNet poses for CASIA-B, Gait3D and GREW. OUMVLP-Pose uses AlphaPose joints mapped to COCO17. Identical views are excluded for indoor targets. GREW uses its standard 6,000-ID test split; Gait3D uses its 1,000-ID test split."
     }
   ],
   "catalogue": [

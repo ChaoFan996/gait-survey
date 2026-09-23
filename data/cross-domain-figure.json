@@ -1,5 +1,5 @@
 {
-  "source": "BiggerGait Table 1; GaitMax Table 3. Source-specific settings; only panel (c) computes differences.",
+  "source": "BiggerGait Table 1; GaitMax Table 3; Gait3D supplementary Table 3; GPGait Table 1. Directly reported scores; source-specific inputs and protocols.",
   "metric": "Rank-1 accuracy (%)",
   "targets": [
     "SUSTech1K\nOverall",
@@ -156,6 +156,144 @@
       [
         "cross-huang2026gaitmax-ccpg-casia-b-gaitmax",
         "cross-huang2026gaitmax-ccpg-sustech1k-gaitmax"
+      ]
+    ],
+    "metric": "CL"
+  },
+  "silhouette_transfer": {
+    "source": {
+      "key": "zheng2022gait",
+      "title": "Gait Recognition in the Wild with Dense 3D Representations and a Benchmark",
+      "venue": "CVPR",
+      "year": 2022,
+      "paperId": "zheng2022gait-cvpr-2022",
+      "url": "https://openaccess.thecvf.com/content/CVPR2022/supplemental/Zheng_Gait_Recognition_in_CVPR_2022_supplemental.pdf"
+    },
+    "method": "GaitSet",
+    "rowLabels": [
+      "CASIA-B → Gait3D",
+      "OU-LP → Gait3D",
+      "GREW → Gait3D",
+      "Gait3D → GREW†"
+    ],
+    "metrics": [
+      "R1",
+      "R5",
+      "mAP"
+    ],
+    "values": [
+      [
+        6.9,
+        14.6,
+        4.64
+      ],
+      [
+        6.1,
+        12.4,
+        4.42
+      ],
+      [
+        16.5,
+        31.1,
+        11.71
+      ],
+      [
+        43.86,
+        60.89,
+        28.06
+      ]
+    ],
+    "recordIds": [
+      "cross-zheng2022gait-gaitset-casia-b-gait3d",
+      "cross-zheng2022gait-gaitset-ou-lp-gait3d",
+      "cross-zheng2022gait-gaitset-grew-gait3d",
+      "cross-zheng2022gait-gaitset-gait3d-grew-1000-id-subset"
+    ]
+  },
+  "pose_transfer": {
+    "source": {
+      "key": "fu2023gpgait",
+      "title": "GPGait: Generalized Pose-based Gait Recognition",
+      "venue": "ICCV",
+      "year": 2023,
+      "paperId": "fu2023gpgait-iccv-2023",
+      "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.pdf"
+    },
+    "metric": "R1",
+    "methods": [
+      "GaitGraph",
+      "GaitGraph2",
+      "GaitTR",
+      "GPGait"
+    ],
+    "directions": [
+      {
+        "train": "CASIA-B",
+        "target": "GREW"
+      },
+      {
+        "train": "CASIA-B",
+        "target": "Gait3D"
+      },
+      {
+        "train": "GREW",
+        "target": "Gait3D"
+      },
+      {
+        "train": "Gait3D",
+        "target": "GREW"
+      }
+    ],
+    "values": [
+      [
+        0.45,
+        0.9,
+        4.4,
+        3.14
+      ],
+      [
+        0.48,
+        1.1,
+        8.3,
+        2.39
+      ],
+      [
+        0.62,
+        1.1,
+        7.3,
+        4.38
+      ],
+      [
+        9.97,
+        8.9,
+        18.5,
+        11.02
+      ]
+    ],
+    "recordIds": [
+      [
+        "cross-fu2023gpgait-gaitgraph-casia-b-grew",
+        "cross-fu2023gpgait-gaitgraph-casia-b-gait3d",
+        "cross-fu2023gpgait-gaitgraph-grew-gait3d",
+        "cross-fu2023gpgait-gaitgraph-gait3d-grew"
+      ],
+      [
+        "cross-fu2023gpgait-gaitgraph2-casia-b-grew",
+        "cross-fu2023gpgait-gaitgraph2-casia-b-gait3d",
+        "cross-fu2023gpgait-gaitgraph2-grew-gait3d",
+        "cross-fu2023gpgait-gaitgraph2-gait3d-grew"
+      ],
+      [
+        "cross-fu2023gpgait-gaittr-casia-b-grew",
+        "cross-fu2023gpgait-gaittr-casia-b-gait3d",
+        "cross-fu2023gpgait-gaittr-grew-gait3d",
+        "cross-fu2023gpgait-gaittr-gait3d-grew"
+      ],
+      [
+        "cross-fu2023gpgait-gpgait-casia-b-grew",
+        "cross-fu2023gpgait-gpgait-casia-b-gait3d",
+        "cross-fu2023gpgait-gpgait-grew-gait3d",
+        "cross-fu2023gpgait-gpgait-gait3d-grew"
       ]
     ]
   }
