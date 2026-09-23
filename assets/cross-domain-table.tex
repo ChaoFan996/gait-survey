@@ -2,48 +2,68 @@
 \begin{table*}[t]
 \centering
 \caption{Selected source-only cross-domain gait recognition results (\%).
-Training datasets and reporting sources are listed together; no target-domain adaptation is used.}
+Repeated reports under matching settings are consolidated by taking the higher value per cell.}
 \label{tab:transfer}
 \begingroup
 \fontsize{8}{9.4}\selectfont
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.08}
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcrrrrr@{}}
+\setlength{\tabcolsep}{2.8pt}
+\renewcommand{\arraystretch}{1.04}
+\noindent\makebox[\textwidth][l]{\textbf{A. Transfer across training datasets and clothing conditions} \quad Rank-1 accuracy}\par\vspace{3pt}
+\begin{minipage}[t]{0.49\textwidth}
+\textbf{CCPG training}$^a$\par\vspace{2pt}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lcrrrr@{}}
 \toprule
-\multicolumn{8}{@{}l}{\textbf{A. Transfer across training datasets and clothing conditions} \quad Rank-1 accuracy}\\
+\multirow{2}{*}{Method} & \multirow{2}{*}{Input}
+& \multicolumn{2}{c}{SUSTech1K} & CASIA-B$^*$ & CCGR-Mini\\
+\cmidrule(lr){3-4}
+& & Overall & CL & CL & Overall\\
 \midrule
-\multirow{2}{*}{Training (source)} & \multirow{2}{*}{Method} & \multirow{2}{*}{Input}
-& \multicolumn{2}{c}{SUSTech1K} & CASIA-B$^*$ & CCPG & CCGR-Mini\\
-\cmidrule(lr){4-5}
-& & & Overall & CL & CL & CL & Overall\\
-\midrule
-\multirow{9}{*}{CCPG~\cite{ye2025biggergait}} & GaitSet & S & 12.8 & 8.2 & 25.8 & -- & 2.4 \\
- & GaitPart & S & 13.5 & 8.1 & 26.0 & -- & 2.4 \\
- & GaitGL & S & 33.6 & 25.4 & 46.3 & -- & 3.3 \\
- & GaitBase & S & 16.8 & 9.5 & 30.4 & -- & 2.8 \\
- & DeepGaitV2 & S & 38.4 & 27.0 & 50.2 & -- & 3.7 \\
- & GaitEdge & R+S & 19.6 & 8.9 & 44.8 & -- & -- \\
- & BigGait & R & 56.4 & 43.7 & 33.6 & -- & 7.4 \\
- & DenoisingGait & R+S & 59.1 & 37.3 & 34.8 & -- & -- \\
- & BiggerGait & R & 79.6 & 70.9 & 55.6 & -- & 15.5 \\
-\addlinespace[2pt]
-\multirow{1}{*}{CCPG~\cite{huang2026gaitmax}} & GaitMax & R & -- & 55.0 & 46.2$^{\ddagger}$ & -- & -- \\
-\addlinespace[2pt]
-\multirow{4}{*}{CCGR-Mini~\cite{ye2025biggergait}} & GaitBase & S & 48.0 & 28.7 & 33.9 & -- & -- \\
- & DeepGaitV2 & S & 51.7 & 32.1 & 36.6 & -- & -- \\
- & BigGait & R & 85.6 & 71.9 & 58.4 & -- & -- \\
- & BiggerGait & R & 93.8 & 82.1 & 66.7 & -- & -- \\
-\addlinespace[2pt]
-\multirow{2}{*}{CASIA-B$^*$~\cite{jin2025denoising}} & BigGait & R & 64.8 & 36.9 & -- & 7.5 & -- \\
- & DenoisingGait & R+S & 63.9 & 36.9 & -- & 6.2 & -- \\
-\addlinespace[2pt]
-\multirow{2}{*}{SUSTech1K~\cite{jin2025denoising}} & BigGait & R & -- & -- & 18.7 & 4.5 & -- \\
- & DenoisingGait & R+S & -- & -- & 21.1 & 5.5 & -- \\
+GaitSet & S & 12.8 & 8.2 & 25.8 & 2.4 \\
+GaitPart & S & 13.5 & 8.1 & 26.0 & 2.4 \\
+GaitGL & S & 33.6 & 25.4 & 46.3 & 3.3 \\
+GaitBase & S & 17.3$^{b}$ & 9.7$^{b}$ & 30.4 & 2.8 \\
+DeepGaitV2 & S & 38.4 & 27.0 & 50.2 & 3.7 \\
+GaitEdge & R+S & 19.6 & 8.9 & 44.8 & -- \\
+BigGait & R & 56.4 & 43.7 & 33.6 & 7.4 \\
+DenoisingGait & R+S & 59.1 & 37.3 & 34.8 & -- \\
+BiggerGait & R & 79.6 & 70.9 & 55.6 & 15.5 \\
+GaitMax$^c$ & R & -- & 55.0 & 46.2$^{\ddagger}$ & -- \\
 \bottomrule
 \end{tabular*}
+\par\vspace{3pt}\fontsize{7.5}{8.8}\selectfont
+$^a$BiggerGait Table~1~\cite{ye2025biggergait}; $^b$DenoisingGait supplement Table~9~\cite{jin2025denoising}; $^c$GaitMax Table~3~\cite{huang2026gaitmax}.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\textbf{CCGR-Mini training}$^a$\par\vspace{2pt}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lcrrr@{}}
+\toprule
+\multirow{2}{*}{Method} & \multirow{2}{*}{Input} & \multicolumn{2}{c}{SUSTech1K} & CASIA-B$^*$\\
+\cmidrule(lr){3-4}
+& & Overall & CL & CL\\
+\midrule
+GaitBase & S & 48.0 & 28.7 & 33.9 \\
+DeepGaitV2 & S & 51.7 & 32.1 & 36.6 \\
+BigGait & R & 85.6 & 71.9 & 58.4 \\
+BiggerGait & R & 93.8 & 82.1 & 66.7 \\
+\bottomrule
+\end{tabular*}
+\par\vspace{4pt}
+\textbf{CASIA-B$^*$ / SUSTech1K training}$^b$\par\vspace{2pt}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrr@{}}
+\toprule
+\multirow{2}{*}{Method} & \multicolumn{3}{c}{CASIA-B$^*$ $\rightarrow$} & \multicolumn{2}{c}{SUSTech1K $\rightarrow$}\\
+\cmidrule(lr){2-4}\cmidrule(l){5-6}
+& \multicolumn{2}{c}{SUSTech1K} & CCPG & CCPG & CASIA-B$^*$\\
+& Overall & CL & CL & CL & CL\\
+\midrule
+BigGait & 64.8 & 36.9 & 7.5 & 4.5 & 18.7 \\
+DenoisingGait & 63.9 & 36.9 & 6.2 & 5.5 & 21.1 \\
+\bottomrule
+\end{tabular*}
+\end{minipage}
 \par\vspace{5pt}
 \noindent\makebox[\textwidth][l]{\textbf{B. Transfer involving in-the-wild datasets}}\par\vspace{3pt}
-\begin{minipage}[t]{0.46\textwidth}
+\begin{minipage}[t]{0.49\textwidth}
 \textit{Silhouettes: GaitSet, Gait3D supplement Table~3~\cite{zheng2022gait}}\par\vspace{2pt}
 \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
 \toprule
@@ -58,7 +78,7 @@ Gait3D $\rightarrow$ GREW$^{\dagger}$ & 43.86 & 60.89 & 28.06 \\
 \bottomrule
 \end{tabular*}
 \end{minipage}\hfill
-\begin{minipage}[t]{0.515\textwidth}
+\begin{minipage}[t]{0.49\textwidth}
 \textit{Poses: rank-1, GPGait Table~1~\cite{fu2023gpgait}}\par\vspace{2pt}
 \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrr@{}}
 \toprule
@@ -78,11 +98,10 @@ GREW uses the standard 6,000-identity test split.
 \begin{minipage}{\textwidth}
 \fontsize{7.5}{8.8}\selectfont
 S: silhouette; R: RGB; CL: clothing change; ``--'': not reported in the selected comparison.
-Part A uses BiggerGait Table~1, GaitMax Table~3, and DenoisingGait supplementary Table~9.
+Part A takes the higher reported value for matching method, input, training/test dataset and metric; individual source records remain online.
 BigGait and BiggerGait use DINOv2-S (ungrouped BiggerGait); DenoisingGait uses a Stable Diffusion prior; GaitMax uses pretrained visual features and GCaption supervision.
 $^*$Resegmented CASIA-B; $^{\ddagger}$GaitMax retains its source's CASIA-B label.
 $^{\dagger}$Custom GREW subset: 1,000 identities, 1,000 query and 4,095 gallery sequences.
-Results follow each reporting source's preprocessing and evaluation settings.
 \end{minipage}
 \endgroup
 \end{table*}

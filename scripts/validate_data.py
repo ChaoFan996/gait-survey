@@ -71,6 +71,13 @@ table_cells = load('data/cross-domain-table.json')['cells']
 assert len({(c['recordId'], c['metric']) for c in table_cells}) == len(table_cells)
 for c in table_cells:
     assert by_id[c['recordId']]['metrics'][c['metric']] == c['value'], c
+    if 'candidateIds' in c:
+        selected = by_id[c['recordId']]
+        candidates = [by_id[rid] for rid in c['candidateIds']]
+        assert all(tuple(r[k] for k in ['method', 'train', 'target', 'input']) ==
+                   tuple(selected[k] for k in ['method', 'train', 'target', 'input']) for r in candidates)
+        values = [r['metrics'][c['metric']] for r in candidates if r['metrics'][c['metric']] is not None]
+        assert c['value'] == (max(values) if values else None), c
 assert sum(c['value'] is not None for c in table_cells) == 92
 assert r'\label{tab:transfer}' in (ROOT/'assets/cross-domain-table.tex').read_text()
 nodes={n['id'] for n in M['nodes']};evidence={e['id']:e for e in M['evidence']}

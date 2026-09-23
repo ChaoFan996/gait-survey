@@ -4,302 +4,573 @@
     {
       "recordId": "result-086",
       "metric": "R1",
-      "value": 12.8
+      "value": 12.8,
+      "candidateIds": [
+        "result-086",
+        "cross-ye2024biggait-ccpg-sustech1k-gaitset",
+        "cross-jin2025denoising-ccpg-sustech1k-gaitset"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-086",
       "metric": "CL",
-      "value": 8.2
+      "value": 8.2,
+      "candidateIds": [
+        "result-086",
+        "cross-ye2024biggait-ccpg-sustech1k-gaitset",
+        "cross-jin2025denoising-ccpg-sustech1k-gaitset",
+        "cross-huang2026gaitmax-ccpg-sustech1k-gaitset"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-087",
       "metric": "CL",
-      "value": 25.8
+      "value": 25.8,
+      "candidateIds": [
+        "result-087",
+        "cross-ye2024biggait-ccpg-casia-bstar-gaitset",
+        "cross-jin2025denoising-ccpg-casia-bstar-gaitset"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-088",
       "metric": "R1",
-      "value": 2.4
+      "value": 2.4,
+      "candidateIds": [
+        "result-088"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-089",
       "metric": "R1",
-      "value": 13.5
+      "value": 13.5,
+      "candidateIds": [
+        "result-089"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-089",
       "metric": "CL",
-      "value": 8.1
+      "value": 8.1,
+      "candidateIds": [
+        "result-089"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-090",
       "metric": "CL",
-      "value": 26.0
+      "value": 26.0,
+      "candidateIds": [
+        "result-090"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-091",
       "metric": "R1",
-      "value": 2.4
+      "value": 2.4,
+      "candidateIds": [
+        "result-091"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-092",
       "metric": "R1",
-      "value": 33.6
+      "value": 33.6,
+      "candidateIds": [
+        "result-092"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-092",
       "metric": "CL",
-      "value": 25.4
+      "value": 25.4,
+      "candidateIds": [
+        "result-092"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-093",
       "metric": "CL",
-      "value": 46.3
+      "value": 46.3,
+      "candidateIds": [
+        "result-093"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-094",
       "metric": "R1",
-      "value": 3.3
+      "value": 3.3,
+      "candidateIds": [
+        "result-094"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
-      "recordId": "result-095",
+      "recordId": "cross-jin2025denoising-ccpg-sustech1k-gaitbase",
       "metric": "R1",
-      "value": 16.8
+      "value": 17.3,
+      "candidateIds": [
+        "result-095",
+        "cross-ye2024biggait-ccpg-sustech1k-gaitbase",
+        "cross-jin2025denoising-ccpg-sustech1k-gaitbase"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
-      "recordId": "result-095",
+      "recordId": "cross-jin2025denoising-ccpg-sustech1k-gaitbase",
       "metric": "CL",
-      "value": 9.5
+      "value": 9.7,
+      "candidateIds": [
+        "result-095",
+        "cross-ye2024biggait-ccpg-sustech1k-gaitbase",
+        "cross-jin2025denoising-ccpg-sustech1k-gaitbase",
+        "cross-huang2026gaitmax-ccpg-sustech1k-gaitbase"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-096",
       "metric": "CL",
-      "value": 30.4
+      "value": 30.4,
+      "candidateIds": [
+        "result-096",
+        "cross-ye2024biggait-ccpg-casia-bstar-gaitbase",
+        "cross-jin2025denoising-ccpg-casia-bstar-gaitbase"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-097",
       "metric": "R1",
-      "value": 2.8
+      "value": 2.8,
+      "candidateIds": [
+        "result-097"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-098",
       "metric": "R1",
-      "value": 38.4
+      "value": 38.4,
+      "candidateIds": [
+        "result-098"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-098",
       "metric": "CL",
-      "value": 27.0
+      "value": 27.0,
+      "candidateIds": [
+        "result-098",
+        "cross-huang2026gaitmax-ccpg-sustech1k-deepgaitv2"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-099",
       "metric": "CL",
-      "value": 50.2
+      "value": 50.2,
+      "candidateIds": [
+        "result-099"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-100",
       "metric": "R1",
-      "value": 3.7
+      "value": 3.7,
+      "candidateIds": [
+        "result-100"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-101",
       "metric": "R1",
-      "value": 19.6
+      "value": 19.6,
+      "candidateIds": [
+        "result-101"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-101",
       "metric": "CL",
-      "value": 8.9
+      "value": 8.9,
+      "candidateIds": [
+        "result-101"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-102",
       "metric": "CL",
-      "value": 44.8
+      "value": 44.8,
+      "candidateIds": [
+        "result-102"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-103",
       "metric": "R1",
-      "value": null
+      "value": null,
+      "candidateIds": [
+        "result-103"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-104",
       "metric": "R1",
-      "value": 56.4
+      "value": 56.4,
+      "candidateIds": [
+        "result-104",
+        "cross-ye2024biggait-ccpg-sustech1k-biggait",
+        "cross-jin2025denoising-ccpg-sustech1k-biggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-104",
       "metric": "CL",
-      "value": 43.7
+      "value": 43.7,
+      "candidateIds": [
+        "result-104",
+        "cross-ye2024biggait-ccpg-sustech1k-biggait",
+        "cross-jin2025denoising-ccpg-sustech1k-biggait",
+        "cross-huang2026gaitmax-ccpg-sustech1k-biggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-105",
       "metric": "CL",
-      "value": 33.6
+      "value": 33.6,
+      "candidateIds": [
+        "result-105",
+        "cross-ye2024biggait-ccpg-casia-bstar-biggait",
+        "cross-jin2025denoising-ccpg-casia-bstar-biggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-106",
       "metric": "R1",
-      "value": 7.4
+      "value": 7.4,
+      "candidateIds": [
+        "result-106"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-107",
       "metric": "R1",
-      "value": 59.1
+      "value": 59.1,
+      "candidateIds": [
+        "result-107",
+        "cross-jin2025denoising-ccpg-sustech1k-denoisinggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-107",
       "metric": "CL",
-      "value": 37.3
+      "value": 37.3,
+      "candidateIds": [
+        "result-107",
+        "cross-jin2025denoising-ccpg-sustech1k-denoisinggait",
+        "cross-huang2026gaitmax-ccpg-sustech1k-denoisinggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-108",
       "metric": "CL",
-      "value": 34.8
+      "value": 34.8,
+      "candidateIds": [
+        "result-108",
+        "cross-jin2025denoising-ccpg-casia-bstar-denoisinggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-109",
       "metric": "R1",
-      "value": null
+      "value": null,
+      "candidateIds": [
+        "result-109"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-110",
       "metric": "R1",
-      "value": 79.6
+      "value": 79.6,
+      "candidateIds": [
+        "result-110"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-110",
       "metric": "CL",
-      "value": 70.9
+      "value": 70.9,
+      "candidateIds": [
+        "result-110"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-111",
       "metric": "CL",
-      "value": 55.6
+      "value": 55.6,
+      "candidateIds": [
+        "result-111"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-112",
       "metric": "R1",
-      "value": 15.5
+      "value": 15.5,
+      "candidateIds": [
+        "result-112"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "cross-huang2026gaitmax-ccpg-sustech1k-gaitmax",
       "metric": "CL",
-      "value": 55
+      "value": 55,
+      "candidateIds": [
+        "cross-huang2026gaitmax-ccpg-sustech1k-gaitmax"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "cross-huang2026gaitmax-ccpg-casia-b-gaitmax",
       "metric": "CL",
-      "value": 46.2
+      "value": 46.2,
+      "candidateIds": [
+        "cross-huang2026gaitmax-ccpg-casia-b-gaitmax"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-113",
       "metric": "R1",
-      "value": 48.0
+      "value": 48.0,
+      "candidateIds": [
+        "result-113"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-113",
       "metric": "CL",
-      "value": 28.7
+      "value": 28.7,
+      "candidateIds": [
+        "result-113"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-114",
       "metric": "CL",
-      "value": 33.9
+      "value": 33.9,
+      "candidateIds": [
+        "result-114"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-115",
       "metric": "R1",
-      "value": 51.7
+      "value": 51.7,
+      "candidateIds": [
+        "result-115"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-115",
       "metric": "CL",
-      "value": 32.1
+      "value": 32.1,
+      "candidateIds": [
+        "result-115"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-116",
       "metric": "CL",
-      "value": 36.6
+      "value": 36.6,
+      "candidateIds": [
+        "result-116"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-117",
       "metric": "R1",
-      "value": 85.6
+      "value": 85.6,
+      "candidateIds": [
+        "result-117"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-117",
       "metric": "CL",
-      "value": 71.9
+      "value": 71.9,
+      "candidateIds": [
+        "result-117"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-118",
       "metric": "CL",
-      "value": 58.4
+      "value": 58.4,
+      "candidateIds": [
+        "result-118"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-119",
       "metric": "R1",
-      "value": 93.8
+      "value": 93.8,
+      "candidateIds": [
+        "result-119"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-119",
       "metric": "CL",
-      "value": 82.1
+      "value": 82.1,
+      "candidateIds": [
+        "result-119"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "result-120",
       "metric": "CL",
-      "value": 66.7
+      "value": 66.7,
+      "candidateIds": [
+        "result-120"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "cross-jin2025denoising-casia-bstar-sustech1k-biggait",
       "metric": "R1",
-      "value": 64.8
+      "value": 64.8,
+      "candidateIds": [
+        "cross-ye2024biggait-casia-bstar-sustech1k-biggait",
+        "cross-jin2025denoising-casia-bstar-sustech1k-biggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "cross-jin2025denoising-casia-bstar-sustech1k-biggait",
       "metric": "CL",
-      "value": 36.9
+      "value": 36.9,
+      "candidateIds": [
+        "cross-ye2024biggait-casia-bstar-sustech1k-biggait",
+        "cross-jin2025denoising-casia-bstar-sustech1k-biggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "cross-jin2025denoising-casia-bstar-ccpg-biggait",
       "metric": "CL",
-      "value": 7.5
-    },
-    {
-      "recordId": "cross-jin2025denoising-casia-bstar-sustech1k-denoisinggait",
-      "metric": "R1",
-      "value": 63.9
-    },
-    {
-      "recordId": "cross-jin2025denoising-casia-bstar-sustech1k-denoisinggait",
-      "metric": "CL",
-      "value": 36.9
-    },
-    {
-      "recordId": "cross-jin2025denoising-casia-bstar-ccpg-denoisinggait",
-      "metric": "CL",
-      "value": 6.2
-    },
-    {
-      "recordId": "cross-jin2025denoising-sustech1k-casia-bstar-biggait",
-      "metric": "CL",
-      "value": 18.7
+      "value": 7.5,
+      "candidateIds": [
+        "cross-ye2024biggait-casia-bstar-ccpg-biggait",
+        "cross-jin2025denoising-casia-bstar-ccpg-biggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "cross-jin2025denoising-sustech1k-ccpg-biggait",
       "metric": "CL",
-      "value": 4.5
+      "value": 4.5,
+      "candidateIds": [
+        "cross-ye2024biggait-sustech1k-ccpg-biggait",
+        "cross-jin2025denoising-sustech1k-ccpg-biggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
-      "recordId": "cross-jin2025denoising-sustech1k-casia-bstar-denoisinggait",
+      "recordId": "cross-jin2025denoising-sustech1k-casia-bstar-biggait",
       "metric": "CL",
-      "value": 21.1
+      "value": 18.7,
+      "candidateIds": [
+        "cross-ye2024biggait-sustech1k-casia-bstar-biggait",
+        "cross-jin2025denoising-sustech1k-casia-bstar-biggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
+    },
+    {
+      "recordId": "cross-jin2025denoising-casia-bstar-sustech1k-denoisinggait",
+      "metric": "R1",
+      "value": 63.9,
+      "candidateIds": [
+        "cross-jin2025denoising-casia-bstar-sustech1k-denoisinggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
+    },
+    {
+      "recordId": "cross-jin2025denoising-casia-bstar-sustech1k-denoisinggait",
+      "metric": "CL",
+      "value": 36.9,
+      "candidateIds": [
+        "cross-jin2025denoising-casia-bstar-sustech1k-denoisinggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
+    },
+    {
+      "recordId": "cross-jin2025denoising-casia-bstar-ccpg-denoisinggait",
+      "metric": "CL",
+      "value": 6.2,
+      "candidateIds": [
+        "cross-jin2025denoising-casia-bstar-ccpg-denoisinggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "cross-jin2025denoising-sustech1k-ccpg-denoisinggait",
       "metric": "CL",
-      "value": 5.5
+      "value": 5.5,
+      "candidateIds": [
+        "cross-jin2025denoising-sustech1k-ccpg-denoisinggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
+    },
+    {
+      "recordId": "cross-jin2025denoising-sustech1k-casia-bstar-denoisinggait",
+      "metric": "CL",
+      "value": 21.1,
+      "candidateIds": [
+        "cross-jin2025denoising-sustech1k-casia-bstar-denoisinggait"
+      ],
+      "selection": "highest reported value for matching training dataset, target label, input and metric"
     },
     {
       "recordId": "cross-zheng2022gait-gaitset-casia-b-gait3d",
