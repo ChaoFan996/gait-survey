@@ -47,7 +47,7 @@ gb={r['source']['key']:r['metrics'].get('R1') for r in cross if r['method']=='Ga
 assert gb['ye2025biggergait']==16.8 and gb['jin2025denoising']==17.3
 assert all('R1' not in r['metrics'] for r in cross if r['source']['key']=='huang2026gaitmax'), 'Do not relabel GaitMax condition means as overall accuracy'
 F=load('data/cross-domain-figure.json');by_id={r['id']:r for r in cross}
-for key in ['gaitmax_cl','pose_transfer']:
+for key in ['gaitmax_cl','other_sources_cl','pose_transfer']:
     panel=F[key]
     for method,values,record_ids in zip(panel['methods'],panel['values'],panel['recordIds']):
         for direction,value,rid in zip(panel['directions'],values,record_ids):

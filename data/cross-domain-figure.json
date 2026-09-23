@@ -1,5 +1,5 @@
 {
-  "source": "BiggerGait Table 1; GaitMax Table 3; Gait3D supplementary Table 3; GPGait Table 1. Directly reported scores; source-specific inputs and protocols.",
+  "source": "BiggerGait Table 1; GaitMax Table 3; Gait3D supplementary Table 3; GPGait Table 1. Directly reported scores; source-specific inputs and protocols. DenoisingGait supplementary Table 9 supplies the restored alternative-training-source panel.",
   "metric": "Rank-1 accuracy (%)",
   "targets": [
     "SUSTech1K\nOverall",
@@ -296,5 +296,66 @@
         "cross-fu2023gpgait-gpgait-gait3d-grew"
       ]
     ]
+  },
+  "other_sources_cl": {
+    "source": {
+      "key": "jin2025denoising",
+      "title": "On Denoising Walking Videos for Gait Recognition",
+      "venue": "CVPR",
+      "year": 2025,
+      "paperId": "jin2025denoising-cvpr-2025",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Jin_On_Denoising_Walking_CVPR_2025_supplemental.pdf"
+    },
+    "methods": [
+      "BigGait",
+      "DenoisingGait"
+    ],
+    "directions": [
+      {
+        "train": "CASIA-B*",
+        "target": "CCPG"
+      },
+      {
+        "train": "CASIA-B*",
+        "target": "SUSTech1K"
+      },
+      {
+        "train": "SUSTech1K",
+        "target": "CCPG"
+      },
+      {
+        "train": "SUSTech1K",
+        "target": "CASIA-B*"
+      }
+    ],
+    "values": [
+      [
+        7.5,
+        36.9,
+        4.5,
+        18.7
+      ],
+      [
+        6.2,
+        36.9,
+        5.5,
+        21.1
+      ]
+    ],
+    "recordIds": [
+      [
+        "cross-jin2025denoising-casia-bstar-ccpg-biggait",
+        "cross-jin2025denoising-casia-bstar-sustech1k-biggait",
+        "cross-jin2025denoising-sustech1k-ccpg-biggait",
+        "cross-jin2025denoising-sustech1k-casia-bstar-biggait"
+      ],
+      [
+        "cross-jin2025denoising-casia-bstar-ccpg-denoisinggait",
+        "cross-jin2025denoising-casia-bstar-sustech1k-denoisinggait",
+        "cross-jin2025denoising-sustech1k-ccpg-denoisinggait",
+        "cross-jin2025denoising-sustech1k-casia-bstar-denoisinggait"
+      ]
+    ],
+    "metric": "CL"
   }
 }

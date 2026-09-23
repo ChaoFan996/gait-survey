@@ -23,13 +23,14 @@ Discrepancies are retained by reporting source: CCPG-trained GaitBase on SUSTech
 
 ## Figure selection and rebuilding
 
-`data/cross-domain-figure.json` records the exact source records selected for the added panels. The five-panel, double-column figure contains 80 reported scores and two unreported cells:
+`data/cross-domain-figure.json` records the exact source records selected for the added panels. The six-panel, double-column figure contains 88 reported scores and two unreported cells:
 
 - (a–b): 46 scores from BiggerGait Table 1, for CCPG and CCGR-Mini training.
 - (c): six CL scores from GaitMax Table 3.
-- (d): 12 rank-1 / rank-5 / mAP scores for four GaitSet transfer directions from Gait3D supplementary Table 3. The GREW target carries a dagger identifying its custom split.
-- (e): 16 rank-1 scores for four pose methods and four directions from GPGait Table 1, including both GREW-to-Gait3D and Gait3D-to-GREW.
+- (d): eight CL scores for BigGait and DenoisingGait under CASIA-B* / SUSTech1K training, from DenoisingGait supplementary Table 9.
+- (e): 12 rank-1 / rank-5 / mAP scores for four GaitSet transfer directions from Gait3D supplementary Table 3. The GREW target carries a dagger identifying its custom split.
+- (f): 16 rank-1 scores for four pose methods and four directions from GPGait Table 1, including both GREW-to-Gait3D and Gait3D-to-GREW.
 
-The former computed-difference panel and the former panel of alternative RGB training sources are absent; underlying source results remain in the explorer. All panels use one percentage scale, with metrics stated explicitly.
+The computed-difference panel is removed. The alternative RGB training-source panel is restored following the correction that differences, rather than that panel, should be removed. All panels use one percentage scale, with metrics stated explicitly.
 
 The downloadable vector figure is `assets/cross-domain-transfer.pdf`. Its builder and canonical selection live in the survey workspace at `overleaf/statistics/rebuild_transfer_figure.py` and `cross_domain_results.json`. After editing, regenerate the PDF, copy it to `assets/`, and synchronize the selection JSON. Run `python3 scripts/build_data.py`, `python3 scripts/validate_data.py`, and `node --check companion.js`. Validation checks displayed values against source-specific records, dataset split separation, and absence of mean/overall substitution.
