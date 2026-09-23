@@ -34,7 +34,7 @@ function rows(){
 }
 function render(){
  const max=Math.max(...D.repositories.map(r=>r.stars)), opengait=D.repositories.find(r=>r.repository==='ShiqiYu/OpenGait');
- $('view-codebases').innerHTML=`<div class="section-intro"><div><p class="eyebrow">PUBLIC CODEBASES / SEC. III-C</p><h2 id="codebases-title">Code & openness<span class="title-dot">.</span></h2><p>Explore selected gait repositories, OpenGait’s star history, and code-release statements in the survey’s fixed 2020–2025 collection.</p></div></div>
+ $('view-codebases').innerHTML=`<div class="section-intro"><div><p class="eyebrow">CODE AND OPENNESS / SEC. III-C</p><h2 id="codebases-title">Code & openness<span class="title-dot">.</span></h2><p>Explore selected gait repositories, OpenGait’s star history, and code-release statements in the survey’s fixed 2020–2025 collection.</p></div></div>
  <div class="code-links"><a href="./assets/public-codebases-statistics.pdf" download>Single-column figure · PDF ↓</a><a href="./codebases.json" download>Source data · JSON ↓</a><a href="https://github.com/ChaoFan996/gait-survey/blob/main/docs/codebases.md">Counting rules ↗</a></div>
  <p class="code-source">GitHub snapshot: ${esc(D.meta.updated)} · Publication audit: ${esc(D.meta.claimAuditDate)} · ${esc(D.meta.snapshotId)}</p>
  <div class="code-summary"><div><strong>${D.repositories.length}</strong><span>Selected public repositories</span></div><div><strong>${opengait.stars.toLocaleString('en-US')}</strong><span>OpenGait stars at retrieval</span></div><div><strong>${totalClaims} / ${D.records.length}</strong><span>Explicit code-release claims · ${(totalClaims/D.records.length*100).toFixed(1)}%</span></div></div>

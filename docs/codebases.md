@@ -1,6 +1,6 @@
 # Code & openness
 
-The [interactive view](https://chaofan996.github.io/gait-survey/?view=codebases) accompanies Sec. III-C. It combines three distinct datasets, each with its own scope:
+The [interactive view](https://chaofan996.github.io/gait-survey/?view=codebases) accompanies Sec. III-C, “Code and Openness.” It combines three distinct datasets, each with its own scope:
 
 1. **Repository snapshot:** eight selected public repositories spanning method implementations, shared frameworks, dataset benchmarks, and a system demonstration. This is neither an exhaustive list nor a claim to list the eight largest projects. The count is GitHub's `stargazers_count`; stars describe attention, not recognition accuracy or reproducibility. All-in-One-Gait is an OpenGait subproject.
 2. **OpenGait history:** cumulative daily counts reconstructed from the public [GitHub aggregate star-history endpoint](https://docs.github.com/en/rest/activity/starring#get-repository-star-history). All 258 continuous weeks were retrieved on 23 September 2026 (Asia/Shanghai), with daily counts summing to weekly totals and the final 1,150 matching the repository snapshot. This is not a set of independently archived historical net-star totals. Unstar effects are not measured separately; day/week boundaries are not guaranteed to align with UTC. No stargazer identities are collected.
