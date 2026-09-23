@@ -2,6 +2,8 @@
 
 ## 2026-09-23 — Code & openness
 
+- Reflowed the manuscript figure into a two-column, single-row layout and updated the downloadable vector PDF.
+
 - Placed the single-column figure's subfigure captions below their panels, matching the revised manuscript section, “Code and Openness.”
 - Added a fifth view for eight selected repository star counts, an inspectable OpenGait history curve, and annual code-release statements from the existing 160-publication collection.
 - Added shareable year/status/search filters, paper details, paraphrased audit notes with PDF-page references, and JSON selection export.

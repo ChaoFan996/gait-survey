@@ -45,7 +45,7 @@ Paper summaries use three fields—motivation, idea, and techniques—with LLM a
 
 **Download:** [Publication membership](statistics-membership.csv) · [Statistical counts](statistics-counts.csv) · [Relationship evidence](relationships.csv)
 
-The [Code & openness view](https://chaofan996.github.io/gait-survey/?view=codebases) adds a dated snapshot of eight repositories, an interactive OpenGait star-history curve, and 160 source-text audit records. Filter by publication year, statement status, or keyword; download the selection or the single-column manuscript figure. See the [code-statement definitions and maintenance guide](docs/codebases.md).
+The [Code & openness view](https://chaofan996.github.io/gait-survey/?view=codebases) adds a dated snapshot of eight repositories, an interactive OpenGait star-history curve, and 160 source-text audit records. Filter by publication year, statement status, or keyword; download the selection or the two-column manuscript figure. See the [code-statement definitions and maintenance guide](docs/codebases.md).
 
 For interpreting scores, see the [benchmark rules](docs/statistics.md#benchmark-interpretation). Rankings follow the selected protocol and training source; research-map links identify supporting survey discussions.
 
