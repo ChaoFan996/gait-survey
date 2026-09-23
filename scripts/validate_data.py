@@ -1,6 +1,8 @@
 """Check publication identity, statistic scope, protocol integrity and link evidence."""
 from pathlib import Path
 import collections, csv, datetime as dt, json, re
+from urllib.parse import urlparse
+from build_initiatives import bibtex
 ROOT=Path(__file__).resolve().parents[1]
 load=lambda name:json.loads((ROOT/name).read_text())
 P=load('papers.json');D=load('companion.json');M=load('research-map.json');S=load('data/snapshot.json');A=load('data-audit.json')
@@ -18,7 +20,7 @@ assert dict(ds)==A['datasetCounts'] and dict(mods)==A['modalities']
 assert dict(collections.Counter(str(r['year']) for r in D['records']))==A['yearCounts']
 for r in D['catalogue']:
     if r['archivedUsage'] is not None:assert r['archivedUsage']==ds[r.get('statisticsKey',r['dataset'])],r['dataset']
-for name,var,js in [('papers','GAIT_DATA','papers.js'),('companion','GAIT_COMPANION','companion-data.js'),('research-map','GAIT_MAP','research-map-data.js'),('codebases','GAIT_CODEBASES','codebases-data.js')]:
+for name,var,js in [('papers','GAIT_DATA','papers.js'),('companion','GAIT_COMPANION','companion-data.js'),('research-map','GAIT_MAP','research-map-data.js'),('codebases','GAIT_CODEBASES','codebases-data.js'),('initiatives','GAIT_INITIATIVES','initiatives-data.js')]:
     text=(ROOT/js).read_text();assert text.startswith('window.'+var+' = ')
     assert json.loads(text.split(' = ',1)[1].strip().removesuffix(';'))==load(name+'.json'),js+' is stale'
 with (ROOT/'statistics-membership.csv').open() as f:assert {r['paperId'] for r in csv.DictReader(f)}==members
@@ -127,3 +129,28 @@ assert (ROOT/'assets/public-codebases-statistics.pdf').read_bytes().startswith(b
 for script in re.findall(r'<script src="\./([^"]+)"',(ROOT/'index.html').read_text()):assert (ROOT/script).exists()
 print(f'PASS: {len(C["records"])} code-statement records; {sum(r["claim_count"] for r in C["annualClaims"])} explicit claims; {len(repos)} repositories; {len(C["history"])} daily history points.')
 print(f'PASS: {len(ids)} catalogue references; {len(members)} corpus publications; {sum(mods.values())} modality uses; {len(D["results"])} experiments; {len(M["links"])} supported map links.')
+
+I=load('initiatives.json'); initiative_ids=set(); citations={}
+for r in I['records']:
+    assert r['id'] not in initiative_ids and re.fullmatch(r'[a-z0-9-]+',r['id']),r['id']
+    initiative_ids.add(r['id'])
+    assert r['kind'] in ['projects','competitions'] and r['scope'] in ['gait','biometrics','reid']
+    assert isinstance(r['startYear'],int) and (r['endYear'] is None or isinstance(r['endYear'],int) and r['endYear']>=r['startYear'])
+    assert r['countries'] and r['tags'] and r['sources'] and r['periodBasis'] and r['summary'] and r['details']
+    assert dt.date.fromisoformat(r['checkedOn']) <= dt.date.fromisoformat(I['meta']['updated'])
+    source_urls={s['url'] for s in r['sources']}
+    for s in r['sources']:
+        parsed=urlparse(s['url'])
+        assert parsed.scheme=='https' and parsed.hostname and not parsed.username and not parsed.password
+        assert s['label'] and s['evidence']
+    if r['kind']=='competitions': assert r['endYear']==r['startYear']
+    if r['funding']: assert r['funding']['amount'] and r['funding']['basis'] and r['funding']['sourceUrl'] in source_urls
+    c=r['citation'];assert re.fullmatch(r'[a-zA-Z0-9_]+',c['key']) and c['url'] in source_urls
+    assert c.get('entryType','misc') in ['misc','inproceedings']
+    entry=bibtex(r)
+    assert c['key'] not in citations or citations[c['key']]==entry, 'Conflicting shared citation'
+    citations[c['key']]=entry
+assert (ROOT/'initiatives.bib').read_text()=='\n\n'.join(citations.values())+'\n', 'Stale initiative citations'
+assert {r['startYear'] for r in I['records'] if r['id'].startswith('hid-')}==set(range(2020,2027))
+assert all(r['scope']=='reid' for r in I['records'] if r['id'] in ['iarpa-video-lincs','ag-reid-2023','ag-vpreid-2025'])
+print(f'PASS: {len(initiative_ids)} initiatives; {len(citations)} source citations; explicit funding scope and year provenance.')

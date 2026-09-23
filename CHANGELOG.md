@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-23 — Projects & competitions
+
+- Added a sixth view with separate project and competition links, keyword/year/region/scope filters, shared URLs, source details and selection export.
+- Curated 9 funded research entries and 11 competition editions. Included US, Japanese, British and Chinese projects; HID 2020–2026; MGR 2024; OUMVLP-OF 2025; and separately labeled aerial–ground ReID challenges.
+- Added source-linked funding scopes and date provenance, downloadable BibTeX, a reproducible data build and validation, and manuscript links for Sections III-D–E.
+- Kept the fixed publication statistics unchanged.
+
 ## 2026-09-23 — Code & openness
 
 - Moved the code-claim legend inside panel (c) and removed its redundant axis annotation; reduced figure height while preserving all values.

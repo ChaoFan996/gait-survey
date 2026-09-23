@@ -1,0 +1,822 @@
+{
+  "meta": {
+    "updated": "2026-09-23",
+    "version": "initiatives-2026-09-23",
+    "scope": "Selected funded projects and competition editions directly relevant to gait identity recognition or related whole-body and cross-camera matching.",
+    "selection": "Primary grant records, government or institutional reports, organizer websites and competition reports. Health-only, rehabilitation-only and procurement projects are excluded.",
+    "yearRule": "Years match documented project intervals or competition editions. Records with only a launch or solicitation year match that year; this is not an active-project calendar."
+  },
+  "records": [
+    {
+      "id": "darpa-humanid",
+      "kind": "projects",
+      "title": "DARPA HumanID",
+      "startYear": 1999,
+      "endYear": 2002,
+      "period": "1999–2002",
+      "countries": [
+        "United States",
+        "United Kingdom"
+      ],
+      "host": "DARPA / US Army · Southampton gait research",
+      "scope": "gait",
+      "summary": "Supported early gait biometrics for identifying people at a distance, including model-based and appearance-based analysis of walking video.",
+      "details": "The Southampton account documents a HumanID-funded gait-recognition award and subsequent development of gait biometrics. HumanID is a historical research program, distinct from the annual HID competition series that began in 2020.",
+      "tags": [
+        "Remote identification",
+        "Gait biometrics"
+      ],
+      "sources": [
+        {
+          "label": "Institutional record",
+          "url": "https://impact.ref.ac.uk/casestudies/CaseStudy.aspx?Id=43867",
+          "evidence": "Underpinning research and reference 3.1 identify the Southampton award and its period."
+        }
+      ],
+      "citation": {
+        "key": "uk_biometric_fusion",
+        "title": "Walk This Way: Leading the World in Gait Biometrics",
+        "author": "{University of Southampton}",
+        "url": "https://impact.ref.ac.uk/casestudies/CaseStudy.aspx?Id=43867",
+        "year": 2014,
+        "howpublished": "REF 2014 Impact Case Study"
+      },
+      "periodBasis": "1999–2002 refers to the Southampton award documented in the source, not the full lifetime of the DARPA program.",
+      "originalTitle": "",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "iarpa-briar",
+      "kind": "projects",
+      "title": "BRIAR",
+      "startYear": 2021,
+      "endYear": null,
+      "period": "Launched 2021",
+      "countries": [
+        "United States"
+      ],
+      "host": "IARPA · Biometric Recognition and Identification at Altitude and Range",
+      "scope": "biometrics",
+      "summary": "Develops whole-body biometric identification at long range and from elevated platforms, combining gait, body shape and face evidence.",
+      "details": "The program describes imaging at 300+ meters, elevated sensor angles of at least 20 degrees, and atmospheric turbulence. Its scope includes detection, tracking, biometric signature extraction and multimodal matching. These are program scenarios, not accuracy claims.",
+      "tags": [
+        "Long range",
+        "Elevated views",
+        "Biometric fusion"
+      ],
+      "sources": [
+        {
+          "label": "Program overview",
+          "url": "https://www.iarpa.gov/research-programs/briar",
+          "evidence": "The official summary specifies the November 2021 launch, sensing scenarios and whole-body/face fusion."
+        }
+      ],
+      "citation": {
+        "key": "iarpa_briar",
+        "title": "Biometric Recognition and Identification at Altitude and Range ({BRIAR})",
+        "author": "{Intelligence Advanced Research Projects Activity}",
+        "url": "https://www.iarpa.gov/research-programs/briar",
+        "year": 2021
+      },
+      "periodBasis": "The recorded year is the official launch year; no completion date is inferred.",
+      "originalTitle": "",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "iarpa-video-lincs",
+      "kind": "projects",
+      "title": "Video LINCS",
+      "startYear": 2024,
+      "endYear": null,
+      "period": "Solicitation 2024",
+      "countries": [
+        "United States"
+      ],
+      "host": "IARPA · Video Linking and Intelligence from Non-Collaborative Sensors",
+      "scope": "reid",
+      "summary": "Studies object re-identification across heterogeneous cameras and localization in a common reference frame, including aerial–ground video association.",
+      "details": "People and vehicles are initial object classes. The program also studies broader object matching and geo-localization without prior knowledge of collection geometry. This is related cross-camera association research; gait identification is not the program’s sole or stated mandatory biometric.",
+      "tags": [
+        "Cross-camera association",
+        "Aerial–ground",
+        "Geo-localization"
+      ],
+      "sources": [
+        {
+          "label": "Program overview",
+          "url": "https://www.iarpa.gov/research-programs/video-lincs",
+          "evidence": "The official summary defines the re-identification task; the solicitation was released on May 21, 2024."
+        }
+      ],
+      "citation": {
+        "key": "iarpa_videolincs",
+        "title": "Video Linking and Intelligence from Non-Collaborative Sensors ({Video LINCS})",
+        "author": "{Intelligence Advanced Research Projects Activity}",
+        "url": "https://www.iarpa.gov/research-programs/video-lincs",
+        "year": 2024
+      },
+      "periodBasis": "2024 is the solicitation year. No duration or completion date is inferred from differing program summaries.",
+      "originalTitle": "",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "jsps-22h00538",
+      "kind": "projects",
+      "title": "Adaptive-resolution LiDAR for person recognition",
+      "startYear": 2022,
+      "endYear": 2025,
+      "period": "2022–2025",
+      "countries": [
+        "Japan"
+      ],
+      "host": "JSPS KAKENHI · Osaka University · Yasushi Yagi",
+      "scope": "biometrics",
+      "summary": "Studies LiDAR optics, resolution allocation and person-recognition methods, with related work on gait identification and 3D human representations.",
+      "details": "Project 22H00538, Grant-in-Aid for Scientific Research (A), addresses limited spatial resolution in distant person sensing. Listed outputs include human-mesh gait recognition and a large-population gait database with human meshes. The project covers identity and attribute recognition, rather than gait alone.",
+      "tags": [
+        "LiDAR",
+        "3D body models",
+        "Acquisition quality"
+      ],
+      "sources": [
+        {
+          "label": "Grant record",
+          "url": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-22H00538/",
+          "evidence": "Project dates, research objectives, budget and attributed research outputs."
+        }
+      ],
+      "citation": {
+        "key": "jsps_lidar_person",
+        "title": "Research on Adaptive-Resolution Allocation {LiDAR} for Person Recognition",
+        "author": "Yagi, Yasushi",
+        "url": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-22H00538/",
+        "year": 2022,
+        "howpublished": "JSPS KAKENHI Project 22H00538",
+        "note": "In Japanese; title translated"
+      },
+      "periodBasis": "Official project period: April 1, 2022–March 31, 2025.",
+      "originalTitle": "人物認識のための適応解像度割当型LiDARの研究",
+      "funding": {
+        "amount": "JPY 42.51 million",
+        "basis": "Total recorded allocation, including JPY 9.81 million in indirect costs.",
+        "sourceUrl": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-22H00538/"
+      },
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "jsps-20h00607",
+      "kind": "projects",
+      "title": "Multidimensional registration for video matching",
+      "startYear": 2020,
+      "endYear": 2024,
+      "period": "2020–2024",
+      "countries": [
+        "Japan"
+      ],
+      "host": "JSPS KAKENHI · Osaka University · Yasushi Makihara",
+      "scope": "gait",
+      "summary": "Studies spatial, temporal and appearance alignment for video matching, including gait recognition under occlusion and imperfect person alignment.",
+      "details": "Project 20H00607, Grant-in-Aid for Scientific Research (A), reports registration and data-augmentation studies using OUMVLP and gait-recognition models. It connects video alignment to robustness under observation changes.",
+      "tags": [
+        "Occlusion",
+        "Alignment",
+        "Representation learning"
+      ],
+      "sources": [
+        {
+          "label": "Grant record",
+          "url": "https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-20H00607/",
+          "evidence": "The project overview and annual achievements describe the video-matching framework and gait experiments."
+        }
+      ],
+      "citation": {
+        "key": "jsps_video_registration",
+        "title": "Research on Multidimensional Registration Models for Video Matching and Their Advanced Applications",
+        "author": "Makihara, Yasushi",
+        "url": "https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-20H00607/",
+        "year": 2020,
+        "howpublished": "JSPS KAKENHI Project 20H00607",
+        "note": "In Japanese; title translated"
+      },
+      "periodBasis": "Official project period: April 1, 2020–March 31, 2024; the database records closure in fiscal year 2023.",
+      "originalTitle": "映像照合における多元位置合わせモデルとその高度利用に関する研究",
+      "funding": {
+        "amount": "JPY 44.85 million",
+        "basis": "Total recorded allocation, including JPY 10.35 million in indirect costs.",
+        "sourceUrl": "https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-20H00607/"
+      },
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "uk-biometric-fusion",
+      "kind": "projects",
+      "title": "Fusion of Novel Biometrics for Real-World Secure Environments",
+      "startYear": 2005,
+      "endYear": 2008,
+      "period": "2005–2008",
+      "countries": [
+        "United Kingdom"
+      ],
+      "host": "General Dynamics / MoD Defence Technology Centre · University of Southampton",
+      "scope": "biometrics",
+      "summary": "Supported multiview gait capture and multimodal biometrics, including the Southampton 3D biometric tunnel.",
+      "details": "The institutional account links the award to a tunnel with eight synchronized cameras for collecting non-contact biometrics as a person walks through. This is a historical funded project supporting gait acquisition and recognition research.",
+      "tags": [
+        "Multiview capture",
+        "Biometric fusion",
+        "Gait tunnel"
+      ],
+      "sources": [
+        {
+          "label": "Institutional record",
+          "url": "https://impact.ref.ac.uk/casestudies/CaseStudy.aspx?Id=43867",
+          "evidence": "Underpinning research links the tunnel to MoD support; reference 3.2 gives the project name, dates and award."
+        }
+      ],
+      "citation": {
+        "key": "uk_biometric_fusion",
+        "title": "Walk This Way: Leading the World in Gait Biometrics",
+        "author": "{University of Southampton}",
+        "url": "https://impact.ref.ac.uk/casestudies/CaseStudy.aspx?Id=43867",
+        "year": 2014,
+        "howpublished": "REF 2014 Impact Case Study"
+      },
+      "periodBasis": "2005–2008 is the award period in the institutional record.",
+      "originalTitle": "",
+      "funding": {
+        "amount": "GBP 2.24 million",
+        "basis": "Award reported for this project; not a budget for all Southampton gait research.",
+        "sourceUrl": "https://impact.ref.ac.uk/casestudies/CaseStudy.aspx?Id=43867"
+      },
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "china-2016yfb1001000",
+      "kind": "projects",
+      "title": "Visual big-data analysis for large-scale scene perception",
+      "startYear": 2016,
+      "endYear": 2020,
+      "period": "2016–2020",
+      "countries": [
+        "China"
+      ],
+      "host": "National Key R&D Program of China · Institute of Automation, CAS and partners",
+      "scope": "biometrics",
+      "summary": "Includes a person-recognition subproject studying the fusion of gait, face and iris cues for identity recognition and attribute analysis.",
+      "details": "Project 2016YFB1001000 covers individual, group and scene perception. Its second subproject explicitly studies complementary information across gait, face and iris modalities. The wider program also includes cross-view re-identification and system validation; these are not all gait-only tasks.",
+      "tags": [
+        "Gait–face–iris fusion",
+        "Identity evidence",
+        "Large-scale scenes"
+      ],
+      "sources": [
+        {
+          "label": "Project research tasks",
+          "url": "https://nlpr.ia.ac.cn/key/groups.html",
+          "evidence": "Subproject 2 specifies gait, face and iris fusion for identity and attribute analysis."
+        },
+        {
+          "label": "Project homepage",
+          "url": "https://nlpr.ia.ac.cn/key/",
+          "evidence": "Identifies the National Key R&D project, its number, 2016–2020 period and lead scientist."
+        }
+      ],
+      "citation": {
+        "key": "china_visual_perception",
+        "title": "Key Technologies and a Verification System for Intelligent Visual Big Data Analysis towards Comprehensive Perception of Large-Scale Scenes",
+        "author": "{Institute of Automation, Chinese Academy of Sciences}",
+        "url": "https://nlpr.ia.ac.cn/key/groups.html",
+        "howpublished": "National Key R\\&D Program of China, Project 2016YFB1001000",
+        "note": "In Chinese; title translated"
+      },
+      "periodBasis": "The official project homepage gives 2016–2020 and an October 2016 launch.",
+      "originalTitle": "面向大范围场景透彻感知的视觉大数据智能分析关键技术与验证系统",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "cas-remote-gait",
+      "kind": "projects",
+      "title": "Remote gait recognition technology and applications",
+      "startYear": 2017,
+      "endYear": 2018,
+      "period": "2017–2018",
+      "countries": [
+        "China"
+      ],
+      "host": "Chinese Academy of Sciences · Science and Technology Service Network Initiative · Yongzhen Huang",
+      "scope": "gait",
+      "summary": "A dedicated funded project on remote gait recognition and its applications, recorded in the National Laboratory of Pattern Recognition’s quarterly report.",
+      "details": "The public report identifies the project, principal investigator, funding program and award period. It does not provide a detailed evaluation protocol or performance results, so no such claims are inferred here.",
+      "tags": [
+        "Remote gait recognition",
+        "Technology transfer"
+      ],
+      "sources": [
+        {
+          "label": "Laboratory report",
+          "url": "https://nlpr.ia.ac.cn/uploads/file/20190306/7d22e132a3946fcd65ea157f80ea855a.pdf",
+          "evidence": "2017 third-quarter report, printed page 13 (PDF page 16), lists the project, award and dates."
+        }
+      ],
+      "citation": {
+        "key": "cas_remote_gait",
+        "title": "National Laboratory of Pattern Recognition Quarterly Report: Third Quarter 2017",
+        "author": "{Institute of Automation, Chinese Academy of Sciences}",
+        "url": "https://nlpr.ia.ac.cn/uploads/file/20190306/7d22e132a3946fcd65ea157f80ea855a.pdf",
+        "year": 2017,
+        "note": "In Chinese; project entry on p. 13"
+      },
+      "periodBasis": "Reported award period: July 1, 2017–June 30, 2018.",
+      "originalTitle": "远距离步态识别技术与应用",
+      "funding": {
+        "amount": "CNY 2 million",
+        "basis": "Project allocation in the laboratory report, not a laboratory-wide total.",
+        "sourceUrl": "https://nlpr.ia.ac.cn/uploads/file/20190306/7d22e132a3946fcd65ea157f80ea855a.pdf"
+      },
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "chongqing-gait",
+      "kind": "projects",
+      "title": "Gait recognition and analysis: technology and applications",
+      "startYear": 2022,
+      "endYear": 2025,
+      "period": "2022 approval · 2025 acceptance",
+      "countries": [
+        "China"
+      ],
+      "host": "Chongqing key R&D support · Chongqing Institute of Public Security Science and Technology",
+      "scope": "gait",
+      "summary": "Supports gait-recognition technology and applications within a municipal police-science research program.",
+      "details": "The institute’s 2022 annual report confirms approval under Chongqing’s technology-innovation and application-development key R&D support. The municipal science and technology bureau lists the project as having passed acceptance in 2025. The cited records do not disclose the project’s funding amount or recognition accuracy.",
+      "tags": [
+        "Gait recognition",
+        "Applied research"
+      ],
+      "sources": [
+        {
+          "label": "Official annual report",
+          "url": "https://www.cq.gov.cn/zwgk/zfxxgkzt/sydwndbg_1/2022_406063/202306/t20230614_12064535.html",
+          "evidence": "Confirms project approval in 2022."
+        },
+        {
+          "label": "Acceptance list",
+          "url": "https://kjj.cq.gov.cn/zwxx_176/tzgg/202511/P020251119677176421277.pdf",
+          "evidence": "2025 second-batch project acceptance list, entry 60: passed."
+        }
+      ],
+      "citation": {
+        "key": "chongqing_gait_project",
+        "title": "Annual Report of the Chongqing Institute of Public Security Science and Technology (2022)",
+        "author": "{Chongqing Municipal People's Government}",
+        "url": "https://www.cq.gov.cn/zwgk/zfxxgkzt/sydwndbg_1/2022_406063/202306/t20230614_12064535.html",
+        "year": 2023,
+        "note": "In Chinese"
+      },
+      "periodBasis": "The dates are documented approval and acceptance milestones, not the contractual execution dates.",
+      "originalTitle": "步态识别分析技术研究与应用",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "hid-2020",
+      "kind": "competitions",
+      "title": "HID 2020",
+      "startYear": 2020,
+      "endYear": 2020,
+      "period": "2020",
+      "countries": [
+        "International"
+      ],
+      "host": "International Joint Conference on Biometrics (IJCB)",
+      "scope": "gait",
+      "summary": "The first HID edition evaluated identity recognition from CASIA-E silhouettes and began the annual competition series.",
+      "details": "The organizers’ HID 2023 report retrospectively identifies the 2020–2022 editions as using CASIA-E. This entry summarizes that historical setting; the cited source is a later competition report, not a live registration page.",
+      "tags": [
+        "CASIA-E",
+        "Silhouettes",
+        "Rank-1"
+      ],
+      "sources": [
+        {
+          "label": "Competition report",
+          "url": "https://hid.iapr-tc4.org/wp-content/uploads/sites/11/2024/03/HID2023-summary.pdf",
+          "evidence": "Historical discussion of HID 2020–2022 in the HID 2023 report."
+        },
+        {
+          "label": "Publisher record",
+          "url": "https://doi.org/10.1109/IJCB57857.2023.10448952",
+          "evidence": "HID 2023 organizer report, including a retrospective discussion of earlier editions."
+        }
+      ],
+      "citation": {
+        "key": "hid2023",
+        "entryType": "inproceedings",
+        "author": "Yu, Shiqi and Wang, Chenye and Zhao, Yuwei and Wang, Li and Wang, Ming and Li, Qing and Li, Wenlong and Wang, Runsheng and Huang, Yongzhen and Wang, Liang and Makihara, Yasushi and Ahad, Md Atiqur Rahman",
+        "title": "Human Identification at a Distance: Challenges, Methods and Results on {HID} 2023",
+        "booktitle": "IEEE International Joint Conference on Biometrics (IJCB)",
+        "year": 2023,
+        "pages": "1--8",
+        "doi": "10.1109/IJCB57857.2023.10448952",
+        "url": "https://doi.org/10.1109/IJCB57857.2023.10448952"
+      },
+      "periodBasis": "Competition edition year.",
+      "originalTitle": "",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "hid-2021",
+      "kind": "competitions",
+      "title": "HID 2021",
+      "startYear": 2021,
+      "endYear": 2021,
+      "period": "2021",
+      "countries": [
+        "International"
+      ],
+      "host": "International Joint Conference on Biometrics (IJCB)",
+      "scope": "gait",
+      "summary": "Evaluated CASIA-E silhouette recognition with refreshed test data and code-based submission.",
+      "details": "CASIA-E provides silhouette sequences for identity matching. The early editions use a supplied training split; exact sample selection, submission rules and results belong to each edition and should not be pooled as a single protocol.",
+      "tags": [
+        "CASIA-E",
+        "Silhouettes",
+        "Rank-1"
+      ],
+      "sources": [
+        {
+          "label": "Official edition",
+          "url": "https://hid.iapr-tc4.org/previous-hid-websites/hid-2021/",
+          "evidence": "Edition-specific dataset and evaluation description."
+        }
+      ],
+      "citation": {
+        "key": "hid2021web",
+        "title": "Human Identification at a Distance: HID 2021",
+        "author": "{HID Organizers}",
+        "url": "https://hid.iapr-tc4.org/previous-hid-websites/hid-2021/",
+        "year": 2021
+      },
+      "periodBasis": "Competition edition year.",
+      "originalTitle": "",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "hid-2022",
+      "kind": "competitions",
+      "title": "HID 2022",
+      "startYear": 2022,
+      "endYear": 2022,
+      "period": "2022",
+      "countries": [
+        "International"
+      ],
+      "host": "International Joint Conference on Biometrics (IJCB)",
+      "scope": "gait",
+      "summary": "Evaluated CASIA-E silhouette recognition across view, clothing and carrying changes, with an OpenGait reference implementation.",
+      "details": "CASIA-E provides silhouette sequences for identity matching. The early editions use a supplied training split; exact sample selection, submission rules and results belong to each edition and should not be pooled as a single protocol.",
+      "tags": [
+        "CASIA-E",
+        "Silhouettes",
+        "Rank-1"
+      ],
+      "sources": [
+        {
+          "label": "Official edition",
+          "url": "https://hid.iapr-tc4.org/previous-hid-websites/98-2/",
+          "evidence": "Edition-specific dataset and evaluation description."
+        }
+      ],
+      "citation": {
+        "key": "hid2022web",
+        "title": "Human Identification at a Distance: HID 2022",
+        "author": "{HID Organizers}",
+        "url": "https://hid.iapr-tc4.org/previous-hid-websites/98-2/",
+        "year": 2022
+      },
+      "periodBasis": "Competition edition year.",
+      "originalTitle": "",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "hid-2023",
+      "kind": "competitions",
+      "title": "HID 2023",
+      "startYear": 2023,
+      "endYear": 2023,
+      "period": "2023",
+      "countries": [
+        "International"
+      ],
+      "host": "International Joint Conference on Biometrics (IJCB)",
+      "scope": "gait",
+      "summary": "Introduced SUSTech-Competition and external-data training, shifting the competition toward cross-domain gait recognition.",
+      "details": "SUSTech-Competition contains 859 subjects and covers clothing, carrying and viewpoint variation. No dedicated training split is supplied; external gait datasets are used for training. Refer to the edition source for its splits, allowed data and submission limits.",
+      "tags": [
+        "SUSTech-Competition",
+        "External training",
+        "Rank-1"
+      ],
+      "sources": [
+        {
+          "label": "Competition report",
+          "url": "https://doi.org/10.1109/IJCB57857.2023.10448952",
+          "evidence": "Edition-specific dataset and evaluation description."
+        }
+      ],
+      "citation": {
+        "key": "hid2023",
+        "entryType": "inproceedings",
+        "author": "Yu, Shiqi and Wang, Chenye and Zhao, Yuwei and Wang, Li and Wang, Ming and Li, Qing and Li, Wenlong and Wang, Runsheng and Huang, Yongzhen and Wang, Liang and Makihara, Yasushi and Ahad, Md Atiqur Rahman",
+        "title": "Human Identification at a Distance: Challenges, Methods and Results on {HID} 2023",
+        "booktitle": "IEEE International Joint Conference on Biometrics (IJCB)",
+        "year": 2023,
+        "pages": "1--8",
+        "doi": "10.1109/IJCB57857.2023.10448952",
+        "url": "https://doi.org/10.1109/IJCB57857.2023.10448952"
+      },
+      "periodBasis": "Competition edition year.",
+      "originalTitle": "",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "hid-2024",
+      "kind": "competitions",
+      "title": "HID 2024",
+      "startYear": 2024,
+      "endYear": 2024,
+      "period": "2024",
+      "countries": [
+        "International"
+      ],
+      "host": "International Joint Conference on Biometrics (IJCB)",
+      "scope": "gait",
+      "summary": "Continued SUSTech-Competition evaluation, emphasizing gait recognition without a dedicated training split.",
+      "details": "SUSTech-Competition contains 859 subjects and covers clothing, carrying and viewpoint variation. No dedicated training split is supplied; external gait datasets are used for training. Refer to the edition source for its splits, allowed data and submission limits.",
+      "tags": [
+        "SUSTech-Competition",
+        "External training",
+        "Rank-1"
+      ],
+      "sources": [
+        {
+          "label": "Official edition",
+          "url": "https://hid.iapr-tc4.org/previous-hid-websites/hid2024/",
+          "evidence": "Edition-specific dataset and evaluation description."
+        }
+      ],
+      "citation": {
+        "key": "hid2024web",
+        "title": "Human Identification at a Distance: HID 2024",
+        "author": "{HID Organizers}",
+        "url": "https://hid.iapr-tc4.org/previous-hid-websites/hid2024/",
+        "year": 2024
+      },
+      "periodBasis": "Competition edition year.",
+      "originalTitle": "",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "hid-2025",
+      "kind": "competitions",
+      "title": "HID 2025",
+      "startYear": 2025,
+      "endYear": 2025,
+      "period": "2025",
+      "countries": [
+        "International"
+      ],
+      "host": "International Joint Conference on Biometrics (IJCB)",
+      "scope": "gait",
+      "summary": "Continued the SUSTech-Competition setting, with external gait training and an edition-specific evaluation protocol.",
+      "details": "SUSTech-Competition contains 859 subjects and covers clothing, carrying and viewpoint variation. No dedicated training split is supplied; external gait datasets are used for training. Refer to the edition source for its splits, allowed data and submission limits.",
+      "tags": [
+        "SUSTech-Competition",
+        "External training",
+        "Rank-1"
+      ],
+      "sources": [
+        {
+          "label": "Official edition",
+          "url": "https://hid.iapr-tc4.org/previous-hid-websites/hid-2025/",
+          "evidence": "Edition-specific dataset and evaluation description."
+        },
+        {
+          "label": "Organizer report",
+          "url": "https://arxiv.org/abs/2602.07565",
+          "evidence": "HID 2025 methods and results; preprint posted in 2026."
+        }
+      ],
+      "citation": {
+        "key": "hid2025web",
+        "title": "Human Identification at a Distance: HID 2025",
+        "author": "{HID Organizers}",
+        "url": "https://hid.iapr-tc4.org/previous-hid-websites/hid-2025/",
+        "year": 2025
+      },
+      "periodBasis": "Competition edition year.",
+      "originalTitle": "",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "hid-2026",
+      "kind": "competitions",
+      "title": "HID 2026",
+      "startYear": 2026,
+      "endYear": 2026,
+      "period": "2026",
+      "countries": [
+        "International"
+      ],
+      "host": "International Joint Conference on Biometrics (IJCB)",
+      "scope": "gait",
+      "summary": "Uses SUSTech-Competition silhouettes with reference code, automated Codabench evaluation and stricter restrictions on use of earlier test probes.",
+      "details": "The rules prohibit released test probes from earlier editions from being used for training, validation or model selection. One sequence per identity forms the gallery; remaining sequences form probes, released in 10% and 90% phases. Top submissions undergo code-based reproducibility checks. The site links Codabench, although some rule text retains older CodaLab wording.",
+      "tags": [
+        "SUSTech-Competition",
+        "External training",
+        "Rank-1"
+      ],
+      "sources": [
+        {
+          "label": "Official edition",
+          "url": "https://hid.iapr-tc4.org/",
+          "evidence": "Edition-specific dataset and evaluation description."
+        }
+      ],
+      "citation": {
+        "key": "hid2026web",
+        "title": "Human Identification at a Distance: HID 2026",
+        "author": "{HID Organizers}",
+        "url": "https://hid.iapr-tc4.org/",
+        "year": 2026
+      },
+      "periodBasis": "Competition edition year.",
+      "originalTitle": "",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "mgr-2024",
+      "kind": "competitions",
+      "title": "Multimodal Gait Recognition Challenge",
+      "startYear": 2024,
+      "endYear": 2024,
+      "period": "2024",
+      "countries": [
+        "International"
+      ],
+      "host": "ACM MM · Human-centric Multimedia Analysis (HCMA) workshop",
+      "scope": "gait",
+      "summary": "Compares parsing, silhouette, pose and multimodal gait recognition through four input-specific tracks.",
+      "details": "The multimodal track permits silhouettes, parsing, 2D pose and SMPL parameters. Evaluation uses rank-1 accuracy, with separate development and test phases. This is an HCMA workshop challenge, not labeled here as a main-conference Grand Challenge.",
+      "tags": [
+        "Parsing",
+        "Silhouettes",
+        "Pose",
+        "Multimodal"
+      ],
+      "sources": [
+        {
+          "label": "Official challenge",
+          "url": "https://hcma2024.github.io/mgr",
+          "evidence": "Challenge structure lists the four tracks, permitted inputs and rank-1 evaluation."
+        }
+      ],
+      "citation": {
+        "key": "mgr2024web",
+        "title": "{ACM MM}'24 Multimodal Gait Recognition Challenge",
+        "author": "{HCMA Workshop Organizers}",
+        "url": "https://hcma2024.github.io/mgr",
+        "year": 2024
+      },
+      "periodBasis": "Competition edition year.",
+      "originalTitle": "",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "oumvlp-of-2025",
+      "kind": "competitions",
+      "title": "OUMVLP-OF Gait Recognition Challenge",
+      "startYear": 2025,
+      "endYear": 2025,
+      "period": "2025",
+      "countries": [
+        "International"
+      ],
+      "host": "International Joint Conference on Biometrics (IJCB)",
+      "scope": "gait",
+      "summary": "Evaluates optical-flow gait identification and verification using versions with retained or removed background information.",
+      "details": "V1 retains background in optical-flow maps; V2 masks it using silhouettes. Identification uses rank-1 and verification uses equal error rate. The later official update supplies training samples, superseding the earlier no-training-data statement still present on the page.",
+      "tags": [
+        "Optical flow",
+        "Identification",
+        "Verification"
+      ],
+      "sources": [
+        {
+          "label": "Official challenge",
+          "url": "https://of.iapr-tc4.org/",
+          "evidence": "The dataset section describes V1/V2 and the training-data update; the tracks specify rank-1 and EER."
+        }
+      ],
+      "citation": {
+        "key": "oumvlpof2025web",
+        "title": "Exploring Dense Optical Flow for Gait Recognition: A Challenge on the {OUMVLP-OF} Gait Dataset",
+        "author": "{OUMVLP-OF Challenge Organizers}",
+        "url": "https://of.iapr-tc4.org/",
+        "year": 2025
+      },
+      "periodBasis": "Competition edition year.",
+      "originalTitle": "",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "ag-reid-2023",
+      "kind": "competitions",
+      "title": "AG-ReID 2023",
+      "startYear": 2023,
+      "endYear": 2023,
+      "period": "2023",
+      "countries": [
+        "International"
+      ],
+      "host": "International Joint Conference on Biometrics (IJCB)",
+      "scope": "reid",
+      "summary": "Evaluates person matching between aerial and ground images, exposing viewpoint and scale differences beyond gait-only matching.",
+      "details": "This related person re-identification competition addresses aerial–ground acquisition. Its task is not restricted to walking sequences or gait representations; it remains separate from the gait-specific events in this index.",
+      "tags": [
+        "Aerial–ground",
+        "Image ReID"
+      ],
+      "sources": [
+        {
+          "label": "Official challenge",
+          "url": "https://agreid23.github.io/",
+          "evidence": "The challenge overview defines aerial–ground person re-identification."
+        }
+      ],
+      "citation": {
+        "key": "agreid2023web",
+        "title": "{AG-ReID} 2023: Aerial-Ground Person Re-identification Challenge",
+        "author": "{AG-ReID Organizers}",
+        "url": "https://agreid23.github.io/",
+        "year": 2023
+      },
+      "periodBasis": "Competition edition year.",
+      "originalTitle": "",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    },
+    {
+      "id": "ag-vpreid-2025",
+      "kind": "competitions",
+      "title": "AG-VPReID 2025",
+      "startYear": 2025,
+      "endYear": 2025,
+      "period": "2025",
+      "countries": [
+        "International"
+      ],
+      "host": "International Joint Conference on Biometrics (IJCB)",
+      "scope": "reid",
+      "summary": "Extends aerial–ground person matching to video, with aerial-to-ground and ground-to-aerial evaluation.",
+      "details": "The challenge describes drone video at 80–120 m, ground cameras and video tracklets. Evaluation includes mAP and CMC ranks. External-data use must be disclosed and is ranked separately under the published rules. This is a broader video ReID task, not a gait-specific benchmark.",
+      "tags": [
+        "Aerial–ground",
+        "Video ReID",
+        "mAP / CMC"
+      ],
+      "sources": [
+        {
+          "label": "Official challenge",
+          "url": "https://agvpreid25.github.io/",
+          "evidence": "The overview, evaluation tasks and rules define the video setting and external-data ranking."
+        }
+      ],
+      "citation": {
+        "key": "agvpreid2025web",
+        "title": "{AG-VPReID} 2025: The 2nd Aerial-Ground Person {ReID} Challenge",
+        "author": "{AG-VPReID Organizers}",
+        "url": "https://agvpreid25.github.io/",
+        "year": 2025
+      },
+      "periodBasis": "Competition edition year.",
+      "originalTitle": "",
+      "funding": null,
+      "checkedOn": "2026-09-23"
+    }
+  ]
+}

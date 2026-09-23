@@ -3,6 +3,7 @@ Python 3 standard library only. This does not change corpus membership.
 """
 from pathlib import Path
 import collections, csv, itertools, json, subprocess, sys
+from build_initiatives import build as build_initiatives
 ROOT=Path(__file__).resolve().parents[1]
 subprocess.run([sys.executable,str(ROOT/'sync_data.py')],check=True)
 D=json.loads((ROOT/'companion.json').read_text())
@@ -35,3 +36,4 @@ with (ROOT/'statistics-counts.csv').open('w',newline='') as f:
     for kind,counts in [('dataset',ds),('modality',mods)]:
         for label,value in sorted(counts.items(),key=lambda x:(-x[1],x[0])):w.writerow([kind,label,value,len(members),round(value/len(members)*100,1)])
 print(f'Generated {len(members)}-publication snapshot; {sum(mods.values())} modality uses; {len(D["results"])} result records.')
+build_initiatives()

@@ -26,6 +26,7 @@
 | [Statistics](https://chaofan996.github.io/gait-survey/?view=statistics) | Dataset usage, modality trends, and benchmark resources | Table II · Figs. 5–6 |
 | [Research map](https://chaofan996.github.io/gait-survey/?view=map) | Papers connected to five methodological dimensions, challenges, and outlooks | Sections IV–VI |
 | [Code & openness](https://chaofan996.github.io/gait-survey/?view=codebases) | Repository stars, OpenGait history, and filterable publication code-release statements | Section III-C |
+| [Projects](https://chaofan996.github.io/gait-survey/?view=initiatives&kind=projects) / [Competitions](https://chaofan996.github.io/gait-survey/?view=initiatives&kind=competitions) | Funded research and competition editions, with scope, evaluation settings, official sources and BibTeX | Sections III-D–E |
 
 **Current collection:** 278 catalogue references · 120 experimental records, including alternative reports. Filters can be shared, and records can be exported for further analysis.
 
@@ -48,6 +49,8 @@ Paper summaries use three fields—motivation, idea, and techniques—with LLM a
 The [Code & openness view](https://chaofan996.github.io/gait-survey/?view=codebases) adds a dated snapshot of eight repositories, an interactive OpenGait star-history curve, and 160 source-text audit records. Filter by publication year, statement status, or keyword; download the selection or the two-column manuscript figure. See the [code-statement definitions and maintenance guide](docs/codebases.md).
 
 For interpreting scores, see the [benchmark rules](docs/statistics.md#benchmark-interpretation). Rankings follow the selected protocol and training source; research-map links identify supporting survey discussions.
+
+The [Projects & competitions index](https://chaofan996.github.io/gait-survey/?view=initiatives) contains **9 research entries and 11 competition editions**, including HID 2020–2026, ACM MM 2024 MGR and IJCB 2025 OUMVLP-OF. Filter by year, region, research scope or keyword; inspect official sources and download [BibTeX](initiatives.bib) or [JSON](initiatives.json). Broader ReID tasks are labeled explicitly. See the [scope and update guide](docs/initiatives.md).
 
 ## Preview locally
 

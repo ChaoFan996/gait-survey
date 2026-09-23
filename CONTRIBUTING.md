@@ -19,6 +19,8 @@ Please discuss ideas respectfully, credit the original authors, and give sources
 
 ## A typical paper update
 
+For a funded project or competition, use the [initiative curation guide](docs/initiatives.md). These entries have their own source-linked index and do not change publication statistics.
+
 1. Add or correct the record in `papers.json` and check it against the original paper.
 2. Run `python3 scripts/build_data.py` and `python3 scripts/validate_data.py`.
 3. Preview the change and open a pull request with the source and a short description.
@@ -104,6 +106,8 @@ python3 scripts/validate_data.py
 node --check app.js
 node --check companion.js
 node --check research-map.js
+node --check codebases.js
+node --check initiatives.js
 python3 -m http.server 8766
 ```
 
@@ -126,6 +130,9 @@ The repository root is the GitHub Pages site package. After merging into the Pag
 | `README.md` | Project overview and entry points |
 | `CONTRIBUTING.md` | Contribution and maintenance workflow |
 | `docs/statistics.md` | Statistical scope, counting rules, and benchmark interpretation |
+| `docs/initiatives.md` | Project/competition scope, source requirements and updates |
+| `initiatives.json` | Canonical project and competition records |
+| `initiatives-data.js`, `initiatives.bib` | Generated browser data and source citations |
 | `papers.json` | Canonical metadata and three-field summaries |
 | `companion.json` | Statistical records, resources, protocols, and benchmark evidence |
 | `data/snapshot.json` | Statistical scope and expected totals |
