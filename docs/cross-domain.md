@@ -16,6 +16,6 @@ CASIA-B and CASIA-B* retain the reporting paper's dataset label; preprocessing e
 
 ## Figure selection
 
-`data/cross-domain-figure.json` records the selection and exact experiment IDs for the added panels. Figure 5 keeps the original 46 scores and 12 paired differences in (a–c). Panel (d) adds six CL scores from GaitMax Table 3; panel (e) adds eight CL scores from DenoisingGait supplementary Table 9. CASIA-B* and SUSTech1K training form separate column groups in (e). Sources and preprocessing notes accompany the manuscript caption.
+`data/cross-domain-figure.json` records the selection and exact experiment IDs for the added panels. Figure 5 keeps the original 46 scores and 12 paired differences in (a–c). Panel (d) adds six CL scores from GaitMax Table 3, with methods in columns and target conditions in rows. The former panel (e) is removed from the figure; all its source records remain available in the explorer under CASIA-B* and SUSTech1K training. Sources and preprocessing notes accompany the manuscript caption.
 
 The downloadable vector figure is `assets/cross-domain-transfer.pdf`. Its builder and canonical selection live in the survey workspace at `overleaf/statistics/rebuild_transfer_figure.py` and `cross_domain_results.json`. After editing, regenerate the PDF, copy it to `assets/`, and synchronize the selection JSON. Then run `python3 scripts/build_data.py`, `python3 scripts/validate_data.py`, and `node --check companion.js`. Validation checks every displayed score against the source-specific record and prevents mean/overall substitution.
