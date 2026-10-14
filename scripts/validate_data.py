@@ -88,10 +88,18 @@ for link in M['links']:
     assert link['paperId'] in ids and link['nodeId'] in nodes
     e=evidence[link['evidenceId']]
     assert link['paperId'] in e['paperIds'] and link['nodeId']==e['nodeId'] and e['text']
-    assert e['basis'] in ['Survey discussion','Curated paper evidence']
+    assert e['basis'] in ['Survey discussion','Curated paper evidence','Manuscript synthesis']
     if e['basis']=='Survey discussion':assert e['line']>0 and e['citationKeys']
+    elif e['basis']=='Manuscript synthesis':assert e['page']>0 and e['sourceDocument'] and e['citationKeys']
     else:assert all(e.get(k) for k in ['sourceUrl','reviewedBy','reviewedOn'])
 assert M['meta']['linkedPublications']==len({l['paperId'] for l in M['links']})
+G=load('data/survey-guide.json')
+assert json.loads((ROOT/'survey-guide-data.js').read_text().split(' = ',1)[1].strip().removesuffix(';'))==G
+assert P['meta']['title']==G['meta']['title']
+paper_keys={p['citationKey'] for p in P['papers']}
+assert len(G['progress'])==8 and all(set(r['keys'])<=paper_keys for r in G['progress'])
+assert {'synthetic','scaling','agents'}<=nodes and 'robotics' not in nodes
+assert all(n['section']=='IV-F' for n in M['nodes'] if n['id']=='scaling')
 C=load('codebases.json')
 assert len(C['records'])==C['meta']['recordCount']==len(members)
 assert {r['paperId'] for r in C['records']}==members

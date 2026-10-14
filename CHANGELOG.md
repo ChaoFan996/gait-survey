@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-14 — Alignment with the revised manuscript
+
+- Updated the survey title, scope and introductory copy to connect modern gait recognition since 2020 with foundation models and evidence about effective conditions, failures and transfer.
+- Added a compact, source-linked Table V guide under Sec. IV-F, plus synthetic-data and scaling reading routes. Removed the obsolete Table V/research-agenda label.
+- Updated foundation-model, healthcare, agents and privacy topics with concise manuscript summaries and PDF-page provenance. Agents combines long-video understanding and embodied applications; its gait benefit is explicitly prospective.
+- Added GaitCrafter, the frailty transfer study and MovieNet; clarified GaitEditor and skeleton-scaling records. Catalogue: 281 references; map: 105 linked publications and 165 supported links.
+- Clarified the limited support role of language-model tools in catalogue curation and retained author responsibility for interpretation.
+- Preserved all 160 statistical members, 212 modality uses, 228 experimental records, and code/project/competition data. No manuscript or Overleaf changes.
+- Added reproducible guide generation and consistency checks; checked desktop/mobile layout, reading links, source dialogs, filtering and generated data consistency. Browser download-event verification timed out.
+
 ## 2026-09-23 — Projects & competitions
 
 - Added a sixth view with separate project and competition links, keyword/year/region/scope filters, shared URLs, source details and selection export.

@@ -6,7 +6,7 @@ These rules document the current manuscript snapshot and the evidence shown in t
 
 ## Scope and counting rules
 
-The current manuscript snapshot, **`survey-2026-09-21`**, contains **160 publications from 2020–2025 and 212 recorded modality uses**. Membership is frozen in [`companion.json`](../companion.json) (`records`), with scope recorded in [`data/snapshot.json`](../data/snapshot.json). The broader catalogue currently contains 278 references, including foundational and selected 2026 work. Adding a reference to the catalogue does not automatically add it to the manuscript statistics.
+The current manuscript snapshot, **`survey-2026-09-21`**, contains **160 publications from 2020–2025 and 212 recorded modality uses**. Membership is frozen in [`companion.json`](../companion.json) (`records`), with scope recorded in [`data/snapshot.json`](../data/snapshot.json). The broader catalogue currently contains 281 references, including foundational and selected 2026 work. Adding a reference to the catalogue does not automatically add it to the manuscript statistics.
 
 Included conferences: **CVPR, ICCV, ECCV, WACV, BMVC, ACCV, IJCB, AAAI, ACM MM**. Included journals: **TPAMI, TIFS, TIP, TNNLS, TCSVT, TBIOM, TMM, IJCV, PR**. PRL, NeurIPS, workshops, and preprints are outside this statistical scope. A benchmark result may cite another venue to reproduce Tables III–IV; this does not add its source paper to the statistical corpus.
 

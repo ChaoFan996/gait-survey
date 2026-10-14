@@ -1,0 +1,299 @@
+{
+  "meta": {
+    "updated": "2026-10-14",
+    "title": "Modern Gait Recognition: A Survey from Deep Learning to Foundation Models",
+    "sourceDocument": "2025_GaitSurvey_Chao-4.pdf",
+    "sourceNote": "Aligned with the author-supplied 20-page manuscript received on 2026-10-11. Passages below are concise editorial summaries, not quotations. The fixed 2020–2025 statistical membership is unchanged.",
+    "section": "IV-F",
+    "table": "V",
+    "sourceSha256": "8ca6e098cc7596897b3b8db7e0aa80f79eb7e4a620997525d115109016634499"
+  },
+  "progress": [
+    {
+      "aspect": "Controlled views",
+      "status": "R",
+      "works": "Cross-view matching with reliable extraction and matched laboratory protocols.",
+      "limit": "Clothing changes and outdoor transfer remain separate challenges.",
+      "keys": [
+        "huang2025origins",
+        "wang2025gaitc"
+      ],
+      "labels": {
+        "huang2025origins": "Origins-T"
+      }
+    },
+    {
+      "aspect": "Clothing and covariates",
+      "status": "C",
+      "works": "Condition-aware learning with relevant pairs and broad condition coverage.",
+      "limit": "Unseen combinations remain difficult; averages can hide hard cases.",
+      "keys": [
+        "wang2025gaitc"
+      ]
+    },
+    {
+      "aspect": "Complementary inputs",
+      "status": "C",
+      "works": "Structural, motion and 3D cues with reliable extraction and alignment.",
+      "limit": "Gains with all inputs present do not establish robustness to missing sensors.",
+      "keys": [
+        "shen2025lidargait++",
+        "jin2025exploring"
+      ]
+    },
+    {
+      "aspect": "Source-only transfer",
+      "status": "C",
+      "works": "Pretraining and source coverage suited to the method and target.",
+      "limit": "A source change can help one method and harm another.",
+      "keys": [
+        "ye2025biggergait"
+      ],
+      "labels": {
+        "ye2025biggergait": "DeepGaitV2 / BigGait (BiggerGait)"
+      }
+    },
+    {
+      "aspect": "Foundation models and language",
+      "status": "C",
+      "works": "Adapted visual, temporal and semantic priors that retain individual gait detail.",
+      "limit": "Recognition gains do not establish identity invariance or agent utility.",
+      "keys": [
+        "ye2024biggait",
+        "yang2025bridging",
+        "wu2026lmgait"
+      ]
+    },
+    {
+      "aspect": "Synthetic data",
+      "status": "C",
+      "works": "Identity-consistent augmentation or pretraining with suitable real-data adaptation.",
+      "limit": "More clips need not add diversity; fine-tuning differs from source-only transfer.",
+      "keys": [
+        "ma2024gaiteditor",
+        "mitra2025gaitcrafter",
+        "cai2026barbiegait"
+      ],
+      "labels": {
+        "cai2026barbiegait": "BarbieGait"
+      }
+    },
+    {
+      "aspect": "Data and model scale",
+      "status": "C",
+      "works": "Useful data, suitable model capacity and sufficient training computation.",
+      "limit": "Enlargement can saturate or regress; fitted laws depend on representation and budget.",
+      "keys": [
+        "ye2026foundationgait",
+        "cosma2026scaling"
+      ]
+    },
+    {
+      "aspect": "Reuse across tasks",
+      "status": "C/U",
+      "works": "Adapted readouts for selected healthcare objectives.",
+      "limit": "Identity accuracy does not establish clinical sensitivity or timely identity recovery for agents.",
+      "keys": [
+        "ye2026foundationgait"
+      ]
+    }
+  ],
+  "statusNote": "R: relatively mature within the stated protocols; C: conditionally supported; U: insufficient evidence. These are judgments about capabilities and settings, not rankings of methods. Cross-system scores do not isolate individual design effects.",
+  "topics": [
+    {
+      "id": "synthetic",
+      "title": "Synthetic Gait Data and Generative Learning",
+      "short": "Synthetic data",
+      "section": "IV-C",
+      "group": "discussion",
+      "overview": "Editing, diffusion and rendering expand training variation. Their value depends on preserving identity and improving recognition on held-out real people and conditions.",
+      "passages": [
+        {
+          "heading": "Identity and real-data utility",
+          "page": 11,
+          "text": "GaitEditor edits pedestrian attributes; GaitCrafter synthesizes conditional silhouettes and interpolates identity embeddings; BarbieGait renders clothing variants linked to source identities. These routes add different kinds of variation. Benefits after real-data fine-tuning should be distinguished from source-only synthetic-to-real transfer.",
+          "keys": [
+            "ma2024gaiteditor",
+            "mitra2025gaitcrafter",
+            "cai2026barbiegait"
+          ]
+        },
+        {
+          "heading": "What synthesis still needs to establish",
+          "page": 11,
+          "text": "Independent recognizers, temporal checks and held-out real conditions are needed to test identity preservation. More generated clips do not necessarily add distinct identities or useful conditions, and gains on controlled benchmarks do not establish unconstrained transfer.",
+          "keys": [
+            "mitra2025gaitcrafter",
+            "cai2026barbiegait"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scaling",
+      "title": "Data and Model Scaling",
+      "short": "Data and model scale",
+      "section": "IV-F",
+      "group": "discussion",
+      "overview": "Separate sequence count, identity diversity, condition coverage, model capacity and computation. Larger datasets and networks help only when these resources support the target task.",
+      "passages": [
+        {
+          "heading": "Diversity and design",
+          "page": 13,
+          "text": "FoundationGait reports saturation or regression when GaitSSB is enlarged, while part-aware pretraining better preserves complementary information. Its GaitLU-1M/WebGait-2M comparison changes data size and composition together, so it does not isolate the benefit of sequence count from identity or condition diversity.",
+          "keys": [
+            "ye2026foundationgait"
+          ]
+        },
+        {
+          "heading": "What a fitted scaling law establishes",
+          "page": 13,
+          "text": "The skeleton scaling study fits power laws using 2.7 million walking sequences and evaluates transfer to CASIA-B, PsyMo, GREW and Gait3D. Smaller models with greater data exposure are more efficient in its fixed-budget regime. These findings depend on the tested representations, objectives and budgets; a general gait scaling law remains unestablished.",
+          "keys": [
+            "cosma2026scaling"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foundation",
+      "title": "Gait Foundation Models",
+      "short": "Foundation models",
+      "section": "V-B",
+      "group": "outlook",
+      "overview": "General visual pretraining and gait-specific pretraining offer complementary routes to reuse. The key question is which identity and motion cues survive adaptation to new conditions and tasks.",
+      "passages": [
+        {
+          "heading": "Testing reusable capabilities",
+          "page": 13,
+          "text": "Frozen extraction, linear probing and fine-tuning test different capabilities. Label efficiency and transfer to unseen datasets should be evaluated separately, with pretraining overlap and adaptation budgets stated explicitly.",
+          "keys": [
+            "ye2026foundationgait",
+            "cosma2026scaling"
+          ]
+        },
+        {
+          "heading": "Retaining individual detail",
+          "page": 14,
+          "text": "BiggerGait finds useful gait information in intermediate visual features. Gait-specific temporal learning, adapters and distilled students should be judged by the detail they retain and their full training and deployment costs. Language guidance may improve features, but this does not yet demonstrate gait reasoning or agent capability.",
+          "keys": [
+            "ye2025biggergait",
+            "huang2026gaitmax",
+            "yang2025bridging",
+            "wu2026lmgait"
+          ]
+        },
+        {
+          "heading": "Generative models",
+          "page": 14,
+          "text": "Broader generative reuse requires identity consistency over long sequences, new condition combinations and preserved biomechanics. Identity-preserving augmentation and de-identification pursue different goals and need separate evaluation.",
+          "keys": [
+            "cai2026barbiegait",
+            "mitra2025gaitcrafter",
+            "ma2024gaiteditor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "healthcare",
+      "title": "Gait Representation Learning for Healthcare",
+      "short": "Healthcare",
+      "section": "V-C",
+      "group": "outlook",
+      "overview": "A useful health representation must keep meaningful changes visible while accounting for a person's usual walking style. Recognition accuracy alone does not establish clinical value.",
+      "passages": [
+        {
+          "heading": "From everyday walking to health assessment",
+          "page": 14,
+          "text": "Studies of scoliosis, skeletal health and frailty motivate repeated observation of everyday walking. Recognition models favor stable identity cues, which may suppress timing changes or asymmetry that matter for health. Personal baselines and population comparisons offer complementary ways to study those changes.",
+          "keys": [
+            "li2024finerehab",
+            "zhou2024gait",
+            "vishwakarma2026scoligaitx",
+            "gabet2026health",
+            "mcdaniel2026frailty"
+          ]
+        },
+        {
+          "heading": "Testing the intended benefit",
+          "page": 14,
+          "text": "Evaluate unseen people and sessions, transfer across sites and populations, and sensitivity to recovery or deterioration. Generated gait should preserve condition-relevant movement. Screening, assessment and follow-up need their own outcomes rather than identity-recognition accuracy alone.",
+          "keys": [
+            "adeli2026gaitgen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agents",
+      "replaces": "robotics",
+      "title": "Gait Recognition for Agents",
+      "short": "Agents",
+      "section": "V-D",
+      "group": "outlook",
+      "overview": "Virtual agents analyzing long videos and embodied agents such as robots share a need to maintain identity across interrupted observations. Gait's contribution to these tasks still needs direct evaluation.",
+      "passages": [
+        {
+          "heading": "Maintaining identity over time",
+          "page": 14,
+          "text": "MovieNet studies character identity in long videos; FollowMe and online continual ReID address person following. They motivate a shared identity-continuity problem, but are not evidence that gait-enabled agents already work. Gait could add a cue when walking is visible and facial detail is limited.",
+          "keys": [
+            "huang2020movienet",
+            "rollo2023followme",
+            "ye2024robotreid"
+          ]
+        }
+      ],
+      "outlookNote": "A long recording may contain only brief walking segments. Virtual agents can revisit useful segments; robots can gather another view. Both must weigh extra identity evidence against observation time and computation. LLM coordination remains a proposal to test against fixed pipelines under matched budgets."
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy and Responsible Use",
+      "short": "Privacy",
+      "section": "VI",
+      "group": "outlook",
+      "overview": "A hidden face does not guarantee a hidden identity. Protection should follow gait data through reuse and be assessed alongside the value that the intended application must retain.",
+      "passages": [
+        {
+          "heading": "Protection beyond one recognizer",
+          "page": 14,
+          "text": "Silhouettes and compact embeddings can still reveal identity. Temporal edits, contour changes and generative protection should be tested against independent recognizers, retraining on protected outputs and linkage across releases. Editing a video cannot protect embeddings already shared.",
+          "keys": [
+            "shen2024comprehensive",
+            "he2023temporal",
+            "hou2025edge",
+            "duan2026gaitprotector",
+            "ma2024gaiteditor"
+          ]
+        }
+      ],
+      "outlookNote": "Preserving useful movement may preserve identifying cues; removing identity may erase clinically relevant change. Evaluate privacy and downstream utility together, including errors and the proportion of observations receiving a decision. Access, retention and template protection address other stages of the same system."
+    }
+  ],
+  "learningPassages": [
+    {
+      "heading": "Foundation models and language guidance",
+      "page": 11,
+      "text": "General visual features, language guidance and gait-specific self-supervision expand the available training resources. Recognition gains must be interpreted alongside backbone, descriptions, target labels and inference cost. Frozen reuse, adaptation and unseen-domain transfer remain distinct claims.",
+      "keys": [
+        "ye2024biggait",
+        "ye2025biggergait",
+        "yang2025bridging",
+        "wu2026lmgait",
+        "ye2026foundationgait",
+        "cosma2026scaling"
+      ]
+    },
+    {
+      "heading": "Generative priors and supervision",
+      "page": 11,
+      "text": "DenoisingGait uses diffusion features, Origins a generated template, and CoD2 conditional diffusion supervision. These supply priors or joint supervision beyond synthetic-sample augmentation.",
+      "keys": [
+        "jin2025denoising",
+        "huang2025origins",
+        "xiong2026cod2"
+      ]
+    }
+  ]
+}

@@ -4,8 +4,10 @@ Python 3 standard library only. This does not change corpus membership.
 from pathlib import Path
 import collections, csv, itertools, json, subprocess, sys
 from build_initiatives import build as build_initiatives
+from build_guide import build as build_guide
 ROOT=Path(__file__).resolve().parents[1]
 subprocess.run([sys.executable,str(ROOT/'sync_data.py')],check=True)
+build_guide()
 D=json.loads((ROOT/'companion.json').read_text())
 P=json.loads((ROOT/'papers.json').read_text())
 R=json.loads((ROOT/'research-map.json').read_text())
@@ -14,7 +16,7 @@ members={r['paperId'] for r in D['records']}
 for p in P['papers']:
     p['statisticsEligible']=p['id'] in members
     p['venueInScope']=p['venue'] in D['meta']['allowedVenues']
-P['meta']['updated']=D['meta']['updated']
+# Catalogue curation and the frozen statistical snapshot have separate dates.
 for filename,data,var in [('papers',P,'GAIT_DATA'),('companion',D,'GAIT_COMPANION'),('research-map',R,'GAIT_MAP'),('codebases',C,'GAIT_CODEBASES')]:
     (ROOT/(filename+'.json')).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     js='papers.js' if filename=='papers' else filename+'-data.js'

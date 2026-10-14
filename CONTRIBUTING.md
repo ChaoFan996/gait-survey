@@ -37,7 +37,7 @@ Edit [`papers.json`](papers.json), the canonical literature catalogue. Copy a st
 | `idea` | **What changes?** What is the central contribution? |
 | `techniques` | **How does it work?** Which mechanisms implement the idea? |
 
-The survey's initial collection and three-field summaries used LLM assistance followed by record-by-record human verification. You may draft additions yourself or use an LLM; in either case, check metadata, each summary, inputs, and dataset claims against the linked paper before merging. Record evidence and review information in `provenance`, for example:
+The authors retain responsibility for literature selection, analysis and interpretation. Language-model tools assisted organization, metadata extraction and wording of the initial catalogue summaries, followed by source checking. You may draft additions yourself or use an LLM; in either case, check metadata, each summary, inputs, and dataset claims against the linked paper before merging. Record evidence and review information in `provenance`, for example:
 
 ```json
 {
@@ -83,6 +83,12 @@ To add a relationship before it appears in the manuscript, append a reviewed ent
 ```
 
 Use a node ID from `research-map.json`. The map labels these additions as *Curated paper evidence*. If the manuscript is unavailable, propose the addition in a pull request for a maintainer to regenerate and review.
+
+### Dated manuscript alignment
+
+`data/survey-guide.json` holds the concise Table V synthesis and updated topic summaries. Each passage records a manuscript PDF page and citation keys; metadata records the source hash. `scripts/build_guide.py`, called by `build_data.py`, applies these dated topic updates to the core map, regenerates relationship exports, and preserves the statistical membership. This pass is idempotent.
+
+After rebuilding the base map from TeX, run `build_data.py` as usual. For a later manuscript, review or replace the guide as part of that revision so older summaries do not override newer evidence. Do not label a paraphrase as a quotation or treat an application proposal as demonstrated capability. See [the October alignment record](docs/manuscript-alignment.md).
 
 ## 4. Release a new statistical snapshot
 
@@ -138,6 +144,8 @@ The repository root is the GitHub Pages site package. After merging into the Pag
 | `data/snapshot.json` | Statistical scope and expected totals |
 | `data/relationship-additions.json` | Human-reviewed relationships beyond manuscript citation indexing |
 | `research-map.json` | Map nodes, links, passages, and manuscript provenance |
+| `data/survey-guide.json` | Dated Table V synthesis and updated discussion/outlook summaries |
+| `scripts/build_guide.py` | Apply the guide to the map and regenerate relationship exports |
 | `scripts/build_data.py` | Generate browser bundles, membership, and counts |
 | `scripts/build_research_map.py` | Generate map and CSV from the manuscript and reviewed additions |
 | `scripts/validate_data.py` | Check consistency before release |

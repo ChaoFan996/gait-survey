@@ -7,8 +7,8 @@
 <h1 align="center">Gait Research Library</h1>
 
 <p align="center">
-  An evolving companion to <strong>Gait Recognition: A Survey and Outlook</strong>.<br>
-  Explore research ideas, compare benchmark evidence, and connect open questions.
+  An evolving companion to <strong>Modern Gait Recognition: A Survey from Deep Learning to Foundation Models</strong>.<br>
+  What works, where it fails, and what transfers—from deep learning to foundation models.
 </p>
 
 <p align="center">
@@ -24,11 +24,22 @@
 | [Literature](https://chaofan996.github.io/gait-survey/) | **Why / What / How** summaries: Core Motivation, Key Idea, and Main Techniques | Research landscape |
 | [Benchmarks](https://chaofan996.github.io/gait-survey/?view=benchmarks) | Within- and cross-domain results, training sources, protocols, and rankings | Tables III–IV |
 | [Statistics](https://chaofan996.github.io/gait-survey/?view=statistics) | Dataset usage, modality trends, and benchmark resources | Table II · Figs. 5–6 |
-| [Research map](https://chaofan996.github.io/gait-survey/?view=map) | Papers connected to five methodological dimensions, challenges, and outlooks | Sections IV–VI |
+| [Research map](https://chaofan996.github.io/gait-survey/?view=map) | Progress and limits; papers connected to five methodological dimensions, synthesis, scaling, and outlooks | Sections IV–VI |
 | [Code & openness](https://chaofan996.github.io/gait-survey/?view=codebases) | Repository stars, OpenGait history, and filterable publication code-release statements | Section III-C |
 | [Projects](https://chaofan996.github.io/gait-survey/?view=initiatives&kind=projects) / [Competitions](https://chaofan996.github.io/gait-survey/?view=initiatives&kind=competitions) | Funded research and competition editions, with scope, evaluation settings, official sources and BibTeX | Sections III-D–E |
 
-**Current collection:** 278 catalogue references · 120 experimental records, including alternative reports. Filters can be shared, and records can be exported for further analysis.
+**Current collection:** 281 catalogue references · 228 experimental records, including alternative reports. Filters can be shared, and records can be exported for further analysis.
+
+## Read the revised survey
+
+The discussion focuses on **January 2020–September 2026**, with earlier work for context. The October manuscript alignment adds concise, source-linked reading routes:
+
+- [Progress and limits](https://chaofan996.github.io/gait-survey/?view=map#progress): the eight capability/setting judgments in **Table V, Sec. IV-F**.
+- [Synthetic data](https://chaofan996.github.io/gait-survey/?view=map&topic=synthetic): identity preservation and real-data utility across GaitEditor, GaitCrafter and BarbieGait.
+- [Data and model scaling](https://chaofan996.github.io/gait-survey/?view=map&topic=scaling): sequence count, identities, condition coverage, capacity and computation.
+- [Gait recognition for agents](https://chaofan996.github.io/gait-survey/?view=map&topic=agents): long-video analysis and robotics as prospective applications whose gait benefits still need evaluation.
+
+Healthcare and privacy discussions distinguish stable identity cues from useful within-person change and responsible reuse. Updated summaries carry manuscript-page provenance. See the [alignment record](docs/manuscript-alignment.md).
 
 ## Help the survey grow
 
@@ -42,7 +53,7 @@ See the **[contribution guide](CONTRIBUTING.md)** for paper updates, human verif
 
 The manuscript snapshot **`survey-2026-09-21`** contains **160 publications from 2020–2025** and **212 recorded modality uses**. Statistics cover the selected conferences and journals listed in the [scope and counting rules](docs/statistics.md). The broader literature catalogue also includes foundational, related, and selected 2026 work.
 
-Paper summaries use three fields—motivation, idea, and techniques—with LLM assistance followed by human verification. Versioned records and documented update tools support continued curation while preserving the statistical basis of each manuscript version. New catalogue entries can be added without changing the fixed snapshot.
+The authors curate and interpret the evidence. Language-model tools assisted literature organization, metadata extraction and wording of catalogue summaries, with source checking. Summaries use three fields: motivation, idea and techniques. Versioned records and documented update tools support continued curation while preserving the statistical basis of each manuscript version. New catalogue entries can be added without changing the fixed snapshot.
 
 **Download:** [Publication membership](statistics-membership.csv) · [Statistical counts](statistics-counts.csv) · [Relationship evidence](relationships.csv)
 

@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Gait Recognition: A Survey and Outlook",
-    "updated": "2026-09-21",
-    "coverage": "2020–2026, with foundational and related references",
-    "description": "Literature identification, data extraction and three-field summaries used language-model assistance, followed by record-by-record manual verification by the authors. This describes the curation workflow; linked results remain source-reported.",
+    "title": "Modern Gait Recognition: A Survey from Deep Learning to Foundation Models",
+    "updated": "2026-10-14",
+    "coverage": "January 2020-September 2026, with foundational and related references",
+    "description": "The authors curate the literature, assess the evidence and take responsibility for the survey's interpretations. Language-model tools assisted literature organization, metadata extraction and wording of catalogue summaries, which were checked against their sources. Results remain attributable to the original studies.",
     "wordCloudMethod": "Document frequency in the three summary fields: a term contributes at most once per paper. Counts describe this collection, not citation impact or a complete publication census.",
     "counts": {
-      "total": 278,
-      "complete": 278
+      "total": 281,
+      "complete": 281
     },
     "githubOwner": "ChaoFan996",
     "githubRepo": "gait-survey",
@@ -165,7 +165,7 @@
       "inputs": "Skeleton",
       "backbone": "Transformer",
       "loss": "",
-      "datasets": "2.7M pretraining walks; four downstream benchmarks (names not extracted)",
+      "datasets": "2.7M pretraining sequences; CASIA-B, PsyMo, GREW, Gait3D",
       "codeAvailable": "Unverified",
       "codeUrl": "",
       "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37340",
@@ -182,7 +182,7 @@
         }
       ],
       "summaryStatus": "Editorial summary",
-      "notes": "2.7M is walking sequences, not verified unique identities; four downstream dataset names require full text.",
+      "notes": "Sequence count does not establish unique identity count. Scaling trends depend on the tested representation, objectives and compute budget.",
       "sections": [
         "Introduction / Motivation",
         "Advances in Methods / Gait Learning Frameworks",
@@ -1421,7 +1421,7 @@
       "summaryStatus": "Editorial summary",
       "notes": "Clinical motion generation; exclude from identity-method denominator.",
       "sections": [
-        "Challenges and Outlooks / Gait Recognition in Healthcare"
+        "Challenges and Outlooks / Gait Representation Learning for Healthcare"
       ],
       "abstract": "GAITGen generates gait sequences conditioned on impairment severity. A conditional quantized autoencoder separates motion and pathology factors, and Transformer components generate new sequences. Experiments on PD-GaM evaluate reconstruction, generation and downstream severity estimation; a clinical user study assesses the plausibility of generated walking patterns.",
       "abstractKind": "Abstract summary",
@@ -1510,7 +1510,7 @@
       "summaryStatus": "Editorial summary",
       "notes": "Clinical classification, not biometric identity recognition; reported accuracy is not a Rank-1 identity metric.",
       "sections": [
-        "Challenges and Outlooks / Gait Recognition in Healthcare"
+        "Challenges and Outlooks / Gait Representation Learning for Healthcare"
       ],
       "abstract": "ScoliGaitX studies scoliosis assessment from gait videos using silhouettes, optical flow and sequences with the average gait template removed. An alignment and gating module combines their complementary appearance and motion cues. Evaluation on Scoliosis1K investigates classification performance and the contribution of each stream to non-invasive screening research.",
       "abstractKind": "Abstract summary",
@@ -1647,7 +1647,7 @@
       "summaryStatus": "Editorial summary",
       "notes": "Observational preprint; predictive association is not clinical deployment validation; no identity accuracy comparison.",
       "sections": [
-        "Challenges and Outlooks / Gait Recognition in Healthcare"
+        "Challenges and Outlooks / Gait Representation Learning for Healthcare"
       ],
       "abstract": "The authors train a representation model on 3D skeletal recordings from 3,414 adults and investigate associations with a broad set of health measurements. Learned embeddings are compared with engineered features and assessed after adjustment for demographic and body-composition variables. Anatomical ablations explore which body regions support different prediction targets.",
       "abstractKind": "Abstract summary",
@@ -4617,7 +4617,7 @@
       ],
       "summaryStatus": "Editorial summary",
       "sections": [
-        "Challenges and Outlooks / Gait Recognition in Healthcare"
+        "Challenges and Outlooks / Gait Representation Learning for Healthcare"
       ],
       "abstract": "FineRehab supports analysis of rehabilitation movements using synchronized visual, depth and inertial recordings. It contains sixteen actions performed by fifty participants, including patients and healthy volunteers. The paper presents baselines for multidimensional movement-quality assessment and investigates how multimodal measurements can support more quantitative exercise feedback.",
       "abstractKind": "Abstract summary",
@@ -5133,7 +5133,7 @@
       "sections": [
         "Introduction",
         "Background / Broader Applications",
-        "Challenges and Outlooks / Gait Recognition in Healthcare"
+        "Challenges and Outlooks / Gait Representation Learning for Healthcare"
       ],
       "abstract": "This work studies gait video as a non-invasive source of information for scoliosis classification. It introduces Scoliosis1K and compares a baseline ScoNet with a multitask extension, ScoNet-MT. The experiments assess whether learned walking representations can support screening research without relying on radiographs as the model input.",
       "abstractKind": "Abstract summary",
@@ -5509,7 +5509,7 @@
       ],
       "summaryStatus": "Editorial summary",
       "sections": [
-        "Challenges and Outlooks / Gait Recognition in Robots"
+        "Challenges and Outlooks / Gait Recognition for Agents"
       ],
       "abstract": "This work adapts person re-identification during robot following. An online continual-learning system updates its feature extractor using recent observations and a memory of earlier appearances, helping the robot recover its target after occlusion. Experiments examine viewpoint and lighting changes alongside distraction from visually similar people.",
       "abstractKind": "Abstract summary",
@@ -6260,7 +6260,7 @@
       "id": "ref-ma2024gaiteditor",
       "citationKey": "ma2024gaiteditor",
       "archiveKey": "ma2024gaiteditor",
-      "method": "",
+      "method": "GaitEditor",
       "title": "Pedestrian Attribute Editing for Gait Recognition and Anonymization",
       "authors": "Ma, Jingzhe and Ye, Dingqiang and Fan, Chao and Yu, Shiqi",
       "year": 2024,
@@ -6288,7 +6288,8 @@
       ],
       "summaryStatus": "Editorial summary",
       "sections": [
-        "Privacy Concerns and Potential Solutions"
+        "Privacy Concerns and Potential Solutions",
+        "Advances in Methods / Synthetic Gait Data and Generative Learning"
       ],
       "abstract": "GaitEditor modifies multiple attributes in real walking sequences while preserving plausible visual appearance. The same editing framework serves two objectives: producing training variations for recognition and reducing identifying information for anonymization. Experiments across three gait benchmarks evaluate both uses, examining how controlled attribute changes can enhance or weaken identity matching.",
       "abstractKind": "Abstract summary",
@@ -6455,7 +6456,7 @@
       ],
       "summaryStatus": "Editorial summary",
       "sections": [
-        "Challenges and Outlooks / Gait Recognition in Robots"
+        "Challenges and Outlooks / Gait Recognition for Agents"
       ],
       "abstract": "FollowMe combines visual re-identification, gesture recognition and autonomous navigation so a mobile robot can follow a designated person. The system learns the target's appearance and uses it for subsequent re-identification, while the navigation component avoids obstacles. Laboratory experiments include unfamiliar moving obstacles to test the integrated behavior.",
       "abstractKind": "Abstract summary",
@@ -12516,6 +12517,126 @@
       "abstractKind": "Abstract summary",
       "abstractSource": "Editorial summary of the linked research paper",
       "abstractUrl": "https://persci.mit.edu/pub_abstracts/niyogi_XYT_abs.html",
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": true
+    },
+    {
+      "id": "ref-mitra2025gaitcrafter",
+      "citationKey": "mitra2025gaitcrafter",
+      "archiveKey": "mitra2025gaitcrafter",
+      "method": "GaitCrafter",
+      "title": "GaitCrafter: Diffusion Model for Biometric Preserving Gait Synthesis",
+      "authors": "Mitra, Sirshapan and Rawat, Yogesh Singh",
+      "year": 2025,
+      "venue": "ICCV Workshops",
+      "motivation": "Collecting diverse walking sequences for each identity is costly.",
+      "idea": "Generate controllable silhouette sequences and study their value for gait recognition.",
+      "techniques": "Conditional video diffusion; identity embedding interpolation; silhouette augmentation.",
+      "inputs": "Silhouette",
+      "backbone": "",
+      "loss": "",
+      "datasets": "",
+      "codeAvailable": "Unverified",
+      "codeUrl": "",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025W/FoundGen-Bio/html/Mitra_GaitCrafter_Diffusion_Model_for_Biometric_Preserving_Gait_Synthesis_ICCVW_2025_paper.html",
+      "bibtex": "@inproceedings{mitra2025gaitcrafter,\n author = {Mitra, Sirshapan and Rawat, Yogesh Singh},\n booktitle = {Proc. IEEE/CVF Int. Conf. Comput. Vis. Workshops},\n pages = {3726--3735},\n title = {{GaitCrafter}: Diffusion Model for Biometric\nPreserving Gait Synthesis},\n url = {https://openaccess.thecvf.com/content/ICCV2025W/FoundGen-Bio/html/Mitra_GaitCrafter_Diffusion_Model_for_Biometric_Preserving_Gait_Synthesis_ICCVW_2025_paper.html},\n year = {2025}\n}",
+      "scope": "Survey collection",
+      "provenance": [
+        {
+          "source": "Manuscript alignment, 2026-10-14",
+          "evidence": "Author-supplied manuscript and linked primary publication page; metadata cross-checked against the bibliography audit."
+        }
+      ],
+      "summaryStatus": "Editorial summary",
+      "notes": "Outside the frozen 2020-2025 statistical snapshot.",
+      "sections": [
+        "Advances in Methods / Synthetic Gait Data and Generative Learning"
+      ],
+      "abstract": "GaitCrafter synthesizes silhouettes conditioned on identity, clothing, carried objects and view. Interpolating identity embeddings creates candidate novel identities. The survey discusses its controlled-benchmark gains while distinguishing added sample count from identity diversity and unconstrained real-world transfer.",
+      "abstractKind": "Abstract summary",
+      "abstractSource": "Concise editorial summary of the linked publication",
+      "abstractUrl": "https://openaccess.thecvf.com/content/ICCV2025W/FoundGen-Bio/html/Mitra_GaitCrafter_Diffusion_Model_for_Biometric_Preserving_Gait_Synthesis_ICCVW_2025_paper.html",
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
+    },
+    {
+      "id": "ref-mcdaniel2026frailty",
+      "citationKey": "mcdaniel2026frailty",
+      "archiveKey": "mcdaniel2026frailty",
+      "method": "Gait Signature of Frailty",
+      "title": "The Gait Signature of Frailty: Transfer Learning based Deep Gait Models for Scalable Frailty Assessment",
+      "authors": "McDaniel, Laura and Pal, Basudha and Szczesny, Crystal and Guo, Yuxiang and Wang, Zhaoyang and Roemmich, Ryan and Abadir, Peter and Chellappa, Rama",
+      "year": 2026,
+      "venue": "arXiv",
+      "motivation": "Frailty assessment needs scalable measures despite limited clinical training data.",
+      "idea": "Adapt pretrained gait recognition representations to frailty classification.",
+      "techniques": "Silhouette features; selective freezing; transfer learning; frailty assessment.",
+      "inputs": "Silhouette",
+      "backbone": "",
+      "loss": "",
+      "datasets": "",
+      "codeAvailable": "Unverified",
+      "codeUrl": "",
+      "url": "https://arxiv.org/abs/2603.24434",
+      "bibtex": "@article{mcdaniel2026frailty,\n author = {McDaniel, Laura and Pal, Basudha and Szczesny, Crystal and Guo, Yuxiang and Wang, Zhaoyang and Roemmich, Ryan and Abadir, Peter and Chellappa, Rama},\n journal = {arXiv:2603.24434},\n title = {{The Gait Signature of Frailty: Transfer Learning based Deep Gait Models for Scalable Frailty Assessment}},\n url = {https://arxiv.org/abs/2603.24434},\n year = {2026}\n}",
+      "scope": "Related research",
+      "provenance": [
+        {
+          "source": "Manuscript alignment, 2026-10-14",
+          "evidence": "Author-supplied manuscript and linked primary publication page; metadata cross-checked against the bibliography audit."
+        }
+      ],
+      "summaryStatus": "Editorial summary",
+      "notes": "Outside the frozen 2020-2025 statistical snapshot.",
+      "sections": [
+        "Challenges and Outlooks / Gait Representation Learning for Healthcare"
+      ],
+      "abstract": "This preprint studies frailty classification using gait models and a silhouette dataset that includes older adults using walking aids. It examines how selectively adapting pretrained representations affects performance under limited data. Clinical value requires evaluation beyond identity-recognition accuracy.",
+      "abstractKind": "Abstract summary",
+      "abstractSource": "Concise editorial summary of the linked publication",
+      "abstractUrl": "https://arxiv.org/abs/2603.24434",
+      "complete": true,
+      "statisticsEligible": false,
+      "venueInScope": false
+    },
+    {
+      "id": "ref-huang2020movienet",
+      "citationKey": "huang2020movienet",
+      "archiveKey": "huang2020movienet",
+      "method": "MovieNet",
+      "title": "MovieNet: A Holistic Dataset for Movie Understanding",
+      "authors": "Huang, Qingqiu and Xiong, Yu and Rao, Anyi and Wang, Jiaze and Lin, Dahua",
+      "year": 2020,
+      "venue": "ECCV",
+      "motivation": "Long-video understanding requires linking characters, scenes and narrative information.",
+      "idea": "Provide a movie dataset with complementary annotations and evaluation tasks.",
+      "techniques": "Character identity annotations; scene boundaries; multimodal movie understanding.",
+      "inputs": "RGB video",
+      "backbone": "",
+      "loss": "",
+      "datasets": "",
+      "codeAvailable": "Unverified",
+      "codeUrl": "",
+      "url": "https://arxiv.org/abs/2007.10937",
+      "bibtex": "@inproceedings{huang2020movienet,\n author = {Huang, Qingqiu and Xiong, Yu and Rao, Anyi\nand Wang, Jiaze and Lin, Dahua},\n booktitle = {Proc. Eur. Conf. Comput. Vis.},\n title = {{MovieNet}: A Holistic Dataset for Movie Understanding},\n url = {https://arxiv.org/abs/2007.10937},\n year = {2020}\n}",
+      "scope": "Related research",
+      "provenance": [
+        {
+          "source": "Manuscript alignment, 2026-10-14",
+          "evidence": "Author-supplied manuscript and linked primary publication page; metadata cross-checked against the bibliography audit."
+        }
+      ],
+      "summaryStatus": "Editorial summary",
+      "notes": "Outside the frozen 2020-2025 statistical snapshot.",
+      "sections": [
+        "Challenges and Outlooks / Gait Recognition for Agents"
+      ],
+      "abstract": "MovieNet provides a dataset and benchmarks for movie understanding, including character identity annotations. It motivates the identity-continuity problem discussed for virtual agents; it does not demonstrate gait recognition or a gait-enabled agent.",
+      "abstractKind": "Abstract summary",
+      "abstractSource": "Concise editorial summary of the linked publication",
+      "abstractUrl": "https://arxiv.org/abs/2007.10937",
       "complete": true,
       "statisticsEligible": false,
       "venueInScope": true
