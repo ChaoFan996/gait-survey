@@ -7,11 +7,12 @@
 <h1 align="center">Gait Research Library</h1>
 
 <p align="center">
-  An evolving companion to <strong>Modern Gait Recognition: A Survey from Deep Learning to Foundation Models</strong>.<br>
+  An evolving companion to <a href="https://www.researchgate.net/publication/415739002_Modern_Gait_Recognition_A_Survey_from_Deep_Learning_to_Foundation_Models"><strong>Modern Gait Recognition: A Survey from Deep Learning to Foundation Models</strong></a>.<br>
   What works, where it fails, and what transfers—from deep learning to foundation models.
 </p>
 
 <p align="center">
+  <a href="https://www.researchgate.net/publication/415739002_Modern_Gait_Recognition_A_Survey_from_Deep_Learning_to_Foundation_Models"><strong>Read the paper · ResearchGate</strong></a> ·
   <a href="https://chaofan996.github.io/gait-survey/"><strong>Explore the homepage</strong></a> ·
   <a href="CONTRIBUTING.md">Contribute</a> ·
   <a href="https://github.com/ChaoFan996/gait-survey/issues/new">Suggest a paper or correction</a>
@@ -62,6 +63,10 @@ The [Code & openness view](https://chaofan996.github.io/gait-survey/?view=codeba
 For interpreting scores, see the [benchmark rules](docs/statistics.md#benchmark-interpretation). Rankings follow the selected protocol and training source; research-map links identify supporting survey discussions.
 
 The [Projects & competitions index](https://chaofan996.github.io/gait-survey/?view=initiatives) contains **9 research entries and 11 competition editions**, including HID 2020–2026, ACM MM 2024 MGR and IJCB 2025 OUMVLP-OF. Filter by year, region, research scope or keyword; inspect official sources and download [BibTeX](initiatives.bib) or [JSON](initiatives.json). Broader ReID tasks are labeled explicitly. See the [scope and update guide](docs/initiatives.md).
+
+## Website visitor map
+
+The homepage header embeds [MapMyVisitors](https://mapmyvisitors.com/) using the site owner’s widget. It shows visits from activation onward, with approximate locations inferred by the provider; visits are not a count of distinct people. Click the map for geographic statistics. The widget loads only on the published `chaofan996.github.io/gait-survey/` site, so local previews and forks do not affect its counter. See [configuration and maintenance](docs/visitor-map.md).
 
 ## Preview locally
 

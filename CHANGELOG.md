@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-17 — Paper link and visitor map
+
+- Linked the survey on ResearchGate from the homepage, About dialog, footer, and GitHub README.
+- Added the owner-provided MapMyVisitors world map opposite the logo, with responsive sizing and links to provider statistics.
+- Count visits on the production site only; local previews and repository forks do not load the tracker. Counts start at activation, and geographic locations are approximate.
+
 ## 2026-10-14 — Alignment with the revised manuscript
 
 - Updated the survey title, scope and introductory copy to connect modern gait recognition since 2020 with foundation models and evidence about effective conditions, failures and transfer.
