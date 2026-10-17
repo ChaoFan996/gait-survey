@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-17 — Header layout refinement
+
+- Grouped the logo and survey title, moved About beside the paper and GitHub links, and aligned the visitor map with its count and reporting dates in a compact desktop layout.
+- Simplified the map heading and moved hover guidance into its accessible description; retained a stacked map layout on narrow screens.
+
 ## 2026-10-17 — Paper link and visitor map
 
 - Linked the survey on ResearchGate from the homepage, About dialog, footer, and GitHub README.
