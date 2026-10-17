@@ -4,7 +4,7 @@
 
 - Linked the survey on ResearchGate from the homepage, About dialog, footer, and GitHub README.
 - Added the owner-provided MapMyVisitors world map opposite the logo, with responsive sizing and links to provider statistics.
-- Count visits on the production site only; local previews and repository forks do not load the tracker. Counts start at activation, and geographic locations are approximate.
+- Count visits on the production site only; local previews and repository forks do not load the tracker. Counts start at activation, and geographic locations are approximate. Retained the provider’s reporting dates and marker tooltips; made the map scale with viewport changes.
 
 ## 2026-10-14 — Alignment with the revised manuscript
 

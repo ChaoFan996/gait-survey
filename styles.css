@@ -22,8 +22,9 @@
 .visitor-map-label{font-size:.56rem;letter-spacing:.12em;font-weight:650;color:var(--muted);margin:0 0 3px}
 .visitor-map-embed{width:100%;min-height:108px}
 .visitor-map-note{font-size:.55rem;color:var(--muted);margin:2px 0 0;line-height:1.35}
-.visitor-map #mapmyvisitors-widget{min-height:0!important}
-.visitor-map .mapmyvisitors-date{display:none}
+.visitor-map #mapmyvisitors-widget{min-height:0!important;max-width:100%}
+.visitor-map .mapmyvisitors-map{width:100%!important;height:auto!important;aspect-ratio:2.04;background-size:100% 100%}
+.visitor-map .mapmyvisitors-date{font-size:8px!important}
 @media(max-width:700px){
   .masthead-inner.has-visitor-map{gap:12px;min-height:137px;padding-top:9px;padding-bottom:18px}
   .visitor-map{flex-basis:155px}

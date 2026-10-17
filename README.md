@@ -66,7 +66,7 @@ The [Projects & competitions index](https://chaofan996.github.io/gait-survey/?vi
 
 ## Website visitor map
 
-The homepage header embeds [MapMyVisitors](https://mapmyvisitors.com/) using the site owner’s widget. It shows visits from activation onward, with approximate locations inferred by the provider; visits are not a count of distinct people. Click the map for geographic statistics. The widget loads only on the published `chaofan996.github.io/gait-survey/` site, so local previews and forks do not affect its counter. See [configuration and maintenance](docs/visitor-map.md).
+The homepage header embeds [MapMyVisitors](https://mapmyvisitors.com/) using the site owner’s widget. It records visits after activation and displays the provider’s recent reporting window, with approximate locations; pageviews are not a count of distinct people. Hover over a visit marker for its region and count, or click the map for geographic statistics. The widget loads only on the published `chaofan996.github.io/gait-survey/` site, so local previews and forks do not affect its counter. See [configuration and maintenance](docs/visitor-map.md).
 
 ## Preview locally
 
