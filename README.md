@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.researchgate.net/publication/415739002_Modern_Gait_Recognition_A_Survey_from_Deep_Learning_to_Foundation_Models"><strong>Read the paper · ResearchGate</strong></a> ·
+  <a href="https://chaofan996.github.io/gait-survey/paper/"><strong>Read the paper · Abstract and PDF</strong></a> ·
   <a href="https://chaofan996.github.io/gait-survey/"><strong>Explore the homepage</strong></a> ·
   <a href="CONTRIBUTING.md">Contribute</a> ·
   <a href="https://github.com/ChaoFan996/gait-survey/issues/new">Suggest a paper or correction</a>
@@ -82,4 +82,4 @@ Open **[localhost:8766](http://localhost:8766/)**. The site is static; no packag
 
 [Contribution guide](CONTRIBUTING.md) · [Statistics and benchmark rules](docs/statistics.md) · [File guide](CONTRIBUTING.md#file-guide) · [Changelog](CHANGELOG.md)
 
-Paper titles, metadata, and linked research remain attributable to their authors and publishers. No paper PDFs are redistributed. The survey logo and editorial content remain with the survey authors.
+Paper titles, metadata, and linked research remain attributable to their authors and publishers. The survey preprint is shared under CC BY 4.0. PDFs for other papers in the catalogue are not redistributed. The survey logo and editorial content remain with the survey authors.
